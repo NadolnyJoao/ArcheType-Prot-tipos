@@ -713,12 +713,19 @@ MonoBehaviour:
     falas:
     - Ola como voce esta?
     - Seja muito ben vindo!
-  - name: Miguel
+    - "interaja com um quadro que passarei informa\xE7\xF5es sobre ele."
+    - '*interaja com um quadro*'
+    canPass: 0
+  - name: Guia
     colorName:
       serializedVersion: 2
-      rgba: 15100734
+      rgba: 4284404479
     falas:
-    - eu quero dar o cu pode me ajudar?
+    - "te vejo pintar o meu ch\xE3o"
+    - 'de vermelho sangue '
+    - vibranteiiiiiiii
+    - 'voce diz: Me ajuda, Deus'
+    canPass: 1
   indexFalas: 0
   dialogoUI: {fileID: 1797737039}
 --- !u!1 &644927283

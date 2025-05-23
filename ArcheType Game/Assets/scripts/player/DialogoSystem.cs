@@ -7,20 +7,28 @@ using TMPro;
 public class Fala
 {
     public string name;
-    public Color32  colorName;
+    public Color32 colorName;
     public List<string> falas = new List<string>();
+
+    public bool canPass = true;
 
     private int index = 0;
     private bool finish = false;
+    public void ConpriObjetivo()
+    {
+        canPass = true;
+    }
     public void nextFala()
     {
-        index++;
+        if (!finish)
+        { index++; }
         if (index >= falas.Count)
         {
             finish = true;
+            index--;
         }
     }
-    public bool getFinish(){ return finish; }
+    public bool getFinish() { return finish; }
     public string getFala()
     {
         return falas[index];
@@ -29,7 +37,7 @@ public class Fala
     {
         return name;
     }
-    public Color32  getColor()
+    public Color32 getColor()
     {
         return colorName;
     }
@@ -40,13 +48,29 @@ public class DialogoSystem : MonoBehaviour
 
     public List<Fala> falas = new List<Fala>();
     public int indexFalas = 0;
-
     public DialogoSystenUI dialogoUI;
     private bool inDialogue = false;
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && indexFalas < falas.Count) 
+        //temporario ate unity events
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            InvokeDialogo();
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            CumprirObjetivo();
+        }
+    }
+    public void CumprirObjetivo()
+    {
+        indexFalas++;
+    }
+    //chamar no unity events
+    public void InvokeDialogo()
+    {
+        if (indexFalas < falas.Count)
         {
 
             if (inDialogue == false)
@@ -55,7 +79,8 @@ public class DialogoSystem : MonoBehaviour
                 ShowFala();
                 inDialogue = true;
                 Debug.Log("inicio do dialogo");
-            }else
+            }
+            else
             {
                 falas[indexFalas].nextFala();
                 if (falas[indexFalas].getFinish())
@@ -64,7 +89,8 @@ public class DialogoSystem : MonoBehaviour
                     inDialogue = false;
                     Debug.Log("Fim do dialogo");
                     //proximo dialogo
-                    indexFalas++;
+                    if (falas[indexFalas].canPass)
+                        indexFalas++;
                 }
                 else
                 {
@@ -72,11 +98,10 @@ public class DialogoSystem : MonoBehaviour
                     Debug.Log("proxima fala");
                 }
             }
-            
-           
+
+
         }
     }
-
 
     public void ShowFala()
     {
