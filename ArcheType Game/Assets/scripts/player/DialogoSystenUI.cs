@@ -6,19 +6,28 @@ using TMPro;
 
 public class DialogoSystenUI : MonoBehaviour
 {
+    public float delayChar = 0.5f;
     public GameObject dialogoBox;
     public TMP_Text nameTextPro;
     public TMP_Text bodyTextPro;
+    private string textFromShow;
     void Start()
     {
         dialogoBox.SetActive(false);
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
+    }
+    void AnimationText()
+    {
+        if (bodyTextPro.text.Length != textFromShow.Length)
+        {
+            bodyTextPro.text += textFromShow[bodyTextPro.text.Length];
+            Invoke("AnimationText", delayChar);
+        }
     }
     public void ShowDialogoBox()
     {
@@ -33,6 +42,9 @@ public class DialogoSystenUI : MonoBehaviour
     {
         nameTextPro.text = name;
         nameTextPro.faceColor = color;
-        bodyTextPro.text = body;
+        textFromShow = body;
+        bodyTextPro.text = "";
+        Invoke("AnimationText", delayChar);
+            
     }
 }

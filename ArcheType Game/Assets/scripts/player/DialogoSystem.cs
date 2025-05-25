@@ -17,6 +17,7 @@ public class Fala
     public void ConpriObjetivo()
     {
         canPass = true;
+        
     }
     public void nextFala()
     {

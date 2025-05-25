@@ -1267,6 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5461e53b11cb64ab290291ba56b9e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayChar: 0.05
   dialogoBox: {fileID: 644927283}
   nameTextPro: {fileID: 239219235}
   bodyTextPro: {fileID: 806384766}
