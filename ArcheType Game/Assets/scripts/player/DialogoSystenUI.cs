@@ -11,6 +11,20 @@ public class DialogoSystenUI : MonoBehaviour
     public TMP_Text nameTextPro;
     public TMP_Text bodyTextPro;
     private string textFromShow;
+
+    public static DialogoSystenUI dialogoSystenUI { get; private set; }
+    void Awake()
+    {
+        if (dialogoSystenUI != null)
+        {
+            Debug.Log("ALGUMA COISAS REFERENTE AO DIALOGOSYSTEMUI");
+        }
+        dialogoSystenUI = this;
+    }
+    public void DebugTeste()
+    {
+        Debug.Log("funcionando");
+    }
     void Start()
     {
         dialogoBox.SetActive(false);

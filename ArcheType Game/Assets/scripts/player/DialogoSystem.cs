@@ -49,14 +49,19 @@ public class DialogoSystem : MonoBehaviour
 
     public List<Fala> falas = new List<Fala>();
     public int indexFalas = 0;
-    public DialogoSystenUI dialogoUI;
+    // public DialogoSystenUI dialogoUI;
     private bool inDialogue = false;
 
+    void Start()
+    {
+        DialogoSystenUI.dialogoSystenUI.DebugTeste();
+   }
     public void Update()
     {
         //temporario ate unity events
         if (Input.GetKeyDown(KeyCode.W))
         {
+
             InvokeDialogo();
         }
         if (Input.GetKeyDown(KeyCode.E))
@@ -106,13 +111,13 @@ public class DialogoSystem : MonoBehaviour
 
     public void ShowFala()
     {
-        dialogoUI.ShowDialogoBox();
-        dialogoUI.SetTextDialogBox(falas[indexFalas].getColor(), falas[indexFalas].getName(), falas[indexFalas].getFala());
+        DialogoSystenUI.dialogoSystenUI.ShowDialogoBox();
+        DialogoSystenUI.dialogoSystenUI.SetTextDialogBox(falas[indexFalas].getColor(), falas[indexFalas].getName(), falas[indexFalas].getFala());
     }
 
     public void HiddenFala()
     {
-        dialogoUI.HiddenDialogoBox();
+        DialogoSystenUI.dialogoSystenUI.HiddenDialogoBox();
     }
 
 }
