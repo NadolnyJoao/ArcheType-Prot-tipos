@@ -17,7 +17,7 @@ public class Fala
     public void ConpriObjetivo()
     {
         canPass = true;
-        
+
     }
     public void nextFala()
     {
@@ -54,24 +54,23 @@ public class DialogoSystem : MonoBehaviour
 
     void Start()
     {
-        DialogoSystenUI.dialogoSystenUI.DebugTeste();
-   }
+    }
     public void Update()
     {
-        //temporario ate unity events
-        if (Input.GetKeyDown(KeyCode.W))
-        {
+        // //temporario ate unity events
+        // if (Input.GetKeyDown(KeyCode.W))
+        // {
 
-            InvokeDialogo();
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            CumprirObjetivo();
-        }
+        //     InvokeDialogo();
+        // }
+        // if (Input.GetKeyDown(KeyCode.E))
+        // {
+        //     CumprirObjetivo();
+        // }
     }
     public void CumprirObjetivo()
     {
-        indexFalas++;
+        if (!falas[indexFalas].canPass) { indexFalas++; }
     }
     //chamar no unity events
     public void InvokeDialogo()
