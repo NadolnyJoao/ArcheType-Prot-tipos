@@ -2,9 +2,13 @@
     "files.exclude": {
         "**/.DS_Store": true,
         "**/.git": true,
+<<<<<<< Updated upstream
         "**/.vs": true,
         "**/.gitmodules": true,
         "**/.vsconfig": true,
+=======
+        "**/.gitmodules": true,
+>>>>>>> Stashed changes
         "**/*.booproj": true,
         "**/*.pidb": true,
         "**/*.suo": true,
@@ -49,6 +53,7 @@
         "library/": true,
         "obj/": true,
         "Obj/": true,
+<<<<<<< Updated upstream
         "Logs/": true,
         "logs/": true,
         "ProjectSettings/": true,
@@ -67,4 +72,12 @@
         "*.sln": "*.csproj",
     },
     "dotnet.defaultSolution": "ArcheType Game.sln"
+=======
+        "ProjectSettings/": true,
+        "temp/": true,
+        "Temp/": true
+    },
+    "dotnet.defaultSolution": "ArcheType Game.sln",
+    "dotnet.preferCSharpExtension": true
+>>>>>>> Stashed changes
 }
