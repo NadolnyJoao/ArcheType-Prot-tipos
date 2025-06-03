@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Workspace" id="{5d9c2548-91c5-455b-87d2-37a26c5d8807}">
 		<relationship name="masterEventFolder">
 			<destination>{9c276b1d-8167-41eb-99b4-71c21883fc9d}</destination>

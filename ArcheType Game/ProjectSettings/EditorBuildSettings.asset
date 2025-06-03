@@ -6,20 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-<<<<<<< Updated upstream
     path: Assets/Scenes/menu/Menu_alterar.unity
     guid: d3c88740b2f59d14a9a8ca7b32093335
   - enabled: 1
     path: Assets/Scenes/fase museu/fase museu teste.unity
     guid: f25e6a7b6a916f44083b72cc6872be98
-=======
-    path: Assets/Scenes/menu/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/fase museu/testes/fase museu teste.unity
-    guid: f25e6a7b6a916f44083b72cc6872be98
-  - enabled: 1
-    path: Assets/Scenes/fase museu/testes/Fase Museu TESTE LOADING.unity
-    guid: 88c1b36ec5e13cc40b44fb3ddb2fd586
->>>>>>> Stashed changes
   m_configObjects: {}

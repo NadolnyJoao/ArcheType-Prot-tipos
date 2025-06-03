@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{128def73-0d16-4e9a-997c-65e32ba41901}">
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{f736edd1-eef8-455e-8ce1-2f40fe5e807f}">
 		<property name="assetPath">
-			<value>FootStep_2.wav</value>
+			<value>FS/FS LAJOTA_03.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
 		<property name="channelCount">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<property name="length">
-			<value>3.03125</value>
+			<value>0.66666666666666663</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{1ca1ee4e-2642-4692-88dd-ba1560b30ab6}</destination>

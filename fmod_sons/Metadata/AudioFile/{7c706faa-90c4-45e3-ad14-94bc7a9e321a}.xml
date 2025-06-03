@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{c3b7c42e-def1-4796-994a-72fc2fbfe035}">
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{7c706faa-90c4-45e3-ad14-94bc7a9e321a}">
 		<property name="assetPath">
-			<value>FootSteep.wav</value>
-		</property>
-		<property name="isStreaming">
-			<value>true</value>
+			<value>FS/FS LAJOTA_01.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -14,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>18.430833333333332</value>
+			<value>0.66666666666666663</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{1ca1ee4e-2642-4692-88dd-ba1560b30ab6}</destination>
