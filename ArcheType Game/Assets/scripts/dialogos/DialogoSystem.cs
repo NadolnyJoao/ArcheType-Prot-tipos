@@ -3,46 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-[System.Serializable]
-public class Fala
-{
-    public string name;
-    public Color32 colorName;
-    public List<string> falas = new List<string>();
+// [System.Serializable]
+// public class Fala
+// {
+//     public string name;
+//     public Color32 colorName;
+//     public List<string> falas = new List<string>();
 
-    public bool canPass = true;
+//     public bool canPass = true;
 
-    private int index = 0;
-    private bool finish = false;
-    public void ConpriObjetivo()
-    {
-        canPass = true;
+//     private int index = 0;
+//     private bool finish = false;
+//     public void ConpriObjetivo()
+//     {
+//         canPass = true;
 
-    }
-    public void nextFala()
-    {
-        if (!finish)
-        { index++; }
-        if (index >= falas.Count)
-        {
-            finish = true;
-            index--;
-        }
-    }
-    public bool getFinish() { return finish; }
-    public string getFala()
-    {
-        return falas[index];
-    }
-    public string getName()
-    {
-        return name;
-    }
-    public Color32 getColor()
-    {
-        return colorName;
-    }
-}
+//     }
+//     public void nextFala()
+//     {
+//         if (!finish)
+//         { index++; }
+//         if (index >= falas.Count)
+//         {
+//             finish = true;
+//             index--;
+//         }
+//     }
+//     public bool getFinish() { return finish; }
+//     public string getFala()
+//     {
+//         return falas[index];
+//     }
+//     public string getName()
+//     {
+//         return name;
+//     }
+//     public Color32 getColor()
+//     {
+//         return colorName;
+//     }
+// }
 
 public class DialogoSystem : MonoBehaviour
 {

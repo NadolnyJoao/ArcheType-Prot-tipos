@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -370,7 +369,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393034667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.2899, y: -4.6224, z: 0}
+  m_LocalPosition: {x: 14.93, y: -4.6224, z: 0}
   m_LocalScale: {x: 56.18, y: 1.3647, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -401,6 +400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: quadro (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
+      propertyPath: falas.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 27acfa52813d7fb4aa6b8b12224f5250, type: 2}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: falas.Array.data[0].falas.Array.data[0]
       value: "Esse \xE9 um classico"
@@ -492,11 +495,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
   m_PrefabInstance: {fileID: 423931824}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &479240961 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-  m_PrefabInstance: {fileID: 6531590200622694634}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &628111325
 GameObject:
@@ -599,16 +597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   falas:
-  - name: Guia
-    colorName:
-      serializedVersion: 2
-      rgba: 4284404479
-    falas:
-    - Ola como voce esta?
-    - Seja muito ben vindo!
-    - "interaja com um quadro que passarei informa\xE7\xF5es sobre ele."
-    - '*interaja com um quadro*'
-    canPass: 0
+  - {fileID: 11400000, guid: e64d6c4471a787b489316c6bf3395f0f, type: 2}
   indexFalas: 0
 --- !u!61 &628111329
 BoxCollider2D:
@@ -774,6 +763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: quadro (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
+      propertyPath: falas.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: d3b02af09bfb1104f9ffeb13783af3b7, type: 2}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: falas.Array.data[0].falas.Array.size
       value: 1
@@ -1011,6 +1004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: quadro (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
+      propertyPath: falas.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1f3ad5260aa9bb74eab1adf28bd41956, type: 2}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: falas.Array.data[0].falas.Array.data[0]
       value: "Esse quadro \xE9 interesante"
@@ -1300,11 +1297,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780416571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.666426, y: -3.2842093, z: -0.013092041}
+  m_LocalPosition: {x: 21, y: -3.2842093, z: -0.013092041}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 479240961}
   - {fileID: 729336809}
   - {fileID: 1482486936}
   - {fileID: 423931825}
@@ -1404,6 +1400,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1429,95 +1426,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &6531590200622694634
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1780416572}
-    m_Modifications:
-    - target: {fileID: 6531590200145568277, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_Name
-      value: quadro
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.1264257
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.6142092
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.013092041
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568750, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: actions.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568750, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: actions.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568750, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: actions.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 628111331}
-    - target: {fileID: 6531590200145568750, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: actions.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568750, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: actions.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetPosition
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568750, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: actions.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GuiaMoviment, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531590200145568750, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: actions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 479240961}
-    - target: {fileID: 6531590200145568750, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
-      propertyPath: actions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Transform, UnityEngine
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
 --- !u!1001 &8723560608939431900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1531,11 +1439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -8.03
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.73
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_LocalPosition.z
