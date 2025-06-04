@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 // [System.Serializable]
 // public class Fala
@@ -48,13 +49,12 @@ public class DialogoSystem : MonoBehaviour
 {
 
     public List<Fala> falas = new List<Fala>();
-    public int indexFalas = 0;
+    public UnityEvent laterActions;
+    private int indexFalas = 0;
     // public DialogoSystenUI dialogoUI;
     private bool inDialogue = false;
 
-    void Start()
-    {
-    }
+   
     public void Update()
     {
         // //temporario ate unity events
@@ -95,7 +95,10 @@ public class DialogoSystem : MonoBehaviour
                     Debug.Log("Fim do dialogo");
                     //proximo dialogo
                     if (falas[indexFalas].canPass)
+                    {
                         indexFalas++;
+                        laterActions.Invoke();
+                    }
                 }
                 else
                 {

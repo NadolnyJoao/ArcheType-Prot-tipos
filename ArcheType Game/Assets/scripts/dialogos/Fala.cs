@@ -43,7 +43,6 @@ public class Fala : ScriptableObject
         return colorName;
     }    //public List<string> frases = new List<string>();
 
-    public UnityEvent actions;//realiza uma ação no final da fala ( opicional )
 
     
 }
