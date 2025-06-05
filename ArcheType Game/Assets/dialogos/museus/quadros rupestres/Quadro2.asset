@@ -20,10 +20,6 @@ MonoBehaviour:
   - "Muitas dessas representa\xE7\xF5es foram encontradas no interior de cavernas,
     como em Lascaux (Fran\xE7a), sugerindo significados espirituais. "
   - "No entanto, tamb\xE9m existem registros ao ar livre, como no Parque Nacional
-    da Serra da Capivara, no Brasil, onde as imagens retratam cenas do cotidiano,
-    como ca\xE7adas, dan\xE7as e partos."
+    da Serra da Capivara, no Brasil"
+  - " onde as imagens retratam cenas do cotidiano, como ca\xE7adas, dan\xE7as e partos."
   canPass: 1
-  frases: []
-  actions:
-    m_PersistentCalls:
-      m_Calls: []

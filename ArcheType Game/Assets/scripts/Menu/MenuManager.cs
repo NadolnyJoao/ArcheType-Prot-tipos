@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 public class MenuManager : MonoBehaviour
@@ -21,8 +22,14 @@ public class MenuManager : MonoBehaviour
         painelInicial.SetActive(true);
         painelOp.SetActive(false); 
     }
-    public void SairGame()  
+    public void SairGame()
     {
-        Application.Quit();
+        #if UNITY_EDITOR
+                EditorApplication.isPlaying = false;
+        #else
+                Application.Quit(); // Funciona em builds executáveis (Windows, Android, etc.)
+        #endif
+    
+        PlayerPrefs.DeleteAll();
     }
 }
