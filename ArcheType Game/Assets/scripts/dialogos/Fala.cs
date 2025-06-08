@@ -12,7 +12,7 @@ public class Fala : ScriptableObject
 
     public bool canPass = true;
 
-    private int index = 0;
+    public int index = 0;
     private bool finish = false;
     public void ConpriObjetivo()
     {

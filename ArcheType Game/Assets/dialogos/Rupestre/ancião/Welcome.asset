@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a171c697117a18047bf6a35eccf7e400, type: 3}
+  m_Name: Welcome
+  m_EditorClassIdentifier: 
+  name: "Anci\xE3o"
+  colorName:
+    serializedVersion: 2
+    rgba: 4285580799
+  falas:
+  - "Voc\xEA que \xE9 o explorador que falam por a\xED?"
+  - "Bom, estamos em um ambiente com poucos recursos e precisamos descobrir novos
+    lugares para morar ou pelo menos ca\xE7ar."
+  - " Esse ser\xE1 seu trabalho, encontre algum lugar para conseguirmos sobreviver.
+    Conto com voc\xEA!"
+  - "*encontre animais para ca\xE7ar e lugar para coletar frutas*"
+  canPass: 1
+  index: 0

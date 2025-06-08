@@ -111,8 +111,9 @@ public class DialogoSystem : MonoBehaviour
         }
     }
 
-    public void ShowFala()
+     void ShowFala()
     {
+        Debug.Log("index da fala "+falas[indexFalas].index);
         DialogoSystenUI.dialogoSystenUI.ShowDialogoBox();
         DialogoSystenUI.dialogoSystenUI.SetTextDialogBox(falas[indexFalas].getColor(), falas[indexFalas].getName(), falas[indexFalas].getFala());
     }
