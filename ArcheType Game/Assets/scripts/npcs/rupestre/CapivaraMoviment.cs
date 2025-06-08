@@ -6,6 +6,7 @@ public class CapivaraMoviment : MonoBehaviour
 {
     // Start is called before the first frame update
     public enum Estado { Parado, Andando, Comendo, Fugindo };
+    public Estado estadoAtual;
 
     [Header("tempo")]
     public float time = 0;
@@ -18,7 +19,6 @@ public class CapivaraMoviment : MonoBehaviour
     public float speedWalk = 2f;
     public float speedRun = 5f;
     [Header("estados")]
-    public Estado estadoAtual;
 
     [Header("movimento")]
     public int directionMov = 1;
@@ -60,7 +60,7 @@ public class CapivaraMoviment : MonoBehaviour
         {
 
             transform.Translate(Vector3.right * directionMov * Time.deltaTime * speedRun);
-            if (distPlayer > distanciaFuga)
+            if (distPlayer > distanciaFuga * 1.5f)
                 estadoAtual = Estado.Andando;
         }
         else if (estadoAtual == Estado.Andando)

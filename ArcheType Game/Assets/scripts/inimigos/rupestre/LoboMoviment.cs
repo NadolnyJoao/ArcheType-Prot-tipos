@@ -51,6 +51,13 @@ public class LoboMoviment : MonoBehaviour
             direction = presaTrans.transform.position.x > transform.position.x ? 1 : -1;
             sprite.flipX = direction == 1;
             transform.Translate(Vector3.right * direction * Time.deltaTime * speedRun);
+            float distPresa = Vector3.Distance(presaTrans.position, transform.position);
+            if (distPresa > 7)
+            {
+                estadoAtual = Estado.Andando;
+                presaTrans = null;
+                Debug.Log("para de caçar");
+            }
 
         }
         else
@@ -157,6 +164,7 @@ public class LoboMoviment : MonoBehaviour
         {
             setPresa(other.gameObject.transform);
             estadoAtual = Estado.Atacando;
+            Debug.Log("começar a cassar " + other.gameObject.name);
         }
     }
 }
