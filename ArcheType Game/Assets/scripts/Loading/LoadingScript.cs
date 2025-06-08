@@ -7,6 +7,7 @@ public class LoadingScript : MonoBehaviour
 {
     public GameObject LoadingScreen;
     public Slider LoadingBar;
+    public Animator aniBackground;
 
     public float minLoadingTime = 2f;
     public static LoadingScript Instance { get; private set; }
@@ -26,6 +27,7 @@ public class LoadingScript : MonoBehaviour
 
     public void LoadScene(int sceneId)
     {
+        aniBackground.SetTrigger("fadeout");
         StartCoroutine(LoadSceneAsync(sceneId));
     }
 
