@@ -12,6 +12,7 @@ public class PlayerMoviment : MonoBehaviour
     private float horizontalInput, verticalInput;
     private bool jump = false;
     private bool isgrounded = false;
+    public GameObject FootSteep; 
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -21,6 +22,15 @@ public class PlayerMoviment : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+
+        if (horizontalInput != 0)
+        {
+            FootSteep.SetActive(true);
+        } if (horizontalInput == 0)
+        {
+            FootSteep.SetActive(false); 
+        }
+
         if (canJump && isgrounded && Input.GetButtonDown("Jump"))
         {
             jump = true;
