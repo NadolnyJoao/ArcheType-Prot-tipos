@@ -12,7 +12,7 @@ public class LoadingScript : MonoBehaviour
     public float minLoadingTime = 2f;
     public static LoadingScript Instance { get; private set; }
 
-      private void Awake()
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -31,7 +31,7 @@ public class LoadingScript : MonoBehaviour
         StartCoroutine(LoadSceneAsync(sceneId));
     }
 
-     IEnumerator LoadSceneAsync(int sceneId)
+    IEnumerator LoadSceneAsync(int sceneId)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
         operation.allowSceneActivation = false;
@@ -57,5 +57,11 @@ public class LoadingScript : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public void ReloadScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
     }
 }
