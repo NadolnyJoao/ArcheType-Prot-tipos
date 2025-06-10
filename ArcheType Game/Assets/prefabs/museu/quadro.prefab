@@ -315,6 +315,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
+  Bip_sound: {fileID: 0}
 --- !u!114 &6531590200145568745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,15 +329,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   falas:
-  - name: Guia
-    colorName:
-      serializedVersion: 2
-      rgba: 4284338687
-    falas:
-    - Ah, era rupestre
-    - "Primeira representa\xE7\xE3o de arte da historia"
-    canPass: 0
-  indexFalas: 0
+  - {fileID: 0}
+  laterActions:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &6531590200145568744
 BoxCollider2D:
   m_ObjectHideFlags: 0
