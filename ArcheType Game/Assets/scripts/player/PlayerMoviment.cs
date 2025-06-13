@@ -7,7 +7,7 @@ public class PlayerMoviment : MonoBehaviour
     public float speed = 100;
     public float forceJump = 100;
     public bool canJump = false;
-
+    private int direction = 1; // 1 para direita, -1 para esquerda (valor inicial como direita)
     private Rigidbody2D rig;
     private float horizontalInput, verticalInput;
     private bool jump = false;
@@ -16,9 +16,14 @@ public class PlayerMoviment : MonoBehaviour
     public bool chaopedra;
     public bool chaofloresta;
     public bool chaoplanice;
+    
+    // Adicione uma referência para o SpriteRenderer para virar o sprite
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Obter o componente SpriteRenderer
     }
 
     void Update()
@@ -26,10 +31,29 @@ public class PlayerMoviment : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
+        // Atualizar a direção baseada no input horizontal
+        if (horizontalInput > 0)
+        {
+            direction = 1;
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.flipX = false; // Virado para direita
+            }
+        }
+        else if (horizontalInput < 0)
+        {
+            direction = -1;
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.flipX = true; // Virado para esquerda
+            }
+        }
+
         if (horizontalInput != 0)
         {
             FootSteep.SetActive(true);
-        } if (horizontalInput == 0)
+        } 
+        else
         {
             FootSteep.SetActive(false); 
         }
@@ -39,6 +63,7 @@ public class PlayerMoviment : MonoBehaviour
             jump = true;
         }
     }
+
     void FixedUpdate()
     {
         float veloy = rig.velocity.y;
@@ -50,6 +75,7 @@ public class PlayerMoviment : MonoBehaviour
             isgrounded = false;
         }
     }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.name == "ground(pedra)")
@@ -79,9 +105,6 @@ public class PlayerMoviment : MonoBehaviour
             chaoplanice = false;
         }
 
-        // -------------
-
-        
         if (other.gameObject.tag == "ground")
         {
             isgrounded = true;
@@ -97,4 +120,9 @@ public class PlayerMoviment : MonoBehaviour
         }
     }
 
+    // Método público para obter a direção atual (opcional)
+    public int GetDirection()
+    {
+        return direction;
+    }
 }

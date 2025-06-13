@@ -20,33 +20,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 548032
   Exists: 1
---- !u!114 &-7705664656654688471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Tosse_2
-  m_EditorClassIdentifier: 
-  Path: event:/Tosse_2
-  Guid:
-    Data1: 400561013
-    Data2: 1202810601
-    Data3: -789952596
-    Data4: -1660597425
-  Banks:
-  - {fileID: 2953299063326372074}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1008
 --- !u!114 &-7491475926113945384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,10 +35,10 @@ MonoBehaviour:
   Path: ../fmod_sons/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638850307914973008
+  lastModified: 638854263075238194
   FileSizes:
   - Name: Desktop
-    Value: 986
+    Value: 904
   Exists: 1
 --- !u!114 &-4265941752655331610
 MonoBehaviour:
@@ -121,6 +94,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 696
+--- !u!114 &-2573960696686411966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Som_buttom
+  m_EditorClassIdentifier: 
+  Path: event:/Som_buttom
+  Guid:
+    Data1: 451914495
+    Data2: 1111413237
+    Data3: 946575792
+    Data4: -1735274769
+  Banks:
+  - {fileID: 2953299063326372074}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 696
 --- !u!114 &-2213879496852519322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,33 +148,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 298
---- !u!114 &-2156719415985498130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FootStep_2
-  m_EditorClassIdentifier: 
-  Path: event:/FootStep_2
-  Guid:
-    Data1: 2086934557
-    Data2: 1317965091
-    Data3: -867657283
-    Data4: -602461345
-  Banks:
-  - {fileID: 2953299063326372074}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3031
 --- !u!114 &-35095299793690061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,15 +162,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Walla
   Guid:
-    Data1: -1245857674
-    Data2: 1206823222
-    Data3: 1374519462
-    Data4: 851454706
+    Data1: 1745768863
+    Data2: 1278077011
+    Data3: -1341983586
+    Data4: -1334379285
   Banks:
   - {fileID: 2953299063326372074}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -215,19 +188,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 4509246996365650990}
-  - {fileID: -8358693423777103037}
+  - {fileID: -7491475926113945384}
+  - {fileID: 2953299063326372074}
   EditorEvents:
-  - {fileID: -2213879496852519322}
-  - {fileID: 5296630694889755916}
-  - {fileID: -4265941752655331610}
-  - {fileID: -3584970804045744189}
+  - {fileID: 6061431592140411316}
+  - {fileID: -35095299793690061}
+  - {fileID: 5838270491594495513}
+  - {fileID: -2573960696686411966}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8358693423777103037}
+  - {fileID: 2953299063326372074}
   StringsBanks:
-  - {fileID: 4509246996365650990}
-  cacheTime: 638851643271357745
+  - {fileID: -7491475926113945384}
+  cacheTime: 638854263075238194
   cacheVersion: 131619
 --- !u!114 &2953299063326372074
 MonoBehaviour:
@@ -244,10 +217,10 @@ MonoBehaviour:
   Path: ../fmod_sons/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638850307914973008
+  lastModified: 638854263075168239
   FileSizes:
   - Name: Desktop
-    Value: 690176
+    Value: 548032
   Exists: 1
 --- !u!114 &4509246996365650990
 MonoBehaviour:
@@ -296,7 +269,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 59214
---- !u!114 &5367824366025764104
+--- !u!114 &5838270491594495513
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -306,23 +279,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FootSteep
+  m_Name: event:/FS LAJOTA_01
   m_EditorClassIdentifier: 
-  Path: event:/FootSteep
+  Path: event:/FS LAJOTA_01
   Guid:
-    Data1: 194816644
-    Data2: 1259973601
-    Data3: 799932803
-    Data4: -716512511
+    Data1: -1164386100
+    Data2: 1236726105
+    Data3: 1372017050
+    Data4: 956080377
   Banks:
   - {fileID: 2953299063326372074}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 18430
+  Length: 666
 --- !u!114 &6061431592140411316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,10 +310,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Bip_quadro-interaction
   Guid:
-    Data1: -535772299
-    Data2: 1265002201
-    Data3: -1108336761
-    Data4: -38316833
+    Data1: 1931090052
+    Data2: 1338393133
+    Data3: 1063649960
+    Data4: 1508001924
   Banks:
   - {fileID: 2953299063326372074}
   IsStream: 0
@@ -350,30 +323,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 298
---- !u!114 &8226207887466502024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Tosse
-  m_EditorClassIdentifier: 
-  Path: event:/Tosse
-  Guid:
-    Data1: -958522529
-    Data2: 1087514995
-    Data3: 1695388334
-    Data4: -2118435942
-  Banks:
-  - {fileID: 2953299063326372074}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1418

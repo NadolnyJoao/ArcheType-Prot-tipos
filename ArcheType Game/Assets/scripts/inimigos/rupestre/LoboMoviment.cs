@@ -157,7 +157,7 @@ public class LoboMoviment : MonoBehaviour
     {
         presaTrans = newPresa;
     }
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other.gameObject.name + " is trigger");
         if (other.gameObject.GetComponent<LoboMoviment>() == null)

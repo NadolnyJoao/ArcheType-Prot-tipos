@@ -22,6 +22,7 @@ MonoBehaviour:
     lugares para morar ou pelo menos ca\xE7ar."
   - " Esse ser\xE1 seu trabalho, encontre algum lugar para conseguirmos sobreviver.
     Conto com voc\xEA!"
+  - Caso encontrar um animal perigoso, sogue uma pedra(tecla E) para distrair ele
   - "*encontre animais para ca\xE7ar e lugar para coletar frutas*"
-  canPass: 1
+  canPass: 0
   index: 0

@@ -21,6 +21,15 @@ public class DialogoSystenUI : MonoBehaviour
         }
         dialogoSystenUI = this;
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            HiddenDialogoBox();
+        }
+    }
+
     public void DebugTeste()
     {
         Debug.Log("funcionando");
@@ -30,11 +39,7 @@ public class DialogoSystenUI : MonoBehaviour
         dialogoBox.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     void AnimationText()
     {
         if (bodyTextPro.text.Length != textFromShow.Length)

@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/fase museu/fase museu teste.unity
     guid: f25e6a7b6a916f44083b72cc6872be98
   - enabled: 1
+    path: Assets/Scenes/fase rupestre/FaseRupestreTesteMarcelo.unity
+    guid: c45d3e25392f7394b8a2ed3e4c26ce6d
+  - enabled: 0
+    path: Assets/Scenes/fase rupestre/FaseRupestreTeste.unity
+    guid: 94786e0fb9f932b42a597ef4894d2ba0
+  - enabled: 0
     path: Assets/Scenes/fase rupestre/rupestre testes broches.unity
     guid: 82360ef1a193146458685847291637b5
   m_configObjects: {}

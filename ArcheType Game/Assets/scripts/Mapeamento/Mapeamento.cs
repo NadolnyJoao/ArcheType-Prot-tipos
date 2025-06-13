@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class Mapeamento : MonoBehaviour
 {
+    public UnityEvent actionsLaterExploration;
+
     public bool caverna = false;
     public bool floresta = false;
     public bool planice = false;
@@ -19,6 +22,7 @@ public class Mapeamento : MonoBehaviour
     public GameObject mapavazio;
 
     private PlayerMoviment playermoviment;
+    private bool objetivoCompleto = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +33,19 @@ public class Mapeamento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if ((caverna && planice && floresta) && objetivoCompleto == false)
         {
-            mapa.SetActive(true);
+            //explorou tudo 
+            actionsLaterExploration.Invoke();
+            objetivoCompleto = true;
         }
+        
+
+
+        if (Input.GetKeyDown(KeyCode.M))
+            {
+            AbrirMapa();
+            }
         if (caverna == true)
         {
             cavernadescoberta.SetActive(true);
@@ -95,5 +108,9 @@ public class Mapeamento : MonoBehaviour
     public void FecharMapa()
     {
         mapa.SetActive(false);
+    }
+    public void AbrirMapa()
+    {
+        mapa.SetActive(true);
     }
 }
