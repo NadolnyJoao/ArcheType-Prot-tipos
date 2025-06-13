@@ -12,6 +12,10 @@ public class PlayerMoviment : MonoBehaviour
     private float horizontalInput, verticalInput;
     private bool jump = false;
     private bool isgrounded = false;
+    public GameObject FootSteep;
+    public bool chaopedra;
+    public bool chaofloresta;
+    public bool chaoplanice;
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -21,6 +25,15 @@ public class PlayerMoviment : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+
+        if (horizontalInput != 0)
+        {
+            FootSteep.SetActive(true);
+        } if (horizontalInput == 0)
+        {
+            FootSteep.SetActive(false); 
+        }
+
         if (canJump && isgrounded && Input.GetButtonDown("Jump"))
         {
             jump = true;
@@ -39,6 +52,36 @@ public class PlayerMoviment : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.name == "ground(pedra)")
+        {
+            chaopedra = true;
+        }
+        else
+        {
+            chaopedra = false;
+        }
+
+        if (other.gameObject.name == "ground(floresta)")
+        {
+            chaofloresta = true;
+        }
+        else
+        {
+            chaofloresta = false;
+        }
+
+        if (other.gameObject.name == "ground(planice)")
+        {
+            chaoplanice = true;
+        }
+        else
+        {
+            chaoplanice = false;
+        }
+
+        // -------------
+
+        
         if (other.gameObject.tag == "ground")
         {
             isgrounded = true;
