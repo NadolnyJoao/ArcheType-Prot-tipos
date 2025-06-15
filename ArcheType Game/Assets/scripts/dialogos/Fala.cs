@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class Fala : ScriptableObject
 {
-    public string name;
+    public string name = "";
     public Color32 colorName;
     public List<string> falas = new List<string>();
 

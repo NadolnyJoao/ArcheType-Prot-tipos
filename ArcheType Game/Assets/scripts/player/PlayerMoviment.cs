@@ -48,7 +48,7 @@ public class PlayerMoviment : MonoBehaviour
                 spriteRenderer.flipX = true; // Virado para esquerda
             }
         }
-
+        if(FootSteep != null)
         if (horizontalInput != 0)
         {
             FootSteep.SetActive(true);
