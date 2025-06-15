@@ -26,7 +26,7 @@ public class DialogoSystenUI : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
-            HiddenDialogoBox();
+            // HiddenDialogoBox();
         }
     }
 

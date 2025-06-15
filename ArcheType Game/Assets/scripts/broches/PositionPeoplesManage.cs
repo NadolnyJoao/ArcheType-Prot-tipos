@@ -32,6 +32,8 @@ public class PositionPeoplesManage : MonoBehaviour
             if (PlayerPrefs.GetInt("startgame") == 0)
             {
                 LoadPositions();
+                PlayerPrefs.SetInt("startgame", 1);
+            PlayerPrefs.Save();
                 Debug.Log("carregar as posições");
             }
         }

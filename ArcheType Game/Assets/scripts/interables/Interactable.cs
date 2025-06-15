@@ -21,6 +21,7 @@ public class Interactable : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && playerContact)
         {
             actions.Invoke();
+            if(Bip_sound != null)
             Bip_sound.SetActive(true);
         }
         if (Bip_sound == true)
