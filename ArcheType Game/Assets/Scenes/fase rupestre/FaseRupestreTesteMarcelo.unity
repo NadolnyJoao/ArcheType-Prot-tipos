@@ -1359,6 +1359,86 @@ PrefabInstance:
       propertyPath: FootSteep
       value: 
       objectReference: {fileID: 1674384012}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosPedra.Path
+      value: event:/Bip_quadro-interaction
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Path
+      value: event:/FS LAJOTA_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosFloresta.Path
+      value: event:/Som_buttom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Guid.Data1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Guid.Data2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Guid.Data3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Guid.Data4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosPedra.Guid.Data1
+      value: 1931090052
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosPedra.Guid.Data2
+      value: 1338393133
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosPedra.Guid.Data3
+      value: 1063649960
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosPedra.Guid.Data4
+      value: 1508001924
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Guid.Data1
+      value: -1164386100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Guid.Data2
+      value: 1236726105
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Guid.Data3
+      value: 1372017050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Guid.Data4
+      value: 956080377
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosFloresta.Guid.Data1
+      value: 451914495
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosFloresta.Guid.Data2
+      value: 1111413237
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosFloresta.Guid.Data3
+      value: 946575792
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosFloresta.Guid.Data4
+      value: -1735274769
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
 --- !u!4 &381069822 stripped

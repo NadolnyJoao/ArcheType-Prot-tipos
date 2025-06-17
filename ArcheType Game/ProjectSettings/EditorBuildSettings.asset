@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fase rupestre/CutsceneRupestre.unity
     guid: 7727e6e48661e8b438e8377ec7b93e91
+  - enabled: 1
+    path: Assets/Scenes/fase egito/FaseEgitoPedro.unity
+    guid: 871732eeb89af1f4b8eb1987394a169c
   - enabled: 0
     path: Assets/Scenes/fase rupestre/FaseRupestreTeste.unity
     guid: 94786e0fb9f932b42a597ef4894d2ba0

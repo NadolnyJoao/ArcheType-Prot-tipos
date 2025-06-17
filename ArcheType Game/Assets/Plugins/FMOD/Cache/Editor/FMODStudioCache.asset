@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8358693423777103037
+--- !u!114 &-5421618071854508320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15,113 +15,12 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638851643271357745
+  lastModified: 638857735983638035
   FileSizes:
   - Name: Desktop
-    Value: 548032
+    Value: 547904
   Exists: 1
---- !u!114 &-4265941752655331610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FS LAJOTA_01
-  m_EditorClassIdentifier: 
-  Path: event:/FS LAJOTA_01
-  Guid:
-    Data1: -1164386100
-    Data2: 1236726105
-    Data3: 1372017050
-    Data4: 956080377
-  Banks:
-  - {fileID: -8358693423777103037}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 666
---- !u!114 &-3584970804045744189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Som_buttom
-  m_EditorClassIdentifier: 
-  Path: event:/Som_buttom
-  Guid:
-    Data1: 451914495
-    Data2: 1111413237
-    Data3: 946575792
-    Data4: -1735274769
-  Banks:
-  - {fileID: -8358693423777103037}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 696
---- !u!114 &-2800099170524996673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../fmod_Sons/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638857692022300292
-  FileSizes:
-  - Name: Desktop
-    Value: 548032
-  Exists: 1
---- !u!114 &-2573960696686411966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Som_buttom
-  m_EditorClassIdentifier: 
-  Path: event:/Som_buttom
-  Guid:
-    Data1: 451914495
-    Data2: 1111413237
-    Data3: 946575792
-    Data4: -1735274769
-  Banks:
-  - {fileID: -2800099170524996673}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 696
---- !u!114 &-2213879496852519322
+--- !u!114 &-2697545201274244220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +39,7 @@ MonoBehaviour:
     Data3: 1063649960
     Data4: 1508001924
   Banks:
-  - {fileID: -8358693423777103037}
+  - {fileID: -5421618071854508320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -148,7 +47,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 298
---- !u!114 &-35095299793690061
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 3447122133200574301}
+  - {fileID: -5421618071854508320}
+  EditorEvents:
+  - {fileID: -2697545201274244220}
+  - {fileID: 3378473131544788774}
+  - {fileID: 3657316307654894828}
+  - {fileID: 3606758584654377698}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -5421618071854508320}
+  StringsBanks:
+  - {fileID: 3447122133200574301}
+  cacheTime: 638857735983638035
+  cacheVersion: 131619
+--- !u!114 &3378473131544788774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,7 +93,7 @@ MonoBehaviour:
     Data3: -1341983586
     Data4: -1334379285
   Banks:
-  - {fileID: -2800099170524996673}
+  - {fileID: -5421618071854508320}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -175,34 +101,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 59214
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 2548309457356538233}
-  - {fileID: -2800099170524996673}
-  EditorEvents:
-  - {fileID: 6061431592140411316}
-  - {fileID: -35095299793690061}
-  - {fileID: 5838270491594495513}
-  - {fileID: -2573960696686411966}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -2800099170524996673}
-  StringsBanks:
-  - {fileID: 2548309457356538233}
-  cacheTime: 638857692022310272
-  cacheVersion: 131619
---- !u!114 &2548309457356538233
+--- !u!114 &3447122133200574301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,27 +121,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 904
   Exists: 1
---- !u!114 &4509246996365650990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../fmod_Sons/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638851643271357745
-  FileSizes:
-  - Name: Desktop
-    Value: 904
-  Exists: 1
---- !u!114 &5296630694889755916
+--- !u!114 &3606758584654377698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,24 +131,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Walla
+  m_Name: event:/Som_buttom
   m_EditorClassIdentifier: 
-  Path: event:/Walla
+  Path: event:/Som_buttom
   Guid:
-    Data1: 1745768863
-    Data2: 1278077011
-    Data3: -1341983586
-    Data4: -1334379285
+    Data1: 451914495
+    Data2: 1111413237
+    Data3: 946575792
+    Data4: -1735274769
   Banks:
-  - {fileID: -8358693423777103037}
-  IsStream: 1
+  - {fileID: -5421618071854508320}
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 59214
---- !u!114 &5838270491594495513
+  Length: 696
+--- !u!114 &3657316307654894828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,38 +167,11 @@ MonoBehaviour:
     Data3: 1372017050
     Data4: 956080377
   Banks:
-  - {fileID: -2800099170524996673}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 666
---- !u!114 &6061431592140411316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Bip_quadro-interaction
-  m_EditorClassIdentifier: 
-  Path: event:/Bip_quadro-interaction
-  Guid:
-    Data1: 1931090052
-    Data2: 1338393133
-    Data3: 1063649960
-    Data4: 1508001924
-  Banks:
-  - {fileID: -2800099170524996673}
+  - {fileID: -5421618071854508320}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 298
+  Length: 666
