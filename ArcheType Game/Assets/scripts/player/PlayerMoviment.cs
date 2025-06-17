@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class PlayerMoviment : MonoBehaviour
 {
@@ -13,15 +15,28 @@ public class PlayerMoviment : MonoBehaviour
     private bool jump = false;
     private bool isgrounded = false;
     public GameObject FootSteep;
+    public bool isWalking; 
     public bool chaopedra;
     public bool chaofloresta;
+    public bool chaoAzulejo;
     public bool chaoplanice;
-    
+
+    [Header("Sons de Passos")]
+    [SerializeField] private EventReference passosAzulejo;
+    [SerializeField] private EventReference passosFloresta;    
+    [SerializeField] private EventReference passosPedra;
+    [SerializeField] private EventReference passosGrama;
+
+    private float passoTimer = 0f;
+    private float intervaloPasso = 0.58f; 
+
+
     // Adicione uma referência para o SpriteRenderer para virar o sprite
     private SpriteRenderer spriteRenderer;
 
     void Start()
-    {
+    {      
+        
         rig = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>(); // Obter o componente SpriteRenderer
     }
@@ -48,14 +63,16 @@ public class PlayerMoviment : MonoBehaviour
                 spriteRenderer.flipX = true; // Virado para esquerda
             }
         }
-        if(FootSteep != null)
-        if (horizontalInput != 0)
+        if (horizontalInput != 0 && isgrounded)
         {
-            FootSteep.SetActive(true);
-        } 
-        else
+            passoTimer -= Time.deltaTime;
+            // se so jogar no update vai ficar repedindo o som varias vezes por isso tenho que colocar um intervalo de tempo para soar mais clean
+            // isso vai ser provisório nao me xinga pedro
+        }
+        if(passoTimer <= 0)
         {
-            FootSteep.SetActive(false); 
+            passoTimer = intervaloPasso; 
+             Footsteep();
         }
 
         if (canJump && isgrounded && Input.GetButtonDown("Jump"))
@@ -104,7 +121,14 @@ public class PlayerMoviment : MonoBehaviour
         {
             chaoplanice = false;
         }
-
+         if (other.gameObject.name == "ground(azulejos)")
+        {
+            chaoAzulejo = true;
+        }
+        else
+        {
+            chaoAzulejo = false; 
+        }
         if (other.gameObject.tag == "ground")
         {
             isgrounded = true;
@@ -124,5 +148,31 @@ public class PlayerMoviment : MonoBehaviour
     public int GetDirection()
     {
         return direction;
+
+    }
+
+    public void Footsteep()
+    {
+
+        if (chaoAzulejo)
+        {
+            RuntimeManager.PlayOneShot(passosAzulejo, transform.position);
+        }
+
+        if (chaopedra)
+        {
+            RuntimeManager.PlayOneShot(passosPedra, transform.position);
+        }
+
+        if (chaofloresta)
+        {
+            RuntimeManager.PlayOneShot(passosFloresta, transform.position);
+        }
+
+        if (chaoplanice)
+        {
+            RuntimeManager.PlayOneShot(passosGrama, transform.position);
+        }
+    
     }
 }

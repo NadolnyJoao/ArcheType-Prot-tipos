@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 393034668}
   - component: {fileID: 393034671}
   m_Layer: 0
-  m_Name: grond ( azulejos )
+  m_Name: ground(azulejos)
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -426,8 +426,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393034667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.4193, y: -4.6224, z: 0}
-  m_LocalScale: {x: 75.15761, y: 1.3647, z: 1}
+  m_LocalPosition: {x: 31.7586, y: -4.7471, z: 0}
+  m_LocalScale: {x: 89.840576, y: 1.1154333, z: 1.1906}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1057,7 +1057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &784155875
 Transform:
   m_ObjectHideFlags: 0
@@ -1411,7 +1411,7 @@ GameObject:
   - component: {fileID: 1182096619}
   - component: {fileID: 1182096618}
   m_Layer: 7
-  m_Name: Museu2
+  m_Name: EntradaMuseu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1709,7 +1709,7 @@ GameObject:
   - component: {fileID: 1515678523}
   - component: {fileID: 1515678522}
   m_Layer: 7
-  m_Name: Museu2 (1)
+  m_Name: SaidaMuseu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2265,5 +2265,45 @@ PrefabInstance:
       propertyPath: FootSteep
       value: 
       objectReference: {fileID: 784155874}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Path
+      value: event:/FS LAJOTA_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Guid.Data1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Guid.Data2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Guid.Data3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosGrama.Guid.Data4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Guid.Data1
+      value: -1164386100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Guid.Data2
+      value: 1236726105
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Guid.Data3
+      value: 1372017050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: passosAzulejo.Guid.Data4
+      value: 956080377
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}

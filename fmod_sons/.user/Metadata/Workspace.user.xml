@@ -4,13 +4,20 @@
 		<relationship name="projectSettings">
 			<destination>{9d976da1-0e1d-4442-87c1-9eb4f46d310d}</destination>
 		</relationship>
+		<relationship name="changelist">
+			<destination>{75f65b05-c4a0-4cd6-8dd1-569827662ec1}</destination>
+		</relationship>
 	</object>
 	<object class="ProjectSettings" id="{9d976da1-0e1d-4442-87c1-9eb4f46d310d}">
+		<property name="openWindows">
+			<value>Event Editor 1</value>
+		</property>
 		<property name="windowLayout">
-			<value>AAAAAQAAABYAQQB1AGQAaQBvACAAQgBpAG4AIAAxAAAAQgHZ0MsAAwAAAAAC+wAAAGsAAASMAAADYQAAAvwAAACRAAAEiwAAA2AAAAAAAAAAAAeAAAAC/AAAAJEAAASLAAADYA==</value>
+			<value>AAAAAgAAABwARQB2AGUAbgB0ACAARQBkAGkAdABvAHIAIAAxAAAAQgHZ0MsAAwAA//////////cAAAeAAAAD/AAAAoAAAAEOAAAGnwAAArEAAAAAAgAAAAeAAAAAAAAAAB0AAAd/AAAD+wAAABYAQQB1AGQAaQBvACAAQgBpAG4AIAAxAAAAQgHZ0MsAAwAAAAAC+wAAAGsAAASMAAADYQAAAvwAAACRAAAEiwAAA2AAAAAAAAAAAAeAAAAC/AAAAJEAAASLAAADYA==</value>
 		</property>
 		<relationship name="activePlatform">
 			<destination>{8008c942-f8a2-4d8e-8f20-ada20347e5cc}</destination>
 		</relationship>
 	</object>
+	<object class="WorkspaceChangelist" id="{75f65b05-c4a0-4cd6-8dd1-569827662ec1}" />
 </objects>

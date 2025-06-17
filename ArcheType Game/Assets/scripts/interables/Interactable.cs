@@ -27,7 +27,6 @@ public class Interactable : MonoBehaviour
         if (Bip_sound == true)
         {
             Bip_sound.SetActive(false);
-            Debug.Log("sikidiu");
             } 
 
     }
