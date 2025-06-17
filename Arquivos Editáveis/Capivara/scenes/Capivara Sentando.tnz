@@ -1,4 +1,4 @@
-<tnz framecount="1" version="71.1">
+<tnz framecount="8" version="71.1">
   <generator>
     "OpenToonz 1.7.1"
   </generator>
@@ -486,7 +486,7 @@
         </status>
         <cells>
           <cell>
-            0 1 <level id='1'/>"-"0 
+            0 8 <level id='1'/>"-"0 
           </cell>
           </cells>
         <fx>
@@ -524,7 +524,7 @@
         </status>
         <cells>
           <cell>
-            0 1 <level id='4'/>"-"0 
+            0 8 <level id='4'/>"-"0 
           </cell>
           </cells>
         <fx>
@@ -562,7 +562,7 @@
         </status>
         <cells>
           <cell>
-            0 1 <level id='3'/>"-"0 
+            0 8 <level id='3'/>"-"0 
           </cell>
           </cells>
         <fx>
@@ -600,7 +600,7 @@
         </status>
         <cells>
           <cell>
-            0 1 <level id='2'/>"-"0 
+            0 8 <level id='2'/>"-"0 
           </cell>
           </cells>
         <fx>
@@ -638,7 +638,7 @@
         </status>
         <cells>
           <cell>
-            0 1 <level id='5'/>"-"0 
+            0 8 <level id='5'/>"-"0 
           </cell>
           </cells>
         <fx>
@@ -797,7 +797,13 @@
           </default>
           <keyframes>
             <L>
-              0 0.0197066 
+              0 0.128093 
+            </L>
+            <L>
+              <prev>
+                0.236479 
+              </prev>
+              7 0.236479 
             </L>
             </keyframes>
           </x>
@@ -807,7 +813,13 @@
           </default>
           <keyframes>
             <L>
-              0 -0.157653 
+              0 -0.0591197 
+            </L>
+            <L>
+              <prev>
+                0.0788263 
+              </prev>
+              7 0.0788263 
             </L>
             </keyframes>
           </y>
@@ -826,6 +838,16 @@
             1 
           </default>
           </sc>
+        <rot>
+          <default>
+            0 
+          </default>
+          <keyframes>
+            <L>
+              0 -12.2806 
+            </L>
+            </keyframes>
+          </rot>
         <nodePos>
           24620 25500 
         </nodePos>
@@ -850,6 +872,12 @@
             <L>
               0 1.40902 
             </L>
+            <L>
+              <prev>
+                1.26122 
+              </prev>
+              7 1.26122 
+            </L>
             </keyframes>
           </x>
         <y>
@@ -859,6 +887,12 @@
           <keyframes>
             <L>
               0 -0.0394131 
+            </L>
+            <L>
+              <prev>
+                0.236479 
+              </prev>
+              7 0.236479 
             </L>
             </keyframes>
           </y>
@@ -903,6 +937,38 @@
         <status>
           0 
         </status>
+        <x>
+          <default>
+            0 
+          </default>
+          <keyframes>
+            <L>
+              0 -0.0886796 
+            </L>
+            <L>
+              <prev>
+                -0.0197066 
+              </prev>
+              7 -0.0197066 
+            </L>
+            </keyframes>
+          </x>
+        <y>
+          <default>
+            0 
+          </default>
+          <keyframes>
+            <L>
+              0 -0.236479 
+            </L>
+            <L>
+              <prev>
+                -0.295599 
+              </prev>
+              7 -0.295599 
+            </L>
+            </keyframes>
+          </y>
         <sx>
           <default>
             1 
@@ -940,7 +1006,13 @@
           </default>
           <keyframes>
             <L>
-              0 0.433545 
+              0 0.443398 
+            </L>
+            <L>
+              <prev>
+                0.522224 
+              </prev>
+              7 0.522224 
             </L>
             </keyframes>
           </x>
@@ -950,7 +1022,13 @@
           </default>
           <keyframes>
             <L>
-              0 -0.206919 
+              0 -0.413838 
+            </L>
+            <L>
+              <prev>
+                -0.502518 
+              </prev>
+              7 -0.502518 
             </L>
             </keyframes>
           </y>
@@ -969,6 +1047,22 @@
             1 
           </default>
           </sc>
+        <rot>
+          <default>
+            0 
+          </default>
+          <keyframes>
+            <L>
+              0 -19.2891 
+            </L>
+            <L>
+              <prev>
+                -97.6123 
+              </prev>
+              7 -97.6123 
+            </L>
+            </keyframes>
+          </rot>
         <nodePos>
           24620 25450 
         </nodePos>
@@ -991,7 +1085,13 @@
           </default>
           <keyframes>
             <L>
-              0 1.3499 
+              0 1.37946 
+            </L>
+            <L>
+              <prev>
+                1.15283 
+              </prev>
+              7 1.15283 
             </L>
             </keyframes>
           </x>
@@ -1001,7 +1101,13 @@
           </default>
           <keyframes>
             <L>
-              0 -0.128093 
+              0 -0.374425 
+            </L>
+            <L>
+              <prev>
+                -0.295599 
+              </prev>
+              7 -0.295599 
             </L>
             </keyframes>
           </y>
@@ -1020,6 +1126,22 @@
             1 
           </default>
           </sc>
+        <rot>
+          <default>
+            0 
+          </default>
+          <keyframes>
+            <L>
+              0 6.7418 
+            </L>
+            <L>
+              <prev>
+                -40.8795 
+              </prev>
+              7 -40.8795 
+            </L>
+            </keyframes>
+          </rot>
         <nodePos>
           24620 25300 
         </nodePos>
@@ -1110,6 +1232,6 @@
     "| #    DATE:       Time:   MACHINE:    USER:           |"
     "| #1   17 jun 25   17:03   LAB04-13    IFPR            |"
     "| #2   17 jun 25   17:04   LAB04-13    IFPR            |"
-    "| #3   17 jun 25   17:06   LAB04-13    IFPR            |"
+    "| #3   17 jun 25   17:15   LAB04-13    IFPR            |"
   </history>
   </tnz>
