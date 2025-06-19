@@ -142,7 +142,7 @@ Animator:
   m_GameObject: {fileID: 210037373}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a41507d9357f82e4a9ecd6cddbb68d54, type: 2}
+  m_Controller: {fileID: 9100000, guid: 30d159943c1a3e24890850468ff27dc7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -426,7 +426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393034667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.7586, y: -4.7471, z: 0}
+  m_LocalPosition: {x: 31.7586, y: -4.52, z: 0}
   m_LocalScale: {x: 89.840576, y: 1.1154333, z: 1.1906}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2411,7 +2411,7 @@ PrefabInstance:
     - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -23532340, guid: 86aa82051a42b7f4fa96e0b4a266aeb1, type: 3}
+      objectReference: {fileID: 1523618307, guid: 5f259c9ae814f7f4787bf283367344d2, type: 3}
     - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_Color.a
       value: 1
