@@ -1,0 +1,13 @@
+Total Images: 10
+Individual Image Width: 457
+Individual Image Height: 1023
+Individual Image Width with Padding: 457
+Individual Image Height with Padding: 1023
+Images Across: 4
+Images Down : 3
+Top Padding: 0
+Bottom Padding: 0
+Left Padding: 0
+Right Padding: 0
+Horizontal Space Between Images: 0
+Vertical Space Between Images: 0

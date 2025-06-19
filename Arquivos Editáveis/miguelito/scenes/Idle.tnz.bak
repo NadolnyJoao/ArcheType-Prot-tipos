@@ -37,7 +37,7 @@
           24 
         </fps>
         <path>
-          "+outputs\\.tif"
+          "+outputs\\.spritesheet"
         </path>
         <bpp>
           32 
@@ -46,7 +46,7 @@
           0 
         </multimedia>
         <threadsIndex>
-          2 
+          0 
         </threadsIndex>
         <maxTileSizeIndex>
           0 
@@ -70,6 +70,20 @@
           25 25 
         </timestretch>
         <formatsProperties>
+          <formatProperties ext="spritesheet">
+            <property name="Format" type="enum" value="Grid">
+              <item value="Grid"/>
+              <item value="Vertical"/>
+              <item value="Horizontal"/>
+              <item value="Individual"/>
+              </property>
+            <property max="100" min="0" name="Top Padding" type="int" value="0"/>
+            <property max="100" min="0" name="Bottom Padding" type="int" value="0"/>
+            <property max="100" min="0" name="Left Padding" type="int" value="0"/>
+            <property max="100" min="0" name="Right Padding" type="int" value="0"/>
+            <property max="100" min="1" name="Scale" type="int" value="100"/>
+            <property name="Trim Empty Space" type="bool" value="true"/>
+            </formatProperties>
           <formatProperties ext="tif">
             <property name="Byte Ordering" type="enum" value="IBM PC">
               <item value="IBM PC"/>
@@ -114,7 +128,7 @@
         </output>
       <output name="preview">
         <range>
-          0 -1 
+          0 14 
         </range>
         <step>
           1 
@@ -457,7 +471,7 @@
     </levels>
     <folder name="Cast" type="default">
       <levels>
-        <level id='4'/><level id='5'/><level id='6'/><level id='3'/><level id='12'/><level id='7'/><level id='8'/><level id='1'/><level id='2'/><level id='9'/><level id='10'/><level id='11'/>
+        <level id='9'/><level id='12'/><level id='2'/><level id='4'/><level id='6'/><level id='7'/><level id='8'/><level id='10'/><level id='1'/><level id='11'/><level id='3'/><level id='5'/>
       </levels>
       </folder>
     <folder name="Audio">
@@ -1087,7 +1101,7 @@
               <prev>
                 1.01061 
               </prev>
-              14 1.01061 
+              15 1.01061 
             </L>
             </keyframes>
           </x>
@@ -1115,7 +1129,7 @@
               <prev>
                 -0.271551 
               </prev>
-              14 -0.271551 
+              15 -0.271551 
             </L>
             </keyframes>
           </y>
@@ -1158,7 +1172,7 @@
               <prev>
                 -26.149 
               </prev>
-              14 -26.149 
+              15 -26.149 
             </L>
             </keyframes>
           </rot>
@@ -1214,7 +1228,7 @@
               <prev>
                 0.104868 
               </prev>
-              14 0.104868 
+              15 0.104868 
             </L>
             </keyframes>
           </x>
@@ -1254,7 +1268,7 @@
               <prev>
                 -1.09459 
               </prev>
-              14 -1.09459 
+              15 -1.09459 
             </L>
             </keyframes>
           </y>
@@ -1315,7 +1329,7 @@
               <prev>
                 -13.3237 
               </prev>
-              14 -13.3237 
+              15 -13.3237 
             </L>
             </keyframes>
           </rot>
@@ -1371,7 +1385,7 @@
               <prev>
                 0.493156 
               </prev>
-              14 0.493156 
+              15 0.493156 
             </L>
             </keyframes>
           </x>
@@ -1411,7 +1425,7 @@
               <prev>
                 -1.97262 
               </prev>
-              14 -1.97262 
+              15 -1.97262 
             </L>
             </keyframes>
           </y>
@@ -1472,7 +1486,7 @@
               <prev>
                 26.9015 
               </prev>
-              14 26.9015 
+              15 26.9015 
             </L>
             </keyframes>
           </rot>
@@ -1534,7 +1548,7 @@
               <prev>
                 -0.0362758 
               </prev>
-              14 -0.0362758 
+              15 -0.0362758 
             </L>
             </keyframes>
           </x>
@@ -1580,7 +1594,7 @@
               <prev>
                 -1.03901 
               </prev>
-              14 -1.03901 
+              15 -1.03901 
             </L>
             </keyframes>
           </y>
@@ -1641,7 +1655,7 @@
               <prev>
                 -13.334 
               </prev>
-              14 -13.334 
+              15 -13.334 
             </L>
             </keyframes>
           </rot>
@@ -1697,7 +1711,7 @@
               <prev>
                 -0.336789 
               </prev>
-              14 -0.336789 
+              15 -0.336789 
             </L>
             </keyframes>
           </x>
@@ -1737,7 +1751,7 @@
               <prev>
                 -2.04479 
               </prev>
-              14 -2.04479 
+              15 -2.04479 
             </L>
             </keyframes>
           </y>
@@ -1798,7 +1812,7 @@
               <prev>
                 -0.506826 
               </prev>
-              14 -0.506826 
+              15 -0.506826 
             </L>
             </keyframes>
           </rot>
@@ -1824,7 +1838,19 @@
           </default>
           <keyframes>
             <L>
-              14 -0.125656 
+              0 -0.186385 
+            </L>
+            <L>
+              <prev>
+                -0.125656 
+              </prev>
+              6 -0.125656 
+            </L>
+            <L>
+              <prev>
+                -0.186385 
+              </prev>
+              15 -0.186385 
             </L>
             </keyframes>
           </x>
@@ -1834,7 +1860,19 @@
           </default>
           <keyframes>
             <L>
-              14 -0.628279 
+              0 -0.506822 
+            </L>
+            <L>
+              <prev>
+                -0.628279 
+              </prev>
+              6 -0.628279 
+            </L>
+            <L>
+              <prev>
+                -0.506822 
+              </prev>
+              15 -0.506822 
             </L>
             </keyframes>
           </y>
@@ -1915,7 +1953,7 @@
           0 
         </isOpened>
         <center>
-          0 0 0 0 
+          -1.42713 -0.151822 1.42713 0.151822 
         </center>
         <status>
           0 
@@ -1932,7 +1970,7 @@
               <prev>
                 -0.109884 
               </prev>
-              14 -0.109884 
+              13 -0.109884 
             </L>
             </keyframes>
           </x>
@@ -1948,7 +1986,7 @@
               <prev>
                 1.09696 
               </prev>
-              14 1.09696 
+              13 1.09696 
             </L>
             </keyframes>
           </y>
@@ -1967,6 +2005,34 @@
             1 
           </default>
           </sc>
+        <rot>
+          <default>
+            0 
+          </default>
+          <keyframes>
+            <L>
+              0 0 
+            </L>
+            <L>
+              <prev>
+                4.87179 
+              </prev>
+              6 4.87179 
+            </L>
+            <L>
+              <prev>
+                -2.24141 
+              </prev>
+              10 -2.24141 
+            </L>
+            <L>
+              <prev>
+                0 
+              </prev>
+              13 0 
+            </L>
+            </keyframes>
+          </rot>
         <nodePos>
           24834 25381 
         </nodePos>
@@ -2103,7 +2169,7 @@
               <prev>
                 -0.304197 
               </prev>
-              14 -0.304197 
+              15 -0.304197 
             </L>
             </keyframes>
           </x>
@@ -2125,7 +2191,7 @@
               <prev>
                 -0.394138 
               </prev>
-              14 -0.394138 
+              15 -0.394138 
             </L>
             </keyframes>
           </y>
@@ -2168,7 +2234,7 @@
               <prev>
                 26.0108 
               </prev>
-              14 26.0108 
+              15 26.0108 
             </L>
             </keyframes>
           </rot>
@@ -2183,28 +2249,13 @@
     <fxnodes>
       <terminal>
         <fxnode>
-          <Toonz_columnFx id='26'/>
-        </fxnode>
-        <fxnode>
-          <Toonz_columnFx id='28'/>
-        </fxnode>
-        <fxnode>
-          <Toonz_columnFx id='30'/>
+          <Toonz_columnFx id='16'/>
         </fxnode>
         <fxnode>
           <Toonz_columnFx id='14'/>
         </fxnode>
         <fxnode>
-          <Toonz_columnFx id='34'/>
-        </fxnode>
-        <fxnode>
-          <Toonz_columnFx id='32'/>
-        </fxnode>
-        <fxnode>
-          <Toonz_columnFx id='36'/>
-        </fxnode>
-        <fxnode>
-          <Toonz_columnFx id='16'/>
+          <Toonz_columnFx id='18'/>
         </fxnode>
         <fxnode>
           <Toonz_columnFx id='20'/>
@@ -2213,10 +2264,25 @@
           <Toonz_columnFx id='24'/>
         </fxnode>
         <fxnode>
-          <Toonz_columnFx id='18'/>
+          <Toonz_columnFx id='26'/>
         </fxnode>
         <fxnode>
           <Toonz_columnFx id='22'/>
+        </fxnode>
+        <fxnode>
+          <Toonz_columnFx id='28'/>
+        </fxnode>
+        <fxnode>
+          <Toonz_columnFx id='30'/>
+        </fxnode>
+        <fxnode>
+          <Toonz_columnFx id='36'/>
+        </fxnode>
+        <fxnode>
+          <Toonz_columnFx id='34'/>
+        </fxnode>
+        <fxnode>
+          <Toonz_columnFx id='32'/>
         </fxnode>
         </terminal>
       <xsheet>
@@ -2262,7 +2328,7 @@
             0 
           </numberId>
           <name>
-            Output 
+            OutputFx 
           </name>
           <fxId>
             "" 
@@ -2282,5 +2348,6 @@
   <history>
     "| #    DATE:       Time:   MACHINE:    USER:           |"
     "| #1   17 jun 25   16:09   LAB04-12    IFPR            |"
+    "| #2   19 jun 25   15:56   DESKTOP-8CV8user            |"
   </history>
   </tnz>
