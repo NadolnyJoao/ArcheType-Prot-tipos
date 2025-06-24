@@ -17,8 +17,11 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4284338687
   falas:
-  - "Essa obra \xE9 interessante"
-  - pois ela o primeiro registro de um beijo da humanidade
-  - Quero que voce tente se imaginar na quela epoca, vivenciando as nececidades daquelas
-    pessoas
+  - "Agora estamos na \xE9poca dos grandes artistas, como Leonardo da Vinci!"
+  - Eles adoravam estudar o corpo humano, a natureza e pintar pessoas bem reais.
+  - "Ali temos o \u2018Homem Vitruviano\u2019, um desenho que mostra as medidas perfeitas
+    do corpo!"
+  - "E olhem ali no meio: \xE9 a Mona Lisa, com seu sorrisinho misterioso. Tudo era
+    feito com muito cuidado e cheio de detalhes!"
   canPass: 1
+  index: 3

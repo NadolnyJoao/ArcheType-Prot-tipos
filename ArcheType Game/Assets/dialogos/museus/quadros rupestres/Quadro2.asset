@@ -17,9 +17,12 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4284338687
   falas:
-  - "Muitas dessas representa\xE7\xF5es foram encontradas no interior de cavernas,
-    como em Lascaux (Fran\xE7a), sugerindo significados espirituais. "
-  - "No entanto, tamb\xE9m existem registros ao ar livre, como no Parque Nacional
-    da Serra da Capivara, no Brasil"
-  - " onde as imagens retratam cenas do cotidiano, como ca\xE7adas, dan\xE7as e partos."
+  - "Olhe que legal esse fara\xF3 com o chap\xE9u dourado!"
+  - "No Egito Antigo, as pessoas acreditavam em muitos deuses e se preparavam muito
+    para a vida ap\xF3s a morte."
+  - "Eles faziam m\xFAmias, pir\xE2mides e decoravam tudo com desenhos m\xE1gicos
+    chamados hier\xF3glifos."
+  - "Aqueles olhos nas paredes? \xC9 o \u2018Olho de H\xF3rus\u2019, que protege
+    as pessoas do mal."
   canPass: 1
+  index: 0
