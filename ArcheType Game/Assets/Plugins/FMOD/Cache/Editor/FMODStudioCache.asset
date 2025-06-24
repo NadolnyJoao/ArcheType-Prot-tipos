@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638861183030323325
+  lastModified: 638863757160156382
   FileSizes:
   - Name: Desktop
-    Value: 547904
+    Value: 579104
   Exists: 1
 --- !u!114 &-2697545201274244220
 MonoBehaviour:
@@ -47,6 +47,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 298
+--- !u!114 &-2086189570593809300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS- Florest_1
+  m_EditorClassIdentifier: 
+  Path: event:/FS- Florest_1
+  Guid:
+    Data1: 1321349341
+    Data2: 1196632740
+    Data3: -2108854640
+    Data4: 176616543
+  Banks:
+  - {fileID: -5421618071854508320}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 751
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,12 +94,13 @@ MonoBehaviour:
   - {fileID: 3378473131544788774}
   - {fileID: 3657316307654894828}
   - {fileID: 3606758584654377698}
+  - {fileID: -2086189570593809300}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5421618071854508320}
   StringsBanks:
   - {fileID: 3447122133200574301}
-  cacheTime: 638861183030323325
+  cacheTime: 638863757160177041
   cacheVersion: 131619
 --- !u!114 &3378473131544788774
 MonoBehaviour:
@@ -94,7 +122,7 @@ MonoBehaviour:
     Data4: -1334379285
   Banks:
   - {fileID: -5421618071854508320}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
@@ -116,10 +144,10 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638851518243043127
+  lastModified: 638863757160177041
   FileSizes:
   - Name: Desktop
-    Value: 904
+    Value: 958
   Exists: 1
 --- !u!114 &3606758584654377698
 MonoBehaviour:

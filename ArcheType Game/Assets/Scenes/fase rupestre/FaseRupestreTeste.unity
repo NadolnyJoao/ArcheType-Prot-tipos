@@ -694,7 +694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: passosFloresta.Path
-      value: event:/Som_buttom
+      value: event:/FS- Florest_1
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: passosPedra.Guid.Data1
@@ -730,19 +730,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: passosFloresta.Guid.Data1
-      value: 451914495
+      value: 1321349341
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: passosFloresta.Guid.Data2
-      value: 1111413237
+      value: 1196632740
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: passosFloresta.Guid.Data3
-      value: 946575792
+      value: -2108854640
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: passosFloresta.Guid.Data4
-      value: -1735274769
+      value: 176616543
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}

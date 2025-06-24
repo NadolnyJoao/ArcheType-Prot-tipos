@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{5fc37d57-d497-482c-90e2-89bfdd4d4116}">
+	<object class="AudioFile" id="{07f7ecdd-90ff-40f9-b438-b86e4bfed738}">
 		<property name="assetPath">
-			<value>FX/Som_buttom.wav</value>
+			<value>FS- Florest.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.70691666666666664</value>
+			<value>8.8401875000000008</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{f60e3892-d3b5-4705-a2e1-bf35c2604348}</destination>
