@@ -7,7 +7,8 @@ using UnityEngine;
 public class BrocheManage : MonoBehaviour
 {
     public Broches coletados = new Broches();
-    private string pathFile = "Assets/Saves/Broches.json";
+    public string brocheToColetar;
+    private string pathFile = "Assets/Saves/Broches/Broches.json";
     // Start is called before the first frame update
 
     void Start()
@@ -16,9 +17,9 @@ public class BrocheManage : MonoBehaviour
     }
 
 
-    public void ColetarBroche(string name)
+    public void ColetarBroche()
     {
-        coletados.broches.Add(name);
+        coletados.broches.Add(brocheToColetar);
         SaveBroches();
     }
 

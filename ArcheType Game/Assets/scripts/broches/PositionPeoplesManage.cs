@@ -19,7 +19,7 @@ public class PositionPeoplesManage : MonoBehaviour
 {
     public Transform playerTransform;
     public Transform guiaTransform;
-    string pathFile = "Assets/Saves/Positions.json";
+    string pathFile = "Assets/Saves/Position/Positions.json";
 
     // Start is called before the first frame update
     void Start()
@@ -27,22 +27,13 @@ public class PositionPeoplesManage : MonoBehaviour
         // has a position saved?
         //load postitions
 
-        if (PlayerPrefs.HasKey("startgame"))
+        if(PlayerPrefs.GetInt("loadPositions", 0) == 1)
         {
-            if (PlayerPrefs.GetInt("startgame") == 0)
-            {
-                LoadPositions();
-                PlayerPrefs.SetInt("startgame", 1);
-            PlayerPrefs.Save();
-                Debug.Log("carregar as posições");
-            }
+            LoadPositions();
         }
         else
         {
-            
-            PlayerPrefs.SetInt("startgame", 0);
-            PlayerPrefs.Save();
-            Debug.Log("primeira vez na fase menu");
+            SavePositions();
         }
     }
     public void LoadPositions()
@@ -56,6 +47,8 @@ public class PositionPeoplesManage : MonoBehaviour
             playerTransform.position = positions.positions[0];
             guiaTransform.position = positions.positions[1];
             Debug.Log("posições caregadas");
+            PlayerPrefs.SetInt("loadPositions", 0);
+            PlayerPrefs.Save();
         }
     }
     public void SavePositions()
@@ -68,6 +61,8 @@ public class PositionPeoplesManage : MonoBehaviour
         string dataJson = JsonUtility.ToJson(positionList, true);
         File.WriteAllText(pathFile, dataJson);
         Debug.Log("Dados Salvos");
+        PlayerPrefs.SetInt("loadPositions", 1);
+        PlayerPrefs.Save();
 
     }
 }

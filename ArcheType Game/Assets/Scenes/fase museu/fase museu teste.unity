@@ -127,32 +127,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
   m_PrefabInstance: {fileID: 8723560608939431900}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &210037373 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8723560609020523208, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-  m_PrefabInstance: {fileID: 8723560608939431900}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &210037378
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210037373}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30d159943c1a3e24890850468ff27dc7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &242447872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,69 +1079,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7898890534672241830, guid: 4b977b540a74f0a45844dbfdb05a8391, type: 3}
   m_PrefabInstance: {fileID: 967932127}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &784155874
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 784155875}
-  - component: {fileID: 784155876}
-  m_Layer: 6
-  m_Name: FS_testekk
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &784155875
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784155874}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.91, z: -0.029243972}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 86959385}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &784155876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784155874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1164386100
-      Data2: 1236726105
-      Data3: 1372017050
-      Data4: 956080377
-    Path: event:/FS LAJOTA_01
-  Event: 
-  PlayEvent: 11
-  StopEvent: 12
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &785647603
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,57 +2307,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_Size.x
-      value: 11.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_Size.y
-      value: 7.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1523618307, guid: 5f259c9ae814f7f4787bf283367344d2, type: 3}
-    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.6077446
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.671153
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.2093508
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2491,98 +2354,6 @@ PrefabInstance:
     - target: {fileID: 8723560609020523208, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523208, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: speed
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: FootSteep
-      value: 
-      objectReference: {fileID: 784155874}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosGrama.Path
-      value: event:/FS LAJOTA_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosPedra.Path
-      value: event:/FS LAJOTA_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosAzulejo.Path
-      value: event:/FS LAJOTA_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosFloresta.Path
-      value: event:/FS LAJOTA_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosGrama.Guid.Data1
-      value: -1164386100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosGrama.Guid.Data2
-      value: 1236726105
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosGrama.Guid.Data3
-      value: 1372017050
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosGrama.Guid.Data4
-      value: 956080377
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosPedra.Guid.Data1
-      value: -1164386100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosPedra.Guid.Data2
-      value: 1236726105
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosPedra.Guid.Data3
-      value: 1372017050
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosPedra.Guid.Data4
-      value: 956080377
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosAzulejo.Guid.Data1
-      value: -1164386100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosAzulejo.Guid.Data2
-      value: 1236726105
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosAzulejo.Guid.Data3
-      value: 1372017050
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosAzulejo.Guid.Data4
-      value: 956080377
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosFloresta.Guid.Data1
-      value: -1164386100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosFloresta.Guid.Data2
-      value: 1236726105
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosFloresta.Guid.Data3
-      value: 1372017050
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-      propertyPath: passosFloresta.Guid.Data4
-      value: 956080377
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
