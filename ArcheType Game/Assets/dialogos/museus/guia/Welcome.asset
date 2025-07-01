@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a171c697117a18047bf6a35eccf7e400, type: 3}
+  m_Name: Welcome
+  m_EditorClassIdentifier: 
+  name: Guia
+  colorName:
+    serializedVersion: 2
+    rgba: 4284338687
+  falas:
+  - "Ol\xE1, Miguel! Seja bem-vindo ao Museu das Eras da Arte!"
+  - "Hoje vamos embarcar em uma excurs\xE3o especial atrav\xE9s da hist\xF3ria da
+    arte, explorando diferentes per\xEDodos e estilos que marcaram a humanidade."
+  - Prepare-se para aprender e se surpreender!
+  canPass: 1
+  actions:
+    m_PersistentCalls:
+      m_Calls: []

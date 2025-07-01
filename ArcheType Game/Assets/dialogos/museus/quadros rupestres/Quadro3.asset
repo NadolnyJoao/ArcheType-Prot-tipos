@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a171c697117a18047bf6a35eccf7e400, type: 3}
+  m_Name: Quadro3
+  m_EditorClassIdentifier: 
+  name: Guia
+  colorName:
+    serializedVersion: 2
+    rgba: 4284338687
+  falas:
+  - "Agora estamos na \xE9poca dos grandes artistas, como Leonardo da Vinci!"
+  - Eles adoravam estudar o corpo humano, a natureza e pintar pessoas bem reais.
+  - "Ali temos o \u2018Homem Vitruviano\u2019, um desenho que mostra as medidas perfeitas
+    do corpo!"
+  - "E olhem ali no meio: \xE9 a Mona Lisa, com seu sorrisinho misterioso. Tudo era
+    feito com muito cuidado e cheio de detalhes!"
+  canPass: 1
+  index: 3

@@ -9,9 +9,10 @@ public class Interactable : MonoBehaviour
     public UnityEvent onTrigger;
     public UnityEvent exitTrigger;
     public bool playerContact = false;
+    public GameObject Bip_sound;
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -20,7 +21,14 @@ public class Interactable : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && playerContact)
         {
             actions.Invoke();
+            if(Bip_sound != null)
+            Bip_sound.SetActive(true);
         }
+        if (Bip_sound == true)
+        {
+            Bip_sound.SetActive(false);
+            } 
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
