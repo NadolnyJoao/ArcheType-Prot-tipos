@@ -1215,6 +1215,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0562de7c137fb414eae7b6a0e742aa8e, type: 3}
+    - target: {fileID: 4082721460946363567, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721460946363567, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721460946363567, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -638290853
+      objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0418739
