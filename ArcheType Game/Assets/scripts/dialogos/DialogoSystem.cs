@@ -54,7 +54,7 @@ public class DialogoSystem : MonoBehaviour
     // public DialogoSystenUI dialogoUI;
     private bool inDialogue = false;
 
-   
+
     public void Update()
     {
         // //temporario ate unity events
@@ -84,6 +84,8 @@ public class DialogoSystem : MonoBehaviour
                 ShowFala();
                 inDialogue = true;
                 Debug.Log("inicio do dialogo");
+                Debug.Log("fala:"+falas[indexFalas]+" index: "+falas[indexFalas].index+"estatus: "+falas[indexFalas].getFinish());
+
             }
             else
             {

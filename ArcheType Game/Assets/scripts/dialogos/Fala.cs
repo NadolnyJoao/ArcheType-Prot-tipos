@@ -17,7 +17,16 @@ public class Fala : ScriptableObject
 
     public Fala()
     {
+        
+    }
+    public void Reset()
+    {
         index = 0;
+        finish = false;
+    }
+    private void OnEnable()
+    {
+        Reset();
     }
     public void ConpriObjetivo()
     {
