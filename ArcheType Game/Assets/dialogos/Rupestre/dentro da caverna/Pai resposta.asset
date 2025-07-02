@@ -15,10 +15,10 @@ MonoBehaviour:
   name: Cuidador da caverna
   colorName:
     serializedVersion: 2
-    rgba: 7829367
+    rgba: 4286019447
   falas:
-  - "Precisamos explorar o cenario e p\xF3der encontrar recursos e locais perigosos"
-  - "Voce ser\xE1 nosso explorador, descubra e registre nas paredes para que possamos
-    passar essa informa\xE7\xE3o para nosso filho"
-  canPass: 1
+  - Sim filho, vamos
+  - "La fora temos nosso chefe, ele passara mais informa\xE7\xF5es"
+  - ele deve esta la fora
+  canPass: 0
   index: 0

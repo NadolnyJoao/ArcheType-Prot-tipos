@@ -11,8 +11,9 @@ public class DialogoSystenUI : MonoBehaviour
     public TMP_Text nameTextPro;
     public TMP_Text bodyTextPro;
     private string textFromShow;
-
+    private DialogoSystem dialogoAtual;
     public static DialogoSystenUI dialogoSystenUI { get; private set; }
+    private bool showDialogoBox = false;
     void Awake()
     {
         if (dialogoSystenUI != null)
@@ -24,12 +25,15 @@ public class DialogoSystenUI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && !showDialogoBox)
         {
-            // HiddenDialogoBox();
+            HiddenDialogoBox();
         }
     }
-
+ public void SetDialogoAtual(DialogoSystem sistema)
+    {
+        dialogoAtual = sistema;
+    }
     public void DebugTeste()
     {
         Debug.Log("funcionando");
@@ -51,11 +55,17 @@ public class DialogoSystenUI : MonoBehaviour
     public void ShowDialogoBox()
     {
         dialogoBox.SetActive(true);
+        showDialogoBox = true;
+        Invoke("CanHiddenDialogoBox", 1f);
     }
     public void HiddenDialogoBox()
     {
         dialogoBox.SetActive(false);
 
+    }
+    private void CanHiddenDialogoBox()
+    {
+       showDialogoBox = false;
     }
     public void SetTextDialogBox(Color32 color, string name, string body)
     {
@@ -64,6 +74,6 @@ public class DialogoSystenUI : MonoBehaviour
         textFromShow = body;
         bodyTextPro.text = "";
         Invoke("AnimationText", delayChar);
-            
+
     }
 }

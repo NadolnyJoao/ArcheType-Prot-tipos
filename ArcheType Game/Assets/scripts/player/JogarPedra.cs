@@ -23,7 +23,7 @@ public class JogarPedra : MonoBehaviour
     }
     public void LancarPedra()
     {
-        GameObject pedra = Instantiate(prefabPedra, transform.position, Quaternion.identity);
+        GameObject pedra = Instantiate(prefabPedra, transform.position + Vector3.right * 2.0f * playerMov.GetDirection(), Quaternion.identity);
         int  direction = playerMov.GetDirection();
         pedra.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f * direction, 1f) * force, ForceMode2D.Impulse);
     }
