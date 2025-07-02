@@ -12,6 +12,13 @@ public class Mapeamento : MonoBehaviour
     public bool caverna = false;
     public bool floresta = false;
     public bool planice = false;
+
+    public bool chaopedra;
+    public bool chaofloresta;
+    public bool chaoAzulejo;
+    public bool chaoplanice;
+
+
     public GameObject mapa;
     public GameObject cavernadescoberta;
     public GameObject florestadescoberta;
@@ -39,13 +46,13 @@ public class Mapeamento : MonoBehaviour
             actionsLaterExploration.Invoke();
             objetivoCompleto = true;
         }
-        
+
 
 
         if (Input.GetKeyDown(KeyCode.M))
-            {
+        {
             AbrirMapa();
-            }
+        }
         if (caverna == true)
         {
             cavernadescoberta.SetActive(true);
@@ -62,7 +69,7 @@ public class Mapeamento : MonoBehaviour
             mapavazio.SetActive(false);
         }
 
-        if (playermoviment.chaopedra == true)
+        if (chaopedra == true)
         {
             playerpedra.SetActive(true);
         }
@@ -71,7 +78,7 @@ public class Mapeamento : MonoBehaviour
             playerpedra.SetActive(false);
         }
 
-        if (playermoviment.chaofloresta == true)
+        if (chaofloresta == true)
         {
             playerfloresta.SetActive(true);
         }
@@ -80,7 +87,7 @@ public class Mapeamento : MonoBehaviour
             playerfloresta.SetActive(false);
         }
 
-        if (playermoviment.chaoplanice == true)
+        if (chaoplanice == true)
         {
             playerplanice.SetActive(true);
         }
@@ -112,5 +119,44 @@ public class Mapeamento : MonoBehaviour
     public void AbrirMapa()
     {
         mapa.SetActive(true);
+    }
+    
+     void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.name == "ground(pedra)")
+        {
+            chaopedra = true;
+        }
+        else
+        {
+            chaopedra = false;
+        }
+
+        if (other.gameObject.name == "ground(floresta)")
+        {
+            chaofloresta = true;
+        }
+        else
+        {
+            chaofloresta = false;
+        }
+
+        if (other.gameObject.name == "ground(planice)")
+        {
+            chaoplanice = true;
+        }
+        else
+        {
+            chaoplanice = false;
+        }
+         if (other.gameObject.name == "ground(azulejos)")
+        {
+            chaoAzulejo = true;
+        }
+        else
+        {
+            chaoAzulejo = false; 
+        }
+        
     }
 }

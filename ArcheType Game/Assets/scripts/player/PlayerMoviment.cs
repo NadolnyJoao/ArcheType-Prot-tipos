@@ -16,18 +16,12 @@ public class PlayerMoviment : MonoBehaviour
     private bool isgrounded = false;
     public GameObject FootSteep;
     public bool isWalking; 
-    public bool chaopedra;
-    public bool chaofloresta;
-    public bool chaoAzulejo;
-    public bool chaoplanice;
-
+  
     public Animator ani;
 
     [Header("Sons de Passos")]
-    [SerializeField] private EventReference passosAzulejo;
-    [SerializeField] private EventReference passosFloresta;    
-    [SerializeField] private EventReference passosPedra;
-    [SerializeField] private EventReference passosGrama;
+    [SerializeField] private EventReference footSteep;
+
 
     private float passoTimer = 0f;
     private float intervaloPasso = 0.58f; 
@@ -98,40 +92,6 @@ public class PlayerMoviment : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.name == "ground(pedra)")
-        {
-            chaopedra = true;
-        }
-        else
-        {
-            chaopedra = false;
-        }
-
-        if (other.gameObject.name == "ground(floresta)")
-        {
-            chaofloresta = true;
-        }
-        else
-        {
-            chaofloresta = false;
-        }
-
-        if (other.gameObject.name == "ground(planice)")
-        {
-            chaoplanice = true;
-        }
-        else
-        {
-            chaoplanice = false;
-        }
-         if (other.gameObject.name == "ground(azulejos)")
-        {
-            chaoAzulejo = true;
-        }
-        else
-        {
-            chaoAzulejo = false; 
-        }
         if (other.gameObject.tag == "ground")
         {
             isgrounded = true;
@@ -156,26 +116,6 @@ public class PlayerMoviment : MonoBehaviour
 
     public void Footsteep()
     {
-
-        if (chaoAzulejo)
-        {
-            RuntimeManager.PlayOneShot(passosAzulejo, transform.position);
-        }
-
-        if (chaopedra)
-        {
-            RuntimeManager.PlayOneShot(passosPedra, transform.position);
-        }
-
-        if (chaofloresta)
-        {
-            RuntimeManager.PlayOneShot(passosFloresta, transform.position);
-        }
-
-        if (chaoplanice)
-        {
-            RuntimeManager.PlayOneShot(passosGrama, transform.position);
-        }
-    
+            RuntimeManager.PlayOneShot(footSteep, transform.position);    
     }
 }
