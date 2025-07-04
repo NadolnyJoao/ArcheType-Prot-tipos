@@ -48,7 +48,9 @@ public class PlayerMoviment : MonoBehaviour
             direction = 1;
             if (spriteRenderer != null)
             {
-                spriteRenderer.flipX = false; // Virado para direita
+                // spriteRenderer.flipX = false; // Virado para direita
+                transform.rotation = Quaternion.Euler(0,0,0);
+
             }
         }
         else if (horizontalInput < 0)
@@ -56,7 +58,9 @@ public class PlayerMoviment : MonoBehaviour
             direction = -1;
             if (spriteRenderer != null) 
             {
-                spriteRenderer.flipX = true; // Virado para esquerda
+                // spriteRenderer.flipX = true; // Virado para esquerda
+                transform.rotation = Quaternion.Euler(0,180.0f,0);
+                // transform.rotation.y = 180.0f;
             }
         }
         if (horizontalInput != 0 && isgrounded)
