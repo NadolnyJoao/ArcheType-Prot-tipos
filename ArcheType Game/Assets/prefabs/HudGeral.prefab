@@ -709,7 +709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadingScreen: {fileID: 8187668958979461857}
   LoadingBar: {fileID: 8187668958356001593}
-  aniBackground: {fileID: 0}
+  aniBackground: {fileID: 56195838935011231}
   minLoadingTime: 1
 --- !u!114 &6300630760276842715
 MonoBehaviour:
@@ -1952,7 +1952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &689623445971119916
 RectTransform:
   m_ObjectHideFlags: 0
