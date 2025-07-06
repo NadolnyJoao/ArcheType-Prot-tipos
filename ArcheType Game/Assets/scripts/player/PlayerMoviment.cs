@@ -48,15 +48,17 @@ public class PlayerMoviment : MonoBehaviour
             direction = 1;
             if (spriteRenderer != null)
             {
-                spriteRenderer.flipX = false; // Virado para direita
+                // spriteRenderer.flipX = false; // Virado para direita
+                transform.rotation = Quaternion.Euler(0, 0, 0); // Garante que a rotação esteja zerada
             }
         }
         else if (horizontalInput < 0)
         {
             direction = -1;
-            if (spriteRenderer != null) 
+            if (spriteRenderer != null)
             {
-                spriteRenderer.flipX = true; // Virado para esquerda
+                // spriteRenderer.flipX = true; // Virado para esquerda
+                transform.rotation = Quaternion.Euler(0, 180, 0); // Garante que a rotação esteja virada para a esquerda
             }
         }
         if (horizontalInput != 0 && isgrounded)
