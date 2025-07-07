@@ -6,6 +6,10 @@ public class JogarPedra : MonoBehaviour
 {
     private PlayerMoviment playerMov;
     public GameObject prefabPedra;
+
+    public float countdown = 0.5f; // Tempo de espera entre lançamentos
+    private float time = 0;
+
     public float force;
     // Start is called before the first frame update
     void Start()
@@ -15,10 +19,21 @@ public class JogarPedra : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
+    {   
+        if(time > 0)
+        {
+            time -= Time.deltaTime;
+        }
+        else
+        {
+            time = 0;
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.E) && time == 0)
         {
             LancarPedra();
+            time = countdown; // Reinicia o tempo de espera
         }
     }
     public void LancarPedra()
