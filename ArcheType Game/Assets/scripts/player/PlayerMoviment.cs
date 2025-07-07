@@ -73,10 +73,10 @@ public class PlayerMoviment : MonoBehaviour
              Footsteep();
         }
 
-        if (canJump && isgrounded && Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-        }
+        // if (canJump && isgrounded && Input.GetButtonDown("Jump"))
+        // {
+        //     jump = true;
+        // }
         ani.SetBool("walk",horizontalInput!=0);
     }
 

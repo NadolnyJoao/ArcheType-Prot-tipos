@@ -1,9 +1,20 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class PuzzleManager : MonoBehaviour
 {
     public List<RectTransform> allSlots;
+    public GameObject puzzle;
+    public RectTransform emptySlot;
+    public PortaControler portacontroller;
+    public bool PuzzleCompleto = false;
+    public GameObject Interact;
+    void Start()
+    {
+        GameObject porta = GameObject.FindWithTag("portaegito");
+        portacontroller = porta.GetComponent<PortaControler>();
+    }
 
     public void CheckWinCondition()
     {
@@ -13,25 +24,56 @@ public class PuzzleManager : MonoBehaviour
             if (!piece.IsInCorrectSlot())
                 return;
         }
-
+        PuzzleCompleto = true;
+        portacontroller.Abrir();
         Debug.Log("🏆 Puzzle completo!");
+
+        if (PuzzleCompleto)
+        {
+            ExitPuzzle();
+            Object.Destroy(Interact, 0);
+        }
     }
 
-    public RectTransform GetClosestSlot(RectTransform piece, float snapDistance)
+    public void AtivarPuzzle()
     {
-        float minDistance = float.MaxValue;
-        RectTransform closest = null;
-
-        foreach (RectTransform slot in allSlots)
+        if (PuzzleCompleto == false)
         {
-            float dist = Vector2.Distance(piece.position, slot.position);
-            if (dist < snapDistance && dist < minDistance)
-            {
-                minDistance = dist;
-                closest = slot;
-            }
+            puzzle.SetActive(true);
+            ShufflePieces();
         }
 
-        return closest;
+    }
+
+    public void ExitPuzzle()
+    {
+
+        puzzle.SetActive(false);
+    }
+
+    private void ShufflePieces()
+    {
+        List<UIPuzzlePiece> pieces = new List<UIPuzzlePiece>(FindObjectsOfType<UIPuzzlePiece>());
+        List<RectTransform> availableSlots = new List<RectTransform>(allSlots);
+
+        for (int i = 0; i < availableSlots.Count; i++)
+        {
+            RectTransform temp = availableSlots[i];
+            int randomIndex = Random.Range(i, availableSlots.Count);
+            availableSlots[i] = availableSlots[randomIndex];
+            availableSlots[randomIndex] = temp;
+        }
+
+        for (int i = 0; i < pieces.Count; i++)
+        {
+            UIPuzzlePiece piece = pieces[i];
+            RectTransform newSlot = availableSlots[i];
+
+            piece.transform.SetParent(newSlot);
+            piece.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+            piece.currentSlot = newSlot;
+        }
+
+        emptySlot = availableSlots[pieces.Count];
     }
 }

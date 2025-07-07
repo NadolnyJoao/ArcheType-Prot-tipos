@@ -5,7 +5,7 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 {
     public RectTransform originalSlot;
     public RectTransform currentSlot;
-    public float snapDistance = 100f; 
+    public float snapDistance = 100f;
 
     private RectTransform rectTransform;
     private Canvas canvas;
@@ -28,7 +28,7 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnBeginDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = false;
-        transform.SetParent(canvas.transform); 
+        transform.SetParent(canvas.transform);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -40,33 +40,21 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         canvasGroup.blocksRaycasts = true;
 
-        RectTransform closestSlot = puzzleManager.GetClosestSlot(rectTransform, snapDistance);
+        RectTransform targetSlot = puzzleManager.emptySlot;
+        float distance = Vector2.Distance(rectTransform.position, targetSlot.position);
 
-        if (closestSlot == null)
+        if (distance > snapDistance)
         {
             ReturnToCurrentSlot();
             return;
         }
 
-        UIPuzzlePiece otherPiece = null;
-        if (closestSlot.childCount > 0)
-        {
-            otherPiece = closestSlot.GetComponentInChildren<UIPuzzlePiece>();
-        }
-
-        if (otherPiece != null)
-        {
-            RectTransform oldSlot = currentSlot;
-
-            otherPiece.transform.SetParent(oldSlot);
-            otherPiece.rectTransform.anchoredPosition = Vector2.zero;
-            otherPiece.currentSlot = oldSlot;
-        }
-
-
-        transform.SetParent(closestSlot);
+        RectTransform previousSlot = currentSlot;
+        transform.SetParent(targetSlot);
         rectTransform.anchoredPosition = Vector2.zero;
-        currentSlot = closestSlot;
+        currentSlot = targetSlot;
+
+        puzzleManager.emptySlot = previousSlot;
 
         puzzleManager.CheckWinCondition();
     }
