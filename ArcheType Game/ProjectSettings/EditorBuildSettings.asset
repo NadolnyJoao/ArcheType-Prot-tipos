@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/fase museu/MUSEU.unity
     guid: b19b072aa395dba4b925ba3d1498af4a
   - enabled: 1
+    path: Assets/Scenes/fase rupestre/RUPESTRE.unity
+    guid: 23f9e95ccd4807e479c5dcc7e1577c15
+  - enabled: 1
     path: Assets/Scenes/fase egito/EGITO.unity
     guid: 97b32ef90feffa64baa1af8836b37e26
   m_configObjects: {}

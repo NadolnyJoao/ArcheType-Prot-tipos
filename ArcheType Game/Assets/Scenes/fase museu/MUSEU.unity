@@ -399,7 +399,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameSong: piso de azulejos
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  BG: {fileID: 0}
 --- !u!1 &402137561
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: laterActions.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: laterActions.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1612,7 +1620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: laterActions.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: laterActions.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
