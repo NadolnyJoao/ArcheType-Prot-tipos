@@ -7,6 +7,7 @@ public class CapivaraMoviment : MonoBehaviour
     // Start is called before the first frame update
     public enum Estado { Parado, Andando, Comendo, Fugindo };
     public Estado estadoAtual;
+    public Animator anima;
 
     [Header("tempo")]
     public float time = 0;
@@ -15,7 +16,7 @@ public class CapivaraMoviment : MonoBehaviour
     public float tempoMaxParado = 5f;
     public float tempoMinAndando = 3f;
     public float tempoMaxAndando = 7f;
-    public float tempoComendo = 4f;
+    public float tempoComendo = 50f;
     public float speedWalk = 2f;
     public float speedRun = 5f;
     [Header("estados")]
@@ -31,6 +32,8 @@ public class CapivaraMoviment : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         estadoAtual = Estado.Parado;
         sprite.flipX = directionMov == 1;
+        anima = GetComponent<Animator>();
+        //anima.SetBool("Speed", true);
 
 
     }
@@ -55,11 +58,12 @@ public class CapivaraMoviment : MonoBehaviour
                 MudarEstado();
             }
         }
-
+        
         if (estadoAtual == Estado.Fugindo)
         {
 
             transform.Translate(Vector3.right * directionMov * Time.deltaTime * speedRun);
+            
             if (distPlayer > distanciaFuga * 1.5f)
                 estadoAtual = Estado.Andando;
         }
@@ -67,6 +71,8 @@ public class CapivaraMoviment : MonoBehaviour
         {
             transform.Translate(Vector3.right * directionMov * Time.deltaTime * speedWalk);
         }
+        anima.SetBool("Speed", (estadoAtual == Estado.Andando) || estadoAtual == Estado.Fugindo);
+        anima.SetBool("Sit", estadoAtual == Estado.Comendo);
     }
     void MudarEstado()
     {
