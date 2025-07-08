@@ -1,5 +1,8 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using FMOD.Studio;
+using FMODUnity;
 
 public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -10,25 +13,30 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private Canvas canvas;
     private CanvasGroup canvasGroup;
     private PuzzleManager puzzleManager;
-    
+
+    private EventReference PuzzleSound;
+
 
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>();
+       
     }
 
     void Start()
     {
         currentSlot = (RectTransform)transform.parent;
         puzzleManager = FindObjectOfType<PuzzleManager>();
+        PuzzleSound = puzzleManager.PuzzleSound;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = false;
         transform.SetParent(canvas.transform);
+         RuntimeManager.PlayOneShot(PuzzleSound, transform.position);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -46,6 +54,7 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (distance > snapDistance)
         {
             ReturnToCurrentSlot();
+
             return;
         }
 
@@ -55,6 +64,7 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         currentSlot = targetSlot;
 
         puzzleManager.emptySlot = previousSlot;
+        //  JONAS pode acionar um som de peça sendo encaixada
 
         puzzleManager.CheckWinCondition();
     }

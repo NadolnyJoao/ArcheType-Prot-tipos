@@ -617,13 +617,6 @@ MonoBehaviour:
       Data3: 1281700993
       Data4: 2128173508
     Path: "event:/_Quebra-Cabe\xE7a_3"
-  DoorOpen:
-    Guid:
-      Data1: 2146680787
-      Data2: 1150174307
-      Data3: 178873491
-      Data4: 1125487326
-    Path: event:/OpenningDoor
 --- !u!1 &386249780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,11 +1103,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.98
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363570, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_Size.y
@@ -1132,21 +1125,41 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Path
+      value: event:/OpenningDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data1
+      value: 2146680787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data2
+      value: 1150174307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data3
+      value: 178873491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data4
+      value: 1125487326
+      objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.169533
+      value: 28.03
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.285367
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0930611
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2430,11 +2443,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0301
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0164
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363570, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_Size.y
@@ -2453,8 +2466,28 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Path
+      value: event:/OpenningDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: portaStartOpen
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data1
+      value: 2146680787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data2
+      value: 1150174307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data3
+      value: 178873491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data4
+      value: 1125487326
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_RootOrder
@@ -2462,15 +2495,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9395351
+      value: 4.78
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.285367
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0930611
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalRotation.w

@@ -13,7 +13,7 @@ public class PuzzleManager : MonoBehaviour
     public bool PuzzleCompleto = false;
     public GameObject Interact;
     public EventReference PuzzleSound;
-    public EventReference DoorOpen; 
+    
     
     void Start()
     {
@@ -28,7 +28,7 @@ public class PuzzleManager : MonoBehaviour
         {
             if (!piece.IsInCorrectSlot())
             {
-                RuntimeManager.PlayOneShot(PuzzleSound, transform.position);
+               
                 return;
             }
         }
@@ -39,7 +39,7 @@ public class PuzzleManager : MonoBehaviour
         if (PuzzleCompleto)
         {
             ExitPuzzle();
-            RuntimeManager.PlayOneShot(DoorOpen, transform.position);
+            
             Object.Destroy(Interact, 0);
 
         }

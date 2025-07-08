@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity; 
+using FMOD.Studio;
 
 public class PortaControler : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class PortaControler : MonoBehaviour
 
     private bool _estaAberta;
 
+    public EventReference DoorOpen; // Referência ao som de abertura da porta
     private void Start()
     {
         if (animatorPorta == null)
@@ -31,9 +34,10 @@ public class PortaControler : MonoBehaviour
     public void Abrir()
     {
         if (_estaAberta) return; // Já está aberta
-        
+
         _estaAberta = true;
         animatorPorta.SetBool("Abrir", true);
+        RuntimeManager.PlayOneShot(DoorOpen, transform.position); 
     }
 
 
