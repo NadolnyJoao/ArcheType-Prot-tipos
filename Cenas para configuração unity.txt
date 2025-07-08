@@ -1,0 +1,9 @@
+**Cpmfiguração  de cenas **
+
+
+0: Menu			: Scenes/menu/MENU				
+1: Museu		: Scene/fase museu/MUSEU
+2: Rupestre		: Scene/fase rupestre/FaseRupestreTesteMarcelo
+3: Cutscene Rupestre	: Scene/fase rupestre/CutsceneRupestre
+4: Egito		: Scene/fase egito/Egito
+5: Cutscene Egito	: Scene/fase egito/CutsceneEgito
