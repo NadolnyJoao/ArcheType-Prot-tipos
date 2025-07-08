@@ -505,6 +505,13 @@ MonoBehaviour:
   originalSlot: {fileID: 639681010}
   currentSlot: {fileID: 0}
   snapDistance: 50
+  PuzzleSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &353630297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,13 +624,6 @@ MonoBehaviour:
       Data3: 1281700993
       Data4: 2128173508
     Path: "event:/_Quebra-Cabe\xE7a_3"
-  DoorOpen:
-    Guid:
-      Data1: 2146680787
-      Data2: 1150174307
-      Data3: 178873491
-      Data4: 1125487326
-    Path: event:/OpenningDoor
 --- !u!1 &386249780
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +691,13 @@ MonoBehaviour:
   originalSlot: {fileID: 920280438}
   currentSlot: {fileID: 0}
   snapDistance: 50
+  PuzzleSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &386249784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,11 +1117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.98
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363570, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_Size.y
@@ -1132,13 +1139,33 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Path
+      value: event:/OpenningDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data1
+      value: 2146680787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data2
+      value: 1150174307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data3
+      value: 178873491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data4
+      value: 1125487326
+      objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.169533
+      value: 28.08
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1249,6 +1276,13 @@ MonoBehaviour:
   originalSlot: {fileID: 114950028}
   currentSlot: {fileID: 0}
   snapDistance: 50
+  PuzzleSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &685144254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1365,6 +1399,13 @@ MonoBehaviour:
   originalSlot: {fileID: 1123360048}
   currentSlot: {fileID: 0}
   snapDistance: 50
+  PuzzleSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &797793672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1600,6 +1641,13 @@ MonoBehaviour:
   originalSlot: {fileID: 165888573}
   currentSlot: {fileID: 0}
   snapDistance: 50
+  PuzzleSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &835225454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1676,7 +1724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7533979384921578334, guid: 4b9d253d3a716c94480edf9c8c2666e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 7.76
       objectReference: {fileID: 0}
     - target: {fileID: 7533979384921578334, guid: 4b9d253d3a716c94480edf9c8c2666e6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2430,11 +2478,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0301
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0164
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363570, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_Size.y
@@ -2453,8 +2501,28 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Path
+      value: event:/OpenningDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: portaStartOpen
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data1
+      value: 2146680787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data2
+      value: 1150174307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data3
+      value: 178873491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data4
+      value: 1125487326
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_RootOrder
@@ -2462,7 +2530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9395351
+      value: 5.03
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3326,6 +3394,13 @@ MonoBehaviour:
   originalSlot: {fileID: 893490604}
   currentSlot: {fileID: 0}
   snapDistance: 50
+  PuzzleSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1620430414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3701,6 +3776,13 @@ MonoBehaviour:
   originalSlot: {fileID: 986787680}
   currentSlot: {fileID: 0}
   snapDistance: 50
+  PuzzleSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1631926727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3903,6 +3985,13 @@ MonoBehaviour:
   originalSlot: {fileID: 1285614904}
   currentSlot: {fileID: 0}
   snapDistance: 50
+  PuzzleSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1823446558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5048,6 +5137,26 @@ PrefabInstance:
     - target: {fileID: 4082721460946363567, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Path
+      value: event:/OpenningDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data1
+      value: 2146680787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data2
+      value: 1150174307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data3
+      value: 178873491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data4
+      value: 1125487326
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_RootOrder

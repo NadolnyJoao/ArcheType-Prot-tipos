@@ -102,6 +102,7 @@ public class PlayerMoviment : MonoBehaviour
             if (groundSong != null)
             {
                 footSteep = groundSong.FsSound;
+                if(groundSong !=null)
                 groundSong.BG.SetActive(true);
             }
             else

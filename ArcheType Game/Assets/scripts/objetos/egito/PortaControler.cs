@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FMODUnity;
+using FMOD.Studio;
 public class PortaControler : MonoBehaviour
 {
     [Header("Referências")]
@@ -11,6 +12,8 @@ public class PortaControler : MonoBehaviour
     [SerializeField] private bool portaStartOpen = false; // Define se a porta começa aberta
 
     private bool _estaAberta;
+
+    public EventReference DoorOpen; 
 
     private void Start()
     {
@@ -34,6 +37,7 @@ public class PortaControler : MonoBehaviour
         
         _estaAberta = true;
         animatorPorta.SetBool("Abrir", true);
+        RuntimeManager.PlayOneShot(DoorOpen,transform.position);
     }
 
 

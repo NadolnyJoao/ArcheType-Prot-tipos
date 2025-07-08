@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+using FMODUnity;
+using FMOD.Studio;
 public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public RectTransform originalSlot;
@@ -10,6 +11,7 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private Canvas canvas;
     private CanvasGroup canvasGroup;
     private PuzzleManager puzzleManager;
+    public EventReference PuzzleSound;
     
 
     void Awake()
@@ -23,12 +25,16 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         currentSlot = (RectTransform)transform.parent;
         puzzleManager = FindObjectOfType<PuzzleManager>();
+
+       
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = false;
         transform.SetParent(canvas.transform);
+                RuntimeManager.PlayOneShot(PuzzleSound,transform.position);
+
     }
 
     public void OnDrag(PointerEventData eventData)

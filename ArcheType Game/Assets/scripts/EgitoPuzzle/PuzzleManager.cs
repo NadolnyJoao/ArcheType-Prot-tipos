@@ -13,12 +13,16 @@ public class PuzzleManager : MonoBehaviour
     public bool PuzzleCompleto = false;
     public GameObject Interact;
     public EventReference PuzzleSound;
-    public EventReference DoorOpen; 
     
     void Start()
     {
         GameObject porta = GameObject.FindWithTag("portaegito");
         portacontroller = porta.GetComponent<PortaControler>();
+        UIPuzzlePiece[] pieces = FindObjectsOfType<UIPuzzlePiece>();
+        foreach( var piece in pieces)
+        {
+            piece.PuzzleSound = PuzzleSound;
+        }
     }
 
     public void CheckWinCondition()
@@ -39,7 +43,7 @@ public class PuzzleManager : MonoBehaviour
         if (PuzzleCompleto)
         {
             ExitPuzzle();
-            RuntimeManager.PlayOneShot(DoorOpen, transform.position);
+            // RuntimeManager.PlayOneShot(PuzzleSound, transform.position);
             Object.Destroy(Interact, 0);
 
         }
