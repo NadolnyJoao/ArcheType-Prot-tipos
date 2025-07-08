@@ -610,6 +610,20 @@ MonoBehaviour:
   portacontroller: {fileID: 0}
   PuzzleCompleto: 0
   Interact: {fileID: 1200455985}
+  PuzzleSound:
+    Guid:
+      Data1: -1623219613
+      Data2: 1086828408
+      Data3: 1281700993
+      Data4: 2128173508
+    Path: "event:/_Quebra-Cabe\xE7a_3"
+  DoorOpen:
+    Guid:
+      Data1: 2146680787
+      Data2: 1150174307
+      Data3: 178873491
+      Data4: 1125487326
+    Path: event:/OpenningDoor
 --- !u!1 &386249780
 GameObject:
   m_ObjectHideFlags: 0
@@ -3448,7 +3462,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameSong: areia
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  BG: {fileID: 0}
 --- !u!61 &1628270341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4270,7 +4292,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameSong: pedra
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  BG: {fileID: 0}
 --- !u!61 &1875896060
 BoxCollider2D:
   m_ObjectHideFlags: 0

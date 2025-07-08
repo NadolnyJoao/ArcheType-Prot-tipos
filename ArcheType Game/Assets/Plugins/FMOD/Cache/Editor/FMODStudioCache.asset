@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8296441187800031306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/_Quebra-Cabe\xE7a_3"
+  m_EditorClassIdentifier: 
+  Path: "event:/_Quebra-Cabe\xE7a_3"
+  Guid:
+    Data1: -1623219613
+    Data2: 1086828408
+    Data3: 1281700993
+    Data4: 2128173508
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 820
 --- !u!114 &-7583929846362628387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 298
+--- !u!114 &-5173601054895239858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG - Florest
+  m_EditorClassIdentifier: 
+  Path: event:/BG - Florest
+  Guid:
+    Data1: -1343573913
+    Data2: 1177794756
+    Data3: 1452070038
+    Data4: -258435580
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 170194
 --- !u!114 &-1918859269314478792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,11 +96,38 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638871727554127141
+  lastModified: 638875369640409989
   FileSizes:
   - Name: Desktop
-    Value: 547904
+    Value: 2964800
   Exists: 1
+--- !u!114 &-99223679351924832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS FOREST_01
+  m_EditorClassIdentifier: 
+  Path: event:/FS FOREST_01
+  Guid:
+    Data1: -1845786255
+    Data2: 1111502204
+    Data3: -1764736069
+    Data4: 818223772
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 655
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,12 +148,16 @@ MonoBehaviour:
   - {fileID: 851110429481971729}
   - {fileID: 5169435930333380035}
   - {fileID: 5891744090635361711}
+  - {fileID: -99223679351924832}
+  - {fileID: -5173601054895239858}
+  - {fileID: -8296441187800031306}
+  - {fileID: 5455210558011993553}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1918859269314478792}
   StringsBanks:
   - {fileID: 5982678536972742319}
-  cacheTime: 638871727554127141
+  cacheTime: 638875369640422934
   cacheVersion: 131619
 --- !u!114 &851110429481971729
 MonoBehaviour:
@@ -94,7 +179,7 @@ MonoBehaviour:
     Data4: -1334379285
   Banks:
   - {fileID: -1918859269314478792}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
@@ -128,6 +213,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 666
+--- !u!114 &5455210558011993553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OpenningDoor
+  m_EditorClassIdentifier: 
+  Path: event:/OpenningDoor
+  Guid:
+    Data1: 2146680787
+    Data2: 1150174307
+    Data3: 178873491
+    Data4: 1125487326
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1223
 --- !u!114 &5891744090635361711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,8 +282,8 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638851546262139837
+  lastModified: 638875369640422934
   FileSizes:
   - Name: Desktop
-    Value: 904
+    Value: 1100
   Exists: 1

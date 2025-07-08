@@ -3449,6 +3449,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameSong: areia
+  FsSound:
+    Guid:
+      Data1: -1164386100
+      Data2: 1236726105
+      Data3: 1372017050
+      Data4: 956080377
+    Path: event:/FS LAJOTA_01
 --- !u!61 &1628270341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4271,6 +4278,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameSong: pedra
+  FsSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1875896060
 BoxCollider2D:
   m_ObjectHideFlags: 0

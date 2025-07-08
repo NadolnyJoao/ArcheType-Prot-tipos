@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using FMODUnity;
+using FMOD.Studio;
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class PuzzleManager : MonoBehaviour
     public PortaControler portacontroller;
     public bool PuzzleCompleto = false;
     public GameObject Interact;
+    public EventReference PuzzleSound;
+    public EventReference DoorOpen; 
+    
     void Start()
     {
         GameObject porta = GameObject.FindWithTag("portaegito");
@@ -22,7 +27,10 @@ public class PuzzleManager : MonoBehaviour
         foreach (var piece in pieces)
         {
             if (!piece.IsInCorrectSlot())
+            {
+                RuntimeManager.PlayOneShot(PuzzleSound, transform.position);
                 return;
+            }
         }
         PuzzleCompleto = true;
         portacontroller.Abrir();
@@ -31,7 +39,9 @@ public class PuzzleManager : MonoBehaviour
         if (PuzzleCompleto)
         {
             ExitPuzzle();
+            RuntimeManager.PlayOneShot(DoorOpen, transform.position);
             Object.Destroy(Interact, 0);
+
         }
     }
 
@@ -41,6 +51,7 @@ public class PuzzleManager : MonoBehaviour
         {
             puzzle.SetActive(true);
             ShufflePieces();
+            
         }
 
     }
@@ -75,5 +86,6 @@ public class PuzzleManager : MonoBehaviour
         }
 
         emptySlot = availableSlots[pieces.Count];
+
     }
 }

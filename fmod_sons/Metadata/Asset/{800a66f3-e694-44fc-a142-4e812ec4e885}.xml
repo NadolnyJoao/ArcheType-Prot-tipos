@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{800a66f3-e694-44fc-a142-4e812ec4e885}">
+		<property name="assetPath">
+			<value>HDFX/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f60e3892-d3b5-4705-a2e1-bf35c2604348}</destination>
+		</relationship>
+	</object>
+</objects>

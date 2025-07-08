@@ -8,23 +8,18 @@ public class PlayerMoviment : MonoBehaviour
 {
     public float speed = 100;
     public float forceJump = 100;
-    public bool canJump = false;
     private int direction = 1; // 1 para direita, -1 para esquerda (valor inicial como direita)
     private Rigidbody2D rig;
     private float horizontalInput, verticalInput;
     private bool jump = false;
     private bool isgrounded = false;
-    public GameObject FootSteep;
-    public bool isWalking; 
-  
     public Animator ani;
-
-    [Header("Sons de Passos")]
-    [SerializeField] private EventReference footSteep;
-
-
+    private EventReference footSteep;
     private float passoTimer = 0f;
-    private float intervaloPasso = 0.58f; 
+    public float intervaloPasso = 0.58f;
+    public float fadeOutBG = 0.7f; 
+    public float timerAmbiente =  0f; 
+    private bool saiuAmbiente = false;
 
 
     // Adicione uma referência para o SpriteRenderer para virar o sprite
@@ -73,6 +68,10 @@ public class PlayerMoviment : MonoBehaviour
              Footsteep();
         }
 
+        if (saiuAmbiente)
+        {
+            timerAmbiente -= Time.deltaTime; 
+        }
         // if (canJump && isgrounded && Input.GetButtonDown("Jump"))
         // {
         //     jump = true;
@@ -97,15 +96,35 @@ public class PlayerMoviment : MonoBehaviour
         if (other.gameObject.tag == "ground")
         {
             isgrounded = true;
+            saiuAmbiente = false;
             GroundSong groundSong = other.gameObject.GetComponent<GroundSong>();
+        
             if (groundSong != null)
             {
-                Debug.Log("Colider how ground - song " + groundSong.nameSong);
+                footSteep = groundSong.FsSound;
+                groundSong.BG.SetActive(true);
             }
             else
             {
                 Debug.Log("Colider how ground - song undefinde");
+
             }
+        }
+    }
+    void OnCollisionExit2D(Collision2D col)
+    {
+
+        if (col.gameObject.tag == "ground")
+        {
+            
+            GroundSong groundSong = col.gameObject.GetComponent<GroundSong>();
+            saiuAmbiente = true;
+            if (timerAmbiente <= 0)
+            {
+                groundSong.BG.SetActive(false);
+                timerAmbiente = fadeOutBG; 
+            }
+            
         }
     }
 
@@ -118,6 +137,6 @@ public class PlayerMoviment : MonoBehaviour
 
     public void Footsteep()
     {
-            RuntimeManager.PlayOneShot(footSteep, transform.position);    
+        RuntimeManager.PlayOneShot(footSteep, transform.position);    
     }
 }

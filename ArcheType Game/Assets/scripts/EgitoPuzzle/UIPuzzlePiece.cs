@@ -6,11 +6,11 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public RectTransform originalSlot;
     public RectTransform currentSlot;
     public float snapDistance = 100f;
-
     private RectTransform rectTransform;
     private Canvas canvas;
     private CanvasGroup canvasGroup;
     private PuzzleManager puzzleManager;
+    
 
     void Awake()
     {

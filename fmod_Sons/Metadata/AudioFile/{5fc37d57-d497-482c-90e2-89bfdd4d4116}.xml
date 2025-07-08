@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{5fc37d57-d497-482c-90e2-89bfdd4d4116}">
 		<property name="assetPath">
-			<value>Som_buttom.wav</value>
+			<value>FX/Som_buttom.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

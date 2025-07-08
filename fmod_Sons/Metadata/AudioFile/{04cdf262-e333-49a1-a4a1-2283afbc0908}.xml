@@ -2,10 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{04cdf262-e333-49a1-a4a1-2283afbc0908}">
 		<property name="assetPath">
-			<value>Walla.wav</value>
-		</property>
-		<property name="isStreaming">
-			<value>true</value>
+			<value>BG/Walla.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
