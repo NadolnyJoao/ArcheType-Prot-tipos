@@ -81,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 170194
+--- !u!114 &-4028526679535606872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS - Land1
+  m_EditorClassIdentifier: 
+  Path: event:/FS - Land1
+  Guid:
+    Data1: 1376861344
+    Data2: 1176637620
+    Data3: 490797192
+    Data4: 326019456
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 740
 --- !u!114 &-1918859269314478792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,11 +123,38 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638876006920986057
+  lastModified: 638877103478207596
   FileSizes:
   - Name: Desktop
-    Value: 2964800
+    Value: 3350112
   Exists: 1
+--- !u!114 &-1599415516775229959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG - Cave
+  m_EditorClassIdentifier: 
+  Path: event:/BG - Cave
+  Guid:
+    Data1: -402964722
+    Data2: 1130259549
+    Data3: -1306824052
+    Data4: -639291516
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
 --- !u!114 &-99223679351924832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,12 +206,15 @@ MonoBehaviour:
   - {fileID: -5173601054895239858}
   - {fileID: -8296441187800031306}
   - {fileID: 5455210558011993553}
+  - {fileID: 2049682818093524127}
+  - {fileID: -1599415516775229959}
+  - {fileID: -4028526679535606872}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1918859269314478792}
   StringsBanks:
   - {fileID: 5982678536972742319}
-  cacheTime: 638876006921015445
+  cacheTime: 638877103478229301
   cacheVersion: 131619
 --- !u!114 &851110429481971729
 MonoBehaviour:
@@ -186,6 +243,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 59214
+--- !u!114 &2049682818093524127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS - Cave
+  m_EditorClassIdentifier: 
+  Path: event:/FS - Cave
+  Guid:
+    Data1: 1769118810
+    Data2: 1249946262
+    Data3: 890716804
+    Data4: -1769962071
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 666
 --- !u!114 &5169435930333380035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,8 +366,8 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638876006921015445
+  lastModified: 638877103478229301
   FileSizes:
   - Name: Desktop
-    Value: 1100
+    Value: 1232
   Exists: 1

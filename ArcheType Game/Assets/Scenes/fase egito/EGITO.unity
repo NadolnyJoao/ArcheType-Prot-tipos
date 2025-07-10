@@ -5082,6 +5082,26 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Path
+      value: event:/OpenningDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data1
+      value: 2146680787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data2
+      value: 1150174307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data3
+      value: 178873491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726820512, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: DoorOpen.Guid.Data4
+      value: 1125487326
+      objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_RootOrder
       value: 0

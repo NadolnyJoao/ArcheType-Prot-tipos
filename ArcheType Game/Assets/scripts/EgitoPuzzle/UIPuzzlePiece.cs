@@ -36,7 +36,7 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         canvasGroup.blocksRaycasts = false;
         transform.SetParent(canvas.transform);
-         RuntimeManager.PlayOneShot(PuzzleSound, transform.position);
+        RuntimeManager.PlayOneShot(PuzzleSound, transform.position);
     }
 
     public void OnDrag(PointerEventData eventData)
