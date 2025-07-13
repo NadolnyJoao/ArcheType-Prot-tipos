@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
-
+using UnityEngine.Events;
+using UnityEngine.InputSystem; 
 public class PlayerMoviment : MonoBehaviour
 {
     public float speed = 100;
@@ -21,6 +22,8 @@ public class PlayerMoviment : MonoBehaviour
     public float timerAmbiente =  0f; 
     private bool saiuAmbiente = false;
 
+    //não queria fazer desse jeito
+    private UnityEvent actionInterableContact;
 
     // Adicione uma referência para o SpriteRenderer para virar o sprite
     private SpriteRenderer spriteRenderer;
@@ -32,9 +35,15 @@ public class PlayerMoviment : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>(); // Obter o componente SpriteRenderer
     }
 
+    void OnMove(InputValue value){
+        Vector2 input = value.Get<Vector2>();
+        horizontalInput = input.x;
+        Debug.Log("Movendo o jogador pelo input system");
+    }
+    
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+        // horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
         // Atualizar a direção baseada no input horizontal
@@ -79,6 +88,17 @@ public class PlayerMoviment : MonoBehaviour
         ani.SetBool("walk",horizontalInput!=0);
     }
 
+     private void OnInteract()
+    {
+        if (actionInterableContact != null )
+        {
+            actionInterableContact.Invoke();
+        }
+    }
+    public void setActionInterableContact(UnityEvent action)
+    {
+        actionInterableContact = action;
+    }  
     void FixedUpdate()
     {
         float veloy = rig.velocity.y;
