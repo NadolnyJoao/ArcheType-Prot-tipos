@@ -31,6 +31,8 @@ public class LoboMoviment : MonoBehaviour
     [Header("movimento")]
     public int direction = 1;
     private SpriteRenderer sprite;
+    private Rigidbody2D rig;
+
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -38,6 +40,8 @@ public class LoboMoviment : MonoBehaviour
         sprite.flipX = direction == 1;
 
         todosLobos.Add(this);
+
+        rig = GetComponent<Rigidbody2D>();
 
     }
 
@@ -50,7 +54,8 @@ public class LoboMoviment : MonoBehaviour
         {//caçar presa
             direction = presaTrans.transform.position.x > transform.position.x ? 1 : -1;
             sprite.flipX = direction == 1;
-            transform.Translate(Vector3.right * direction * Time.deltaTime * speedRun);
+            // rig.MovePosition(transform.position + Vector3.right * direction * Time.deltaTime * speedRun);
+            rig.velocity = new Vector2(direction * speedRun, rig.velocity.y);
             float distPresa = Vector3.Distance(presaTrans.position, transform.position);
             if (distPresa > 7)
             {
@@ -75,7 +80,8 @@ public class LoboMoviment : MonoBehaviour
                 direction = lider.transform.position.x > transform.position.x ? 1 : -1;
                 sprite.flipX = direction == 1;
             }
-            transform.Translate(Vector3.right * direction * Time.deltaTime * speedWalk);
+            // rig.MovePosition(transform.position + (Vector3.right * direction * Time.deltaTime * speedWalk));
+            rig.velocity = new Vector2(direction * speedWalk, rig.velocity.y);
         }
     }
     void MudarEstado()
@@ -108,6 +114,7 @@ public class LoboMoviment : MonoBehaviour
             case Estado.Andando:
                 estadoAtual = Estado.Parado;
                 time = Random.Range(tempoMinParado, tempoMaxParado);
+                rig.velocity = Vector2.zero; // parar o movimento
                 break;
             case Estado.Patrulha:
                 if (lider == null)
