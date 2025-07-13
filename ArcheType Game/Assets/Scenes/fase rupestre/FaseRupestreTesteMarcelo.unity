@@ -1275,6 +1275,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1318786401}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: transition
+          m_BoolArgument: 0
+        m_CallState: 2
   onTrigger:
     m_PersistentCalls:
       m_Calls:
@@ -1989,7 +2001,7 @@ Transform:
   - {fileID: 878729788}
   - {fileID: 64537015}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &282664818
 BoxCollider2D:
@@ -2661,7 +2673,7 @@ Transform:
   - {fileID: 760020875}
   - {fileID: 2086945983}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492212182
 GameObject:
@@ -2840,7 +2852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187668958623273857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8187668958623273857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3067,7 +3079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3139,6 +3151,43 @@ MonoBehaviour:
   prefabPedra: {fileID: 9050893184391320213, guid: 92049592a1be3344b94a76df8203fdae, type: 3}
   countdown: 0.5
   force: 7
+--- !u!114 &582355290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520157898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e6693ef5aeb5549b045ef579167380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionsDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  actionsDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 582355292}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: damage
+          m_BoolArgument: 0
+        m_CallState: 2
+  vida: 2
+  gameover: {fileID: 0}
+--- !u!95 &582355292 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 582355289, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+  m_PrefabInstance: {fileID: 582355286}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &617477122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3268,6 +3317,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1318786401}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: transition
           m_BoolArgument: 0
         m_CallState: 2
   onTrigger:
@@ -3836,7 +3897,7 @@ Transform:
   - {fileID: 224237213}
   - {fileID: 169293035}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &778911295
 BoxCollider2D:
@@ -6211,7 +6272,7 @@ Transform:
   - {fileID: 2087156179}
   - {fileID: 1832512347}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1296816154
 BoxCollider2D:
@@ -6396,6 +6457,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad4926959415e444189799687af85545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1318786401 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 56195838935011231, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+  m_PrefabInstance: {fileID: 504123036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1342712063
 GameObject:
   m_ObjectHideFlags: 0
@@ -8629,7 +8695,7 @@ Transform:
   - {fileID: 322647624}
   - {fileID: 374656430}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1714033492
 MonoBehaviour:
@@ -8755,7 +8821,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1714856546
 GameObject:
