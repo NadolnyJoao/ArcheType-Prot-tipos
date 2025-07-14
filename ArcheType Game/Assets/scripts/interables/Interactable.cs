@@ -12,11 +12,6 @@ public class Interactable : MonoBehaviour
     public bool playerContact = false;
     public GameObject Bip_sound;
 
-
-
-
-
-
     private void PlaySound()
     {
 
@@ -34,7 +29,7 @@ public class Interactable : MonoBehaviour
 
             //passar actions para o player
             PlayerMoviment playerMoviment = other.GetComponent<PlayerMoviment>();
-            if (playerMoviment != null)
+            if (playerMoviment != null && playerContact)
             {
                 playerMoviment.setActionInterableContact(actions);
             }
@@ -48,7 +43,7 @@ public class Interactable : MonoBehaviour
             playerContact = false;
             exitTrigger.Invoke();
             PlayerMoviment playerMoviment = other.GetComponent<PlayerMoviment>();
-            if (playerMoviment != null)
+            if (playerMoviment != null && playerContact == false)
             {
                 playerMoviment.setActionInterableContact(null);
             }

@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8710321122856502318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS - Grass1
+  m_EditorClassIdentifier: 
+  Path: event:/FS - Grass1
+  Guid:
+    Data1: -2009814150
+    Data2: 1305083443
+    Data3: -1273978708
+    Data4: 1616907346
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 690
 --- !u!114 &-8296441187800031306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 170194
+--- !u!114 &-4597400614024727703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WoodBurning1
+  m_EditorClassIdentifier: 
+  Path: event:/WoodBurning1
+  Guid:
+    Data1: -1474406215
+    Data2: 1125259719
+    Data3: -1271691886
+    Data4: -199827204
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2521
 --- !u!114 &-4028526679535606872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +177,10 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638880236604615557
+  lastModified: 638880523386531386
   FileSizes:
   - Name: Desktop
-    Value: 3350112
+    Value: 8347520
   Exists: 1
 --- !u!114 &-1599415516775229959
 MonoBehaviour:
@@ -150,11 +204,11 @@ MonoBehaviour:
   - {fileID: -1918859269314478792}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 10000
+  Length: 12000
 --- !u!114 &-99223679351924832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,12 +263,17 @@ MonoBehaviour:
   - {fileID: 2049682818093524127}
   - {fileID: -1599415516775229959}
   - {fileID: -4028526679535606872}
+  - {fileID: 5235527292848572199}
+  - {fileID: 6090992704925916826}
+  - {fileID: -4597400614024727703}
+  - {fileID: -8710321122856502318}
+  - {fileID: 1585866326099828542}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1918859269314478792}
   StringsBanks:
   - {fileID: 5982678536972742319}
-  cacheTime: 638880236604655512
+  cacheTime: 638880523386561805
   cacheVersion: 131619
 --- !u!114 &851110429481971729
 MonoBehaviour:
@@ -243,6 +302,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 59214
+--- !u!114 &1585866326099828542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG - Wind
+  m_EditorClassIdentifier: 
+  Path: event:/BG - Wind
+  Guid:
+    Data1: 293928308
+    Data2: 1206248622
+    Data3: -1196962641
+    Data4: 238637638
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128149
 --- !u!114 &2049682818093524127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +383,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 666
+--- !u!114 &5235527292848572199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CampFire
+  m_EditorClassIdentifier: 
+  Path: event:/CampFire
+  Guid:
+    Data1: 880107148
+    Data2: 1306098318
+    Data3: -1931960439
+    Data4: 228541009
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 126776
 --- !u!114 &5455210558011993553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,8 +479,35 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638880236604655512
+  lastModified: 638880523386561805
   FileSizes:
   - Name: Desktop
-    Value: 1232
+    Value: 1438
   Exists: 1
+--- !u!114 &6090992704925916826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TorchFire1
+  m_EditorClassIdentifier: 
+  Path: event:/TorchFire1
+  Guid:
+    Data1: -1194082051
+    Data2: 1254043805
+    Data3: -926265167
+    Data4: 1953276375
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 28192

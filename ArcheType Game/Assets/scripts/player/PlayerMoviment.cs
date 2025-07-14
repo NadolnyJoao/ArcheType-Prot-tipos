@@ -20,7 +20,7 @@ public class PlayerMoviment : MonoBehaviour
     public float intervaloPasso = 0.58f;
     public float fadeOutBG = 0.7f; 
     public float timerAmbiente =  0f; 
-    private bool saiuAmbiente = false;
+    public bool saiuAmbiente = false;
 
     //não queria fazer desse jeito
     private UnityEvent actionInterableContact;
@@ -119,7 +119,7 @@ public class PlayerMoviment : MonoBehaviour
             saiuAmbiente = false;
             GroundSong groundSong = other.gameObject.GetComponent<GroundSong>();
         
-            if (groundSong != null)
+            if (groundSong != null && saiuAmbiente == false)
             {
                 footSteep = groundSong.FsSound;
                 groundSong.BG.SetActive(true);
@@ -139,10 +139,9 @@ public class PlayerMoviment : MonoBehaviour
             
             GroundSong groundSong = col.gameObject.GetComponent<GroundSong>();
             saiuAmbiente = true;
-            if (timerAmbiente <= 0)
+            if (saiuAmbiente)
             {
                 groundSong.BG.SetActive(false);
-                timerAmbiente = fadeOutBG; 
             }
             
         }

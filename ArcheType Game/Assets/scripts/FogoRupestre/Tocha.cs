@@ -7,31 +7,41 @@ using FMOD.Studio;
 
 public class Tocha : MonoBehaviour
 {
-    public GameObject tochaFogo;
     public EventReference torchSound;
-    // Start is called before the first frame update
+    public EventReference burningSound;
+    private EventInstance somInstance;
+    public bool teste = false; 
+
     void Start()
     {
-        StartCoroutine(EsperarObjetoAtivar());
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    IEnumerator EsperarObjetoAtivar()
-    {
-        // Enquanto o objeto NÃO estiver ativo, espera 0.1s e tenta de novo
-        while (!tochaFogo.activeInHierarchy)
+        
+    if (torchSound.IsNull)
         {
-            yield return new WaitForSeconds(0.1f);
-
+            Debug.LogError("Evento não atribuído!");
+            return;
         }
-        // toca o som quando o obejto for ativado xD
-        RuntimeManager.PlayOneShot(torchSound, transform.position);
-        // Quando o objeto estiver ativo, faz algo
-        Debug.Log("Objeto ativado!");
+
+    somInstance = RuntimeManager.CreateInstance(torchSound);
+
+    var result = somInstance.start();
+    Debug.Log("Resultado do start: " + result);
+
+    PLAYBACK_STATE state;
+    somInstance.getPlaybackState(out state);
+    Debug.Log("Estado do som após start: " + state); 
     }
+
+    void OnEnable()
+    {
+        somInstance.start();
+        Debug.Log("pq meu deus?");
+        teste = true; 
+    }
+
+    void OnDisable()
+    {
+        somInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        RuntimeManager.PlayOneShot(burningSound, transform.position);
+    }
+
 }

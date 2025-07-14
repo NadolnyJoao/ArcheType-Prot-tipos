@@ -1924,12 +1924,12 @@ MonoBehaviour:
   nameGround: 
   FsSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  BG: {fileID: 0}
+      Data1: -1845786255
+      Data2: 1111502204
+      Data3: -1764736069
+      Data4: 818223772
+    Path: event:/FS FOREST_01
+  BG: {fileID: 2087542127}
 --- !u!212 &282664816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2179,6 +2179,69 @@ RectTransform:
   m_AnchoredPosition: {x: 1.37604, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &330653108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 330653110}
+  - component: {fileID: 330653109}
+  m_Layer: 0
+  m_Name: CampFire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &330653109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330653108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 880107148
+      Data2: 1306098318
+      Data3: -1931960439
+      Data4: 228541009
+    Path: event:/CampFire
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &330653110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330653108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.94, y: -1.13, z: -0.06119036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &347065743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3827,7 +3890,7 @@ MonoBehaviour:
       Data3: 490797192
       Data4: 326019456
     Path: event:/FS - Land1
-  BG: {fileID: 0}
+  BG: {fileID: 330653108}
 --- !u!212 &778911293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6287,7 +6350,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.20408988, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6298,7 +6361,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.4081796, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1296816155
 MonoBehaviour:
@@ -8942,14 +9005,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9f29824ce3b7442b146cd587981c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tochaFogo: {fileID: 1714856546}
   torchSound:
     Guid:
-      Data1: 1931090052
-      Data2: 1338393133
-      Data3: 1063649960
-      Data4: 1508001924
-    Path: event:/Bip_quadro-interaction
+      Data1: -1194082051
+      Data2: 1254043805
+      Data3: -926265167
+      Data4: 1953276375
+    Path: event:/TorchFire1
+  burningSound:
+    Guid:
+      Data1: -1474406215
+      Data2: 1125259719
+      Data3: -1271691886
+      Data4: -199827204
+    Path: event:/WoodBurning1
+  teste: 0
 --- !u!1 &1721074758
 GameObject:
   m_ObjectHideFlags: 0
@@ -10073,6 +10143,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2087542127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2087542129}
+  - component: {fileID: 2087542128}
+  m_Layer: 0
+  m_Name: BG - Camp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2087542128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087542127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 293928308
+      Data2: 1206248622
+      Data3: -1196962641
+      Data4: 238637638
+    Path: event:/BG - Wind
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &2087542129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087542127}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.94, y: -1.13, z: -0.06119036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2123456976
 GameObject:
   m_ObjectHideFlags: 0
