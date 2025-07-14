@@ -85,6 +85,7 @@ public class LoboMoviment : MonoBehaviour
             // rig.MovePosition(transform.position + (Vector3.right * direction * Time.deltaTime * speedWalk));
             rig.velocity = new Vector2(direction * speedWalk, rig.velocity.y);
             anima.SetBool("Walking", estadoAtual == Estado.Andando);
+            
         }
     }
     void MudarEstado()
@@ -174,7 +175,7 @@ public class LoboMoviment : MonoBehaviour
         {
             setPresa(other.gameObject.transform);
             estadoAtual = Estado.Atacando;
-            Debug.Log("começar a cassar " + other.gameObject.name);
+            Debug.Log("começar a caçar " + other.gameObject.name);
         }
     }
 }
