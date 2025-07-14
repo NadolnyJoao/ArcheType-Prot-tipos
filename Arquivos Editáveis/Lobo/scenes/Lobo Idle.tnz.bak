@@ -1,4 +1,4 @@
-<tnz framecount="20" version="71.1">
+<tnz framecount="8" version="71.1">
   <generator>
     "OpenToonz 1.7.1"
   </generator>
@@ -1927,7 +1927,7 @@
     </levels>
     <folder name="Cast" type="default">
       <levels>
-        <level id='6'/><level id='2'/><level id='1'/><level id='3'/><level id='4'/><level id='5'/><childLevel id='25'/><childLevel id='31'/><childLevel id='37'/><childLevel id='7'/><childLevel id='19'/><childLevel id='13'/>
+        <level id='3'/><level id='4'/><level id='1'/><level id='5'/><level id='6'/><level id='2'/><childLevel id='31'/><childLevel id='19'/><childLevel id='7'/><childLevel id='37'/><childLevel id='13'/><childLevel id='25'/>
       </levels>
       </folder>
     <folder name="Audio">
@@ -1942,7 +1942,7 @@
         </status>
         <cells>
           <cell>
-            0 20 <childLevel id='19'/>0001 0 
+            0 8 <childLevel id='19'/>0001 0 
           </cell>
           </cells>
         <fx>
@@ -1980,7 +1980,7 @@
         </status>
         <cells>
           <cell>
-            0 20 <childLevel id='13'/>0001 0 
+            0 8 <childLevel id='13'/>0001 0 
           </cell>
           </cells>
         <fx>
@@ -2018,7 +2018,7 @@
         </status>
         <cells>
           <cell>
-            0 20 <childLevel id='31'/>0001 0 
+            0 8 <childLevel id='31'/>0001 0 
           </cell>
           </cells>
         <fx>
@@ -2056,7 +2056,7 @@
         </status>
         <cells>
           <cell>
-            0 20 <childLevel id='25'/>0001 0 
+            0 8 <childLevel id='25'/>0001 0 
           </cell>
           </cells>
         <fx>
@@ -2094,7 +2094,7 @@
         </status>
         <cells>
           <cell>
-            0 20 <childLevel id='7'/>0001 0 
+            0 8 <childLevel id='7'/>0001 0 
           </cell>
           </cells>
         <fx>
@@ -2132,7 +2132,7 @@
         </status>
         <cells>
           <cell>
-            0 20 <childLevel id='37'/>0001 0 
+            0 8 <childLevel id='37'/>0001 0 
           </cell>
           </cells>
         <fx>
@@ -2170,7 +2170,7 @@
         <parent handle="B" id="None" parentHandle="B">
           </parent>
         <name>
-          "Lobo Andando"
+          "Lobo Idle"
         </name>
         <isOpened>
           0 
@@ -2266,7 +2266,7 @@
         </nodePos>
         </pegbar>
       <pegbar id="Col1">
-        <parent handle="B" id="Col4" parentHandle="B">
+        <parent handle="B" id="Table" parentHandle="B">
           </parent>
         <isOpened>
           0 
@@ -2300,24 +2300,6 @@
             <L>
               0 -8.84196 
             </L>
-            <L>
-              <prev>
-                -26.6035 
-              </prev>
-              6 -26.6035 
-            </L>
-            <L>
-              <prev>
-                -8.29306 
-              </prev>
-              13 -8.29306 
-            </L>
-            <L>
-              <prev>
-                -6.62981 
-              </prev>
-              18 -6.62981 
-            </L>
             </keyframes>
           </rot>
         <nodePos>
@@ -2325,7 +2307,7 @@
         </nodePos>
         </pegbar>
       <pegbar id="Col2">
-        <parent handle="B" id="Col4" parentHandle="B">
+        <parent handle="B" id="Table" parentHandle="B">
           </parent>
         <isOpened>
           0 
@@ -2344,18 +2326,6 @@
             <L>
               0 0.189499 
             </L>
-            <L>
-              <prev>
-                -0.011147 
-              </prev>
-              6 -0.011147 
-            </L>
-            <L>
-              <prev>
-                0.178352 
-              </prev>
-              13 0.178352 
-            </L>
             </keyframes>
           </x>
         <y>
@@ -2365,18 +2335,6 @@
           <keyframes>
             <L>
               0 -0.055735 
-            </L>
-            <L>
-              <prev>
-                -0.122617 
-              </prev>
-              6 -0.122617 
-            </L>
-            <L>
-              <prev>
-                -0.033441 
-              </prev>
-              13 -0.033441 
             </L>
             </keyframes>
           </y>
@@ -2403,24 +2361,6 @@
             <L>
               0 -6.46542 
             </L>
-            <L>
-              <prev>
-                -23.1051 
-              </prev>
-              6 -23.1051 
-            </L>
-            <L>
-              <prev>
-                17.7071 
-              </prev>
-              13 17.7071 
-            </L>
-            <L>
-              <prev>
-                -7.4797 
-              </prev>
-              18 -7.4797 
-            </L>
             </keyframes>
           </rot>
         <nodePos>
@@ -2428,7 +2368,7 @@
         </nodePos>
         </pegbar>
       <pegbar id="Col3">
-        <parent handle="B" id="Col4" parentHandle="B">
+        <parent handle="B" id="Table" parentHandle="B">
           </parent>
         <isOpened>
           0 
@@ -2447,18 +2387,6 @@
             <L>
               0 0.066882 
             </L>
-            <L>
-              <prev>
-                0.22294 
-              </prev>
-              6 0.22294 
-            </L>
-            <L>
-              <prev>
-                0.089176 
-              </prev>
-              13 0.089176 
-            </L>
             </keyframes>
           </x>
         <y>
@@ -2468,18 +2396,6 @@
           <keyframes>
             <L>
               0 0.011147 
-            </L>
-            <L>
-              <prev>
-                -0.178352 
-              </prev>
-              6 -0.178352 
-            </L>
-            <L>
-              <prev>
-                -0.022294 
-              </prev>
-              13 -0.022294 
             </L>
             </keyframes>
           </y>
@@ -2506,24 +2422,6 @@
             <L>
               0 -1.53274 
             </L>
-            <L>
-              <prev>
-                25.8173 
-              </prev>
-              6 25.8173 
-            </L>
-            <L>
-              <prev>
-                -27.9591 
-              </prev>
-              13 -27.9591 
-            </L>
-            <L>
-              <prev>
-                -7.48577 
-              </prev>
-              18 -7.48577 
-            </L>
             </keyframes>
           </rot>
         <nodePos>
@@ -2542,26 +2440,6 @@
         <status>
           0 
         </status>
-        <x>
-          <default>
-            0 
-          </default>
-          <keyframes>
-            <L>
-              6 0.454779 
-            </L>
-            </keyframes>
-          </x>
-        <y>
-          <default>
-            0 
-          </default>
-          <keyframes>
-            <L>
-              6 0.138411 
-            </L>
-            </keyframes>
-          </y>
         <sx>
           <default>
             1 
@@ -2576,13 +2454,30 @@
           <default>
             1 
           </default>
+          <keyframes>
+            <L>
+              0 0.993259 
+            </L>
+            <L>
+              <prev>
+                1.02261 
+              </prev>
+              4 1.02261 
+            </L>
+            <L>
+              <prev>
+                0.991199 
+              </prev>
+              7 0.991199 
+            </L>
+            </keyframes>
           </sc>
         <nodePos>
-          24437 25346 
+          24281 25244 
         </nodePos>
         </pegbar>
       <pegbar id="Col5">
-        <parent handle="B" id="Col4" parentHandle="B">
+        <parent handle="B" id="Table" parentHandle="B">
           </parent>
         <isOpened>
           0 
@@ -2601,12 +2496,6 @@
             <L>
               0 0.133764 
             </L>
-            <L>
-              <prev>
-                0.200646 
-              </prev>
-              13 0.200646 
-            </L>
             </keyframes>
           </x>
         <y>
@@ -2616,12 +2505,6 @@
           <keyframes>
             <L>
               0 0.300969 
-            </L>
-            <L>
-              <prev>
-                0.300969 
-              </prev>
-              13 0.300969 
             </L>
             </keyframes>
           </y>
@@ -2648,24 +2531,6 @@
             <L>
               0 -3.66553 
             </L>
-            <L>
-              <prev>
-                20.5448 
-              </prev>
-              6 20.5448 
-            </L>
-            <L>
-              <prev>
-                -32.7762 
-              </prev>
-              13 -32.7762 
-            </L>
-            <L>
-              <prev>
-                -2.63474 
-              </prev>
-              18 -2.63474 
-            </L>
             </keyframes>
           </rot>
         <nodePos>
@@ -2673,7 +2538,7 @@
         </nodePos>
         </pegbar>
       <pegbar id="Col6">
-        <parent handle="B" id="Col4" parentHandle="B">
+        <parent handle="B" id="Table" parentHandle="B">
           </parent>
         <isOpened>
           0 
@@ -2707,24 +2572,6 @@
             <L>
               0 2.91084 
             </L>
-            <L>
-              <prev>
-                -20.1496 
-              </prev>
-              6 -20.1496 
-            </L>
-            <L>
-              <prev>
-                27.8891 
-              </prev>
-              13 27.8891 
-            </L>
-            <L>
-              <prev>
-                -1.36273 
-              </prev>
-              18 -1.36273 
-            </L>
             </keyframes>
           </rot>
         <nodePos>
@@ -2738,22 +2585,22 @@
     <fxnodes>
       <terminal>
         <fxnode>
-          <Toonz_columnFx id='50'/>
+          <Toonz_columnFx id='52'/>
         </fxnode>
         <fxnode>
           <Toonz_columnFx id='54'/>
         </fxnode>
         <fxnode>
-          <Toonz_columnFx id='46'/>
+          <Toonz_columnFx id='48'/>
         </fxnode>
         <fxnode>
           <Toonz_columnFx id='44'/>
         </fxnode>
         <fxnode>
-          <Toonz_columnFx id='48'/>
+          <Toonz_columnFx id='50'/>
         </fxnode>
         <fxnode>
-          <Toonz_columnFx id='52'/>
+          <Toonz_columnFx id='46'/>
         </fxnode>
         </terminal>
       <xsheet>
@@ -2821,5 +2668,6 @@
     "| #1   21 jun 25   16:24   DESKTOP-0FD7Aluno           |"
     "| #2   13 jul 25   19:16   DESKTOP-0FD7Aluno           |"
     "| #3   14 jul 25   13:30   DESKTOP-0FD7Aluno           |"
+    "| #4   14 jul 25   13:51   DESKTOP-0FD7Aluno           |"
   </history>
   </tnz>
