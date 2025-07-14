@@ -146,6 +146,17 @@
                 },
                 {
                     "name": "",
+                    "id": "f2490b3c-027e-4ad6-8d8a-c40d034d664a",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "a0e25fd2-20ee-4ba9-a816-f059d89482e2",
                     "path": "<Keyboard>/w",
                     "interactions": "",
@@ -170,6 +181,17 @@
                     "name": "",
                     "id": "8e9a56f2-1552-44d5-a959-dcdf30c88135",
                     "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ataque",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fe984b76-78c5-4bd9-86f9-7edddeed4a3c",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
