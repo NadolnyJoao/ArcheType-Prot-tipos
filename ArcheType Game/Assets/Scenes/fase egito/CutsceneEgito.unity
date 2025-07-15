@@ -645,11 +645,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: HudGeral
       objectReference: {fileID: 0}
+    - target: {fileID: 8187668958979461857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+<<<<<<< HEAD
 --- !u!1 &976253143 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8187668958623273858, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+=======
+--- !u!95 &976253143 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 56195838935011231, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+>>>>>>> 1136e92a90c5ea67a8c4ce10ccc4f61940474e5c
   m_PrefabInstance: {fileID: 976253142}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &976253144 stripped
