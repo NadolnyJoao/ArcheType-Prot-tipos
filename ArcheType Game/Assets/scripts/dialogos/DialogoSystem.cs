@@ -91,5 +91,15 @@ public class DialogoSystem : MonoBehaviour
     {
         DialogoSystenUI.dialogoSystenUI.HiddenDialogoBox();
     }
-
+    public void SetIndexFalas(int index)
+    {
+        if (index >= 0 && index < falas.Count)
+        {
+            indexFalas = index;
+        }
+        else
+        {
+            Debug.LogWarning("Index out of range for falas list.");
+        }
+    }
 }
