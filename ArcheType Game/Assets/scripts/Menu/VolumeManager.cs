@@ -11,12 +11,24 @@ public Slider volumeSlider;
 
     void Start()
     {
-        masterBus = RuntimeManager.GetBus("bus:/MasterBus");
-
+        masterBus = RuntimeManager.GetBus("bus:/");
+        
+        float savedVolume;
         // Carrega volume salvo (ou padrão 1.0f)
-        float savedVolume = PlayerPrefs.GetFloat(VolumePrefKey, 1.0f);
-        volumeSlider.value = savedVolume;
-        SetVolume(savedVolume);
+        if (PlayerPrefs.HasKey(VolumePrefKey))
+        {
+            savedVolume = PlayerPrefs.GetFloat(VolumePrefKey);
+            volumeSlider.value = savedVolume;
+            SetVolume(savedVolume);
+            Debug.Log("Volume carregado: " + savedVolume);
+        }
+        else
+        {
+            volumeSlider.value = 1.0f; // Valor padrão
+        }
+        // savedVolume = PlayerPrefs.GetFloat(VolumePrefKey, 1.0f);
+        // volumeSlider.value = savedVolume;
+        // SetVolume(savedVolume);
 
         // Liga o evento de alteração no slider
         volumeSlider.onValueChanged.AddListener(SetVolume);
@@ -26,6 +38,8 @@ public Slider volumeSlider;
     {
         masterBus.setVolume(volume);
         PlayerPrefs.SetFloat(VolumePrefKey, volume);
+        PlayerPrefs.Save(); // Salva o volume atual
+        Debug.Log("Volume ajustado para: " + volume);
     }
     void OnDisable()
 {
