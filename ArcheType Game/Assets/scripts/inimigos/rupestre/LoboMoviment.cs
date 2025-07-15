@@ -7,7 +7,7 @@ public class LoboMoviment : MonoBehaviour
     public enum Estado { Parado, Andando, Patrulha, Atacando };
     public Estado estadoAtual;
     [Header("tempo")]
-    public Animator anima;
+   
     public float time = 0;
     public float tempoPatrulha = 10f;
     public float tempoMinParado = 2f;
@@ -33,6 +33,7 @@ public class LoboMoviment : MonoBehaviour
     public int direction = 1;
     private SpriteRenderer sprite;
     private Rigidbody2D rig;
+     public Animator anima;
 
     void Start()
     {
@@ -51,7 +52,7 @@ public class LoboMoviment : MonoBehaviour
     void Update()
     {
         time -= Time.deltaTime;
-
+        anima.SetBool("Walking", (estadoAtual == Estado.Andando) || (estadoAtual == Estado.Patrulha));
         if (presaTrans != null)
         {//caçar presa
             direction = presaTrans.transform.position.x > transform.position.x ? 1 : -1;
@@ -84,7 +85,7 @@ public class LoboMoviment : MonoBehaviour
             }
             // rig.MovePosition(transform.position + (Vector3.right * direction * Time.deltaTime * speedWalk));
             rig.velocity = new Vector2(direction * speedWalk, rig.velocity.y);
-            anima.SetBool("Walking", estadoAtual == Estado.Andando);
+            
             
         }
     }
