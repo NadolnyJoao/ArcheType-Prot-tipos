@@ -7,6 +7,7 @@ public class LoboMoviment : MonoBehaviour
     public enum Estado { Parado, Andando, Patrulha, Atacando };
     public Estado estadoAtual;
     [Header("tempo")]
+    public Animator anima;
     public float time = 0;
     public float tempoPatrulha = 10f;
     public float tempoMinParado = 2f;
@@ -42,6 +43,7 @@ public class LoboMoviment : MonoBehaviour
         todosLobos.Add(this);
 
         rig = GetComponent<Rigidbody2D>();
+        anima = GetComponent<Animator>();
 
     }
 
@@ -82,6 +84,8 @@ public class LoboMoviment : MonoBehaviour
             }
             // rig.MovePosition(transform.position + (Vector3.right * direction * Time.deltaTime * speedWalk));
             rig.velocity = new Vector2(direction * speedWalk, rig.velocity.y);
+            anima.SetBool("Walking", estadoAtual == Estado.Andando);
+            
         }
     }
     void MudarEstado()
@@ -171,7 +175,7 @@ public class LoboMoviment : MonoBehaviour
         {
             setPresa(other.gameObject.transform);
             estadoAtual = Estado.Atacando;
-            // Debug.Log("começar a cassar " + other.gameObject.name);
+            Debug.Log("começar a caçar " + other.gameObject.name);
         }
     }
 }
