@@ -553,6 +553,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7031826383690007447, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8187668958623273857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -641,13 +645,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: HudGeral
       objectReference: {fileID: 0}
+    - target: {fileID: 8187668958979461857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
---- !u!95 &976253143 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1041462659, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
-  m_PrefabInstance: {fileID: 976253142}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &976253144 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8187668958356001593, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
@@ -748,6 +751,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1482350953 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 56195838935011231, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+  m_PrefabInstance: {fileID: 976253142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1541244441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadingScreen: {fileID: 976253145}
   LoadingBar: {fileID: 976253144}
-  aniBackground: {fileID: 976253143}
+  aniBackground: {fileID: 1482350953}
   minLoadingTime: 2
 --- !u!114 &1657990012
 MonoBehaviour:
