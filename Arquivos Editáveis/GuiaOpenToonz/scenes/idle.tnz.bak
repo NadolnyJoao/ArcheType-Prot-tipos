@@ -37,7 +37,7 @@
           24 
         </fps>
         <path>
-          "+outputs\\.tif"
+          "+outputs\\.spritesheet"
         </path>
         <bpp>
           32 
@@ -46,7 +46,7 @@
           0 
         </multimedia>
         <threadsIndex>
-          2 
+          0 
         </threadsIndex>
         <maxTileSizeIndex>
           0 
@@ -70,6 +70,20 @@
           25 25 
         </timestretch>
         <formatsProperties>
+          <formatProperties ext="spritesheet">
+            <property name="Format" type="enum" value="Grid">
+              <item value="Grid"/>
+              <item value="Vertical"/>
+              <item value="Horizontal"/>
+              <item value="Individual"/>
+              </property>
+            <property max="100" min="0" name="Top Padding" type="int" value="0"/>
+            <property max="100" min="0" name="Bottom Padding" type="int" value="0"/>
+            <property max="100" min="0" name="Left Padding" type="int" value="0"/>
+            <property max="100" min="0" name="Right Padding" type="int" value="0"/>
+            <property max="100" min="1" name="Scale" type="int" value="100"/>
+            <property name="Trim Empty Space" type="bool" value="true"/>
+            </formatProperties>
           <formatProperties ext="tif">
             <property name="Byte Ordering" type="enum" value="IBM PC">
               <item value="IBM PC"/>
@@ -409,7 +423,7 @@
     </levels>
     <folder name="Cast" type="default">
       <levels>
-        <level id='1'/><level id='5'/><level id='2'/><level id='4'/><level id='6'/><level id='3'/>
+        <level id='4'/><level id='6'/><level id='1'/><level id='3'/><level id='2'/><level id='5'/>
       </levels>
       </folder>
     <folder name="Audio">
@@ -1477,16 +1491,16 @@
     <fxnodes>
       <terminal>
         <fxnode>
-          <Toonz_columnFx id='13'/>
-        </fxnode>
-        <fxnode>
           <Toonz_columnFx id='15'/>
         </fxnode>
         <fxnode>
-          <Toonz_columnFx id='8'/>
+          <Toonz_columnFx id='17'/>
         </fxnode>
         <fxnode>
-          <Toonz_columnFx id='17'/>
+          <Toonz_columnFx id='13'/>
+        </fxnode>
+        <fxnode>
+          <Toonz_columnFx id='8'/>
         </fxnode>
         <fxnode>
           <Toonz_columnFx id='11'/>
@@ -1535,7 +1549,7 @@
             0 
           </numberId>
           <name>
-            Output 
+            OutputFx 
           </name>
           <fxId>
             "" 
@@ -1555,6 +1569,6 @@
   <history>
     "| #    DATE:       Time:   MACHINE:    USER:           |"
     "| #1   30 jun 25   21:37   DESKTOP-8CV8user            |"
-    "| #2   30 jun 25   21:49   DESKTOP-8CV8user            |"
+    "| #2   30 jun 25   21:50   DESKTOP-8CV8user            |"
   </history>
   </tnz>
