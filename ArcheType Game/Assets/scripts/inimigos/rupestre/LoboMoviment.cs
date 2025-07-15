@@ -61,7 +61,7 @@ public class LoboMoviment : MonoBehaviour
             {
                 estadoAtual = Estado.Andando;
                 presaTrans = null;
-                Debug.Log("para de caçar");
+                // Debug.Log("para de caçar");
             }
 
         }
@@ -166,12 +166,12 @@ public class LoboMoviment : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name + " is trigger");
+        // Debug.Log(other.gameObject.name + " is trigger");
         if (other.gameObject.GetComponent<LoboMoviment>() == null)
         {
             setPresa(other.gameObject.transform);
             estadoAtual = Estado.Atacando;
-            Debug.Log("começar a cassar " + other.gameObject.name);
+            // Debug.Log("começar a cassar " + other.gameObject.name);
         }
     }
 }

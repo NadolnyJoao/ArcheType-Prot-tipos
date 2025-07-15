@@ -25,10 +25,14 @@ public class DialogoSystenUI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && !showDialogoBox)
-        {
-            HiddenDialogoBox();
-        }
+        // if (Input.GetKeyDown(KeyCode.W) && !showDialogoBox)
+        // {
+        //     HiddenDialogoBox();
+        // }
+    }
+    public bool DialogoBoxIsShow()
+    {
+        return dialogoBox.activeSelf;
     }
  public void SetDialogoAtual(DialogoSystem sistema)
     {

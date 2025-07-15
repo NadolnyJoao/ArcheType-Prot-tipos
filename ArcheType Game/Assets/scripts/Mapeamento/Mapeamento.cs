@@ -45,6 +45,7 @@ public class Mapeamento : MonoBehaviour
             //explorou tudo 
             actionsLaterExploration.Invoke();
             objetivoCompleto = true;
+            Debug.Log("Objetivo de exploração completo!");
         }
 
 

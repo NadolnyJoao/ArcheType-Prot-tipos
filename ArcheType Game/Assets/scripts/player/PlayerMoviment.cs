@@ -23,22 +23,33 @@ public class PlayerMoviment : MonoBehaviour
     public bool saiuAmbiente = false;
 
     //não queria fazer desse jeito
-    private UnityEvent actionInterableContact;
+    public UnityEvent actionInterableContact;
+    public DialogoSystenUI dialogoSystenUI;
 
     // Adicione uma referência para o SpriteRenderer para virar o sprite
     private SpriteRenderer spriteRenderer;
 
     void Start()
-    {      
+    {
         ani = GetComponent<Animator>();
         rig = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>(); // Obter o componente SpriteRenderer
+        spriteRenderer = GetComponent<SpriteRenderer>(); 
+        dialogoSystenUI = DialogoSystenUI.dialogoSystenUI;
+        Debug.Log("dialogo system fund is : " + dialogoSystenUI);
     }
 
     void OnMove(InputValue value){
         Vector2 input = value.Get<Vector2>();
         horizontalInput = input.x;
-        Debug.Log("Movendo o jogador pelo input system");
+        // Debug.Log("Movendo o jogador pelo input system");
+    }
+    void OnJump(InputValue value)
+    {
+        if (value.isPressed && isgrounded)
+        {
+            jump = true;
+            // Debug.Log("Pulo ativado");
+        }
     }
     
     void Update()
@@ -81,16 +92,23 @@ public class PlayerMoviment : MonoBehaviour
         {
             timerAmbiente -= Time.deltaTime; 
         }
-        // if (canJump && isgrounded && Input.GetButtonDown("Jump"))
-        // {
-        //     jump = true;
-        // }
+       
         ani.SetBool("walk",horizontalInput!=0);
     }
 
-     private void OnInteract()
+    private void OnInteract()
     {
-        if (actionInterableContact != null )
+
+        if (dialogoSystenUI != null && dialogoSystenUI.DialogoBoxIsShow())
+        {
+            dialogoSystenUI.HiddenDialogoBox();
+        }
+        else
+        {
+            Debug.Log("Ação de interação não definida ou diálogo já está oculto. dialo bos is show: " + dialogoSystenUI.DialogoBoxIsShow()  );
+        }
+        
+          if (actionInterableContact != null)
         {
             actionInterableContact.Invoke();
         }

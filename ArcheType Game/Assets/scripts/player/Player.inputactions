@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ataque",
+                    "name": "Ataque",
                     "type": "Button",
                     "id": "21f261e9-2a69-4711-a897-12db13e02ac4",
                     "expectedControlType": "Button",
@@ -179,23 +179,34 @@
                 },
                 {
                     "name": "",
+                    "id": "1e4e7823-b665-47f1-b31f-f25c43aefe8b",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact ",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8e9a56f2-1552-44d5-a959-dcdf30c88135",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ataque",
+                    "action": "Ataque",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "fe984b76-78c5-4bd9-86f9-7edddeed4a3c",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ataque",
+                    "action": "Ataque",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

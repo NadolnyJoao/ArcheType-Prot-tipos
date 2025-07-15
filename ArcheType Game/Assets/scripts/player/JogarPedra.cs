@@ -19,8 +19,8 @@ public class JogarPedra : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
-        if(time > 0)
+    {
+        if (time > 0)
         {
             time -= Time.deltaTime;
         }
@@ -30,16 +30,21 @@ public class JogarPedra : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.E) && time == 0)
-        {
-            LancarPedra();
-            time = countdown; // Reinicia o tempo de espera
-        }
+
+        // LancarPedra();
+        // Reinicia o tempo de espera
     }
-    public void LancarPedra()
+
+    void OnAtaque()
     {
-        GameObject pedra = Instantiate(prefabPedra, transform.position + Vector3.right * 2.0f * playerMov.GetDirection(), Quaternion.identity);
-        int  direction = playerMov.GetDirection();
-        pedra.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f * direction, 1f) * force, ForceMode2D.Impulse);
+        Debug.Log("chamar ataque");
+        if (time == 0)
+        {
+            GameObject pedra = Instantiate(prefabPedra, transform.position + Vector3.right * 2.0f * playerMov.GetDirection(), Quaternion.identity);
+            int direction = playerMov.GetDirection();
+            pedra.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f * direction, 1f) * force, ForceMode2D.Impulse);
+            time = countdown;
+            Debug.Log("jogando pedra");
+        }
     }
 }

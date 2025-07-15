@@ -3862,7 +3862,6 @@ GameObject:
   - component: {fileID: 778911292}
   - component: {fileID: 778911295}
   - component: {fileID: 778911297}
-  - component: {fileID: 778911296}
   m_Layer: 0
   m_Name: ground(pedra)
   m_TagString: ground
@@ -3988,41 +3987,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &778911296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 778911291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51fab711a9c303342bfb174e4e3a77ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actions:
-    m_PersistentCalls:
-      m_Calls: []
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1714033492}
-        m_TargetAssemblyTypeName: Mapeamento, Assembly-CSharp
-        m_MethodName: InteragirCaverna
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  exitTrigger:
-    m_PersistentCalls:
-      m_Calls: []
-  playerContact: 0
-  Bip_sound: {fileID: 0}
 --- !u!61 &778911297
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -32,6 +32,7 @@ public class Interactable : MonoBehaviour
             if (playerMoviment != null && playerContact)
             {
                 playerMoviment.setActionInterableContact(actions);
+                Debug.Log("PASSANDO AÇÃO INTERABLE obj: "+gameObject.name);
             }
         }
     }
