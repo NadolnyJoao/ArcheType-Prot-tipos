@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using FMODUnity;
+using FMOD.Studio;
 
 public class ReceberDano : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class ReceberDano : MonoBehaviour
     public UnityEvent actionsDamage;
     public int vida = 2;
     public GameObject gameover;
+    public EventReference damageBite;
 
 
     void Update()
@@ -21,6 +24,7 @@ public class ReceberDano : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            RuntimeManager.PlayOneShot(damageBite, transform.position);
             vida--;
             actionsDamage.Invoke();
             if (vida <= 0)

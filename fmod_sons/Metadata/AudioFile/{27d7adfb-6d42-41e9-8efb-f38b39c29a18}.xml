@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{27d7adfb-6d42-41e9-8efb-f38b39c29a18}">
 		<property name="assetPath">
-			<value>BG - Camp.wav</value>
+			<value>BG/BG - Camp.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

@@ -729,6 +729,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Path
+      value: "event:/Latido_ca\xE7a1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data1
+      value: -1928484324
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data2
+      value: 1142125737
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data3
+      value: -1455317356
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data4
+      value: -1948940298
+      objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004083, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_Name
       value: lobo (2)
@@ -2297,12 +2317,95 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Path
+      value: "event:/Latido_ca\xE7a1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data1
+      value: -1928484324
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data2
+      value: 1142125737
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data3
+      value: -1455317356
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data4
+      value: -1948940298
+      objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004083, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_Name
       value: lobo (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+--- !u!1 &361149984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 361149986}
+  - component: {fileID: 361149985}
+  m_Layer: 0
+  m_Name: Trilha Sonora_Rupestre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &361149985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361149984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1314875345
+      Data2: 1173484656
+      Data3: -1043511375
+      Data4: -1673057735
+    Path: event:/Trilha-sonora_Rupestre
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &361149986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361149984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.8737037, y: 2.706582, z: -0.11545169}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &374656429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,6 +2940,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 204531690168767413, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 689623445971119916, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3254,6 +3361,13 @@ MonoBehaviour:
         m_CallState: 2
   vida: 2
   gameover: {fileID: 0}
+  damageBite:
+    Guid:
+      Data1: -1061254030
+      Data2: 1117664199
+      Data3: 1328581819
+      Data4: -473381422
+    Path: event:/Bite_wolf1
 --- !u!95 &582355292 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 582355289, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
@@ -3321,6 +3435,26 @@ PrefabInstance:
     - target: {fileID: 7708014439114004081, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_SortingLayerID
       value: 914642805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Path
+      value: "event:/Latido_ca\xE7a1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data1
+      value: -1928484324
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data2
+      value: 1142125737
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data3
+      value: -1455317356
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: latido.Guid.Data4
+      value: -1948940298
       objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004083, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_Name

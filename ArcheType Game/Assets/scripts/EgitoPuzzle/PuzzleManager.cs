@@ -13,6 +13,7 @@ public class PuzzleManager : MonoBehaviour
     public bool PuzzleCompleto = false;
     public GameObject Interact;
     public EventReference PuzzleSound;
+    public EventReference pieceDrop;
     
     
     void Start()
@@ -28,7 +29,7 @@ public class PuzzleManager : MonoBehaviour
         {
             if (!piece.IsInCorrectSlot())
             {
-               
+                RuntimeManager.PlayOneShot(pieceDrop, transform.position);
                 return;
             }
         }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class LoboMoviment : MonoBehaviour
 {
@@ -16,6 +18,8 @@ public class LoboMoviment : MonoBehaviour
     public float tempoMaxAndando = 7f;
     public float speedWalk = 2f;
     public float speedRun = 5f;
+    public EventReference latido;
+    
 
     [Header("Caçar")]
     public float distanciaDetecao = 10;
@@ -55,6 +59,7 @@ public class LoboMoviment : MonoBehaviour
         anima.SetBool("Walking", (estadoAtual == Estado.Andando) || (estadoAtual == Estado.Patrulha));
         if (presaTrans != null)
         {//caçar presa
+            
             direction = presaTrans.transform.position.x > transform.position.x ? 1 : -1;
             sprite.flipX = direction == 1;
             // rig.MovePosition(transform.position + Vector3.right * direction * Time.deltaTime * speedRun);
@@ -174,6 +179,7 @@ public class LoboMoviment : MonoBehaviour
         // Debug.Log(other.gameObject.name + " is trigger");
         if (other.gameObject.GetComponent<LoboMoviment>() == null)
         {
+            //RuntimeManager.PlayOneShot(latido, transform.position);
             setPresa(other.gameObject.transform);
             estadoAtual = Estado.Atacando;
             Debug.Log("começar a caçar " + other.gameObject.name);

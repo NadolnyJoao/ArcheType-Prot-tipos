@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8710321122856502318
+--- !u!114 &-8310012319303214041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FS - Grass1
+  m_Name: "event:/Latido_ca\xE7a1"
   m_EditorClassIdentifier: 
-  Path: event:/FS - Grass1
+  Path: "event:/Latido_ca\xE7a1"
   Guid:
-    Data1: -2009814150
-    Data2: 1305083443
-    Data3: -1273978708
-    Data4: 1616907346
+    Data1: -1928484324
+    Data2: 1142125737
+    Data3: -1455317356
+    Data4: -1948940298
   Banks:
   - {fileID: -1918859269314478792}
   IsStream: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 690
+  Length: 280
 --- !u!114 &-8296441187800031306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +81,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 298
+--- !u!114 &-7259083574908548863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vibration1
+  m_EditorClassIdentifier: 
+  Path: event:/Vibration1
+  Guid:
+    Data1: 825940727
+    Data2: 1199557208
+    Data3: -444903290
+    Data4: 282943261
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8400
+--- !u!114 &-7249063603827200590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Trilha-sonora_Museu
+  m_EditorClassIdentifier: 
+  Path: event:/Trilha-sonora_Museu
+  Guid:
+    Data1: -1575689016
+    Data2: 1321486465
+    Data3: 1416633508
+    Data4: 348413408
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 116866
+--- !u!114 &-6726166458130019278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Piece_drop
+  m_EditorClassIdentifier: 
+  Path: event:/Piece_drop
+  Guid:
+    Data1: 283397494
+    Data2: 1209262054
+    Data3: 353764484
+    Data4: 666613152
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 575
 --- !u!114 &-5173601054895239858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +184,7 @@ MonoBehaviour:
   - {fileID: -1918859269314478792}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -177,10 +258,10 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638880854906982071
+  lastModified: 638881600579424536
   FileSizes:
   - Name: Desktop
-    Value: 8347520
+    Value: 12829952
   Exists: 1
 --- !u!114 &-1599415516775229959
 MonoBehaviour:
@@ -266,15 +347,50 @@ MonoBehaviour:
   - {fileID: 5235527292848572199}
   - {fileID: 6090992704925916826}
   - {fileID: -4597400614024727703}
-  - {fileID: -8710321122856502318}
   - {fileID: 1585866326099828542}
+  - {fileID: -6726166458130019278}
+  - {fileID: 364550125604463906}
+  - {fileID: -7259083574908548863}
+  - {fileID: 8679479316880588045}
+  - {fileID: -7249063603827200590}
+  - {fileID: 1290277973326508058}
+  - {fileID: 7162111569690733551}
+  - {fileID: -8310012319303214041}
+  - {fileID: 1591485601285210347}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1918859269314478792}
   StringsBanks:
   - {fileID: 5982678536972742319}
-  cacheTime: 638880854907006134
+  cacheTime: 638881600579454616
   cacheVersion: 131619
+--- !u!114 &364550125604463906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS -Sand1
+  m_EditorClassIdentifier: 
+  Path: event:/FS -Sand1
+  Guid:
+    Data1: 208336146
+    Data2: 1293568844
+    Data3: 1636471450
+    Data4: 996134554
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 823
 --- !u!114 &851110429481971729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +418,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 59214
+--- !u!114 &1290277973326508058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Trilha-sonora_Rupestre
+  m_EditorClassIdentifier: 
+  Path: event:/Trilha-sonora_Rupestre
+  Guid:
+    Data1: 1314875345
+    Data2: 1173484656
+    Data3: -1043511375
+    Data4: -1673057735
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76091
 --- !u!114 &1585866326099828542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,6 +472,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 128149
+--- !u!114 &1591485601285210347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS - Grass1
+  m_EditorClassIdentifier: 
+  Path: event:/FS - Grass1
+  Guid:
+    Data1: -2009814150
+    Data2: 1305083443
+    Data3: -1273978708
+    Data4: 1616907346
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 690
 --- !u!114 &2049682818093524127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,10 +649,10 @@ MonoBehaviour:
   Path: ../fmod_Sons/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638880854907006134
+  lastModified: 638881600579454616
   FileSizes:
   - Name: Desktop
-    Value: 1438
+    Value: 1812
   Exists: 1
 --- !u!114 &6090992704925916826
 MonoBehaviour:
@@ -511,3 +681,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 28192
+--- !u!114 &7162111569690733551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bite_wolf1
+  m_EditorClassIdentifier: 
+  Path: event:/Bite_wolf1
+  Guid:
+    Data1: -1061254030
+    Data2: 1117664199
+    Data3: 1328581819
+    Data4: -473381422
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1103
+--- !u!114 &8679479316880588045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Trilha-sonora_Egito
+  m_EditorClassIdentifier: 
+  Path: event:/Trilha-sonora_Egito
+  Guid:
+    Data1: -92756329
+    Data2: 1298278327
+    Data3: 675164347
+    Data4: 235596540
+  Banks:
+  - {fileID: -1918859269314478792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 88050

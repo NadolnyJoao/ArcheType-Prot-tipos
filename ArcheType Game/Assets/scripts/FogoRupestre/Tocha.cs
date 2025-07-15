@@ -34,13 +34,14 @@ public class Tocha : MonoBehaviour
     void OnEnable()
     {
         somInstance.start();
-        Debug.Log("pq meu deus?");
+        Debug.Log("som esta ativo");
         teste = true; 
     }
 
     void OnDisable()
     {
         somInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        somInstance.release(); 
         RuntimeManager.PlayOneShot(burningSound, transform.position);
     }
 

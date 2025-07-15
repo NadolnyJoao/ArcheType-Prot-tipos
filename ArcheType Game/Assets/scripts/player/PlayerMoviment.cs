@@ -18,8 +18,6 @@ public class PlayerMoviment : MonoBehaviour
     private EventReference footSteep;
     private float passoTimer = 0f;
     public float intervaloPasso = 0.58f;
-    public float fadeOutBG = 0.7f; 
-    public float timerAmbiente =  0f; 
     public bool saiuAmbiente = false;
 
     //não queria fazer desse jeito
@@ -86,11 +84,6 @@ public class PlayerMoviment : MonoBehaviour
         {
             passoTimer = intervaloPasso; 
              Footsteep();
-        }
-
-        if (saiuAmbiente)
-        {
-            timerAmbiente -= Time.deltaTime; 
         }
        
         ani.SetBool("walk",horizontalInput!=0);
