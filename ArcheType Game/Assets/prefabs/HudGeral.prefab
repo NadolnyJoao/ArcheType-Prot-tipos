@@ -1825,6 +1825,7 @@ GameObject:
   - component: {fileID: 8187668958623273871}
   - component: {fileID: 8187668958623273856}
   - component: {fileID: 6083701338985434113}
+  - component: {fileID: 6924766708562143095}
   m_Layer: 5
   m_Name: HudGeral
   m_TagString: Untagged
@@ -1938,6 +1939,19 @@ MonoBehaviour:
   dialogoBox: {fileID: 644927283}
   nameTextPro: {fileID: 239219235}
   bodyTextPro: {fileID: 806384766}
+--- !u!114 &6924766708562143095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8187668958623273858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f8a210446a2804ebd52425ddfabf05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobilePainel: {fileID: 204531690168767413}
 --- !u!1 &8187668958979461857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,6 +3065,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
+--- !u!1 &204531690168767413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7275511051637568392, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
+  m_PrefabInstance: {fileID: 7359280621813293117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4777951248582304214 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2625558882436055531, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
