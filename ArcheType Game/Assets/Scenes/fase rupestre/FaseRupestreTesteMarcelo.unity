@@ -730,6 +730,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: speedRun
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: latido.Path
       value: "event:/Latido_ca\xE7a1"
       objectReference: {fileID: 0}
@@ -2144,6 +2148,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: speedRun
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: latido.Path
       value: "event:/Latido_ca\xE7a1"
       objectReference: {fileID: 0}
@@ -2166,6 +2174,14 @@ PrefabInstance:
     - target: {fileID: 7708014439114004083, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_Name
       value: lobo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004095, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: m_Size.x
+      value: 2.6992888
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004095, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.8496442
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
@@ -3161,6 +3177,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 18.754
       objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723560609020523204, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8723560609020523205, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3266,7 +3294,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   vida: 2
-  gameover: {fileID: 0}
+  gameover: {fileID: 2009447719}
   damageBite:
     Guid:
       Data1: -1061254030
@@ -3341,6 +3369,10 @@ PrefabInstance:
     - target: {fileID: 7708014439114004081, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_SortingLayerID
       value: 914642805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
+      propertyPath: speedRun
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004082, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: latido.Path
@@ -10207,6 +10239,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976424574}
   m_CullTransparentMesh: 1
+--- !u!1 &2009447719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8903767213032891569, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+  m_PrefabInstance: {fileID: 504123036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2019325166 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9050893184391320213, guid: ac0263ad98801d0429896e5a7d328227, type: 3}

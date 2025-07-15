@@ -17,7 +17,7 @@ public class LoboMoviment : MonoBehaviour
     public float tempoMinAndando = 3f;
     public float tempoMaxAndando = 7f;
     public float speedWalk = 2f;
-    public float speedRun = 5f;
+    public float speedRun = 10f;
     public EventReference latido;
     
 
@@ -56,20 +56,20 @@ public class LoboMoviment : MonoBehaviour
     void Update()
     {
         time -= Time.deltaTime;
-        anima.SetBool("Walking", (estadoAtual == Estado.Andando) || (estadoAtual == Estado.Patrulha));
-        if (presaTrans != null)
+        anima.SetBool("Walking", (estadoAtual == Estado.Andando) || (estadoAtual == Estado.Patrulha) || (estadoAtual == Estado.Atacando));
+        if (presaTrans != null )
         {//caçar presa
-            
             direction = presaTrans.transform.position.x > transform.position.x ? 1 : -1;
             sprite.flipX = direction == 1;
             // rig.MovePosition(transform.position + Vector3.right * direction * Time.deltaTime * speedRun);
             rig.velocity = new Vector2(direction * speedRun, rig.velocity.y);
             float distPresa = Vector3.Distance(presaTrans.position, transform.position);
-            if (distPresa > 7)
+            Debug.Log("I has a presa " + presaTrans.name + " your distance " + distPresa);
+            if (distPresa > 15)
             {
                 estadoAtual = Estado.Andando;
                 presaTrans = null;
-                // Debug.Log("para de caçar");
+                Debug.Log("para de caçar");
             }
 
         }
@@ -177,9 +177,10 @@ public class LoboMoviment : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         // Debug.Log(other.gameObject.name + " is trigger");
-        if (other.gameObject.GetComponent<LoboMoviment>() == null)
+        //não podem fazer trigger como um lobo e um interable
+        if (other.gameObject.GetComponent<LoboMoviment>() == null && other.gameObject.GetComponent<Interactable>() == null)
         {
-            //RuntimeManager.PlayOneShot(latido, transform.position);
+            RuntimeManager.PlayOneShot(latido, transform.position);
             setPresa(other.gameObject.transform);
             estadoAtual = Estado.Atacando;
             Debug.Log("começar a caçar " + other.gameObject.name);
