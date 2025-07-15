@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -13,10 +14,7 @@ public class Mapeamento : MonoBehaviour
     public bool floresta = false;
     public bool planice = false;
 
-    public bool chaopedra;
-    public bool chaofloresta;
-    public bool chaoAzulejo;
-    public bool chaoplanice;
+
 
 
     public GameObject mapa;
@@ -28,12 +26,17 @@ public class Mapeamento : MonoBehaviour
     public GameObject playerplanice;
     public GameObject mapavazio;
 
+    public GameObject desenhocaverna;
+    public GameObject desenhofloresta;
+    public GameObject desenhoplanice;
+    public GameObject voltaraomuseu;
+
     private PlayerMoviment playermoviment;
     private bool objetivoCompleto = false;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject player = GameObject.FindWithTag("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         playermoviment = player.GetComponent<PlayerMoviment>();
     }
 
@@ -48,12 +51,11 @@ public class Mapeamento : MonoBehaviour
             Debug.Log("Objetivo de exploração completo!");
         }
 
-
-
-        if (Input.GetKeyDown(KeyCode.M))
+        if (desenhocaverna.activeSelf && desenhofloresta.activeSelf && desenhoplanice.activeSelf)
         {
-            AbrirMapa();
+            voltaraomuseu.SetActive(true);
         }
+
         if (caverna == true)
         {
             cavernadescoberta.SetActive(true);
@@ -70,27 +72,30 @@ public class Mapeamento : MonoBehaviour
             mapavazio.SetActive(false);
         }
 
-        if (chaopedra == true)
+        if (playermoviment.chaopedra == true)
         {
-            playerpedra.SetActive(true);
+            // playerpedra.SetActive(true);
+            caverna = true;
         }
         else
         {
             playerpedra.SetActive(false);
         }
 
-        if (chaofloresta == true)
+        if (playermoviment.chaofloresta == true)
         {
-            playerfloresta.SetActive(true);
+            // playerfloresta.SetActive(true);
+            floresta = true;
         }
         else
         {
             playerfloresta.SetActive(false);
         }
 
-        if (chaoplanice == true)
+        if (playermoviment.chaoplanice == true)
         {
-            playerplanice.SetActive(true);
+            // playerplanice.SetActive(true);
+            planice = true;
         }
         else
         {
@@ -98,20 +103,20 @@ public class Mapeamento : MonoBehaviour
         }
     }
 
-    public void InteragirCaverna()
-    {
-        caverna = true;
-    }
+    // public void InteragirCaverna()
+    // {
+    //     caverna = true;
+    // }
 
-    public void InteragirFloresta()
-    {
-        floresta = true;
-    }
+    // public void InteragirFloresta()
+    // {
+    //     floresta = true;
+    // }
 
-    public void InteragirPlanice()
-    {
-        planice = true;
-    }
+    // public void InteragirPlanice()
+    // {
+    //     planice = true;
+    // }
 
     public void FecharMapa()
     {
@@ -122,42 +127,6 @@ public class Mapeamento : MonoBehaviour
         mapa.SetActive(true);
     }
     
-     void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.name == "ground(pedra)")
-        {
-            chaopedra = true;
-        }
-        else
-        {
-            chaopedra = false;
-        }
 
-        if (other.gameObject.name == "ground(floresta)")
-        {
-            chaofloresta = true;
-        }
-        else
-        {
-            chaofloresta = false;
-        }
-
-        if (other.gameObject.name == "ground(planice)")
-        {
-            chaoplanice = true;
-        }
-        else
-        {
-            chaoplanice = false;
-        }
-         if (other.gameObject.name == "ground(azulejos)")
-        {
-            chaoAzulejo = true;
-        }
-        else
-        {
-            chaoAzulejo = false; 
-        }
-        
-    }
+    
 }
