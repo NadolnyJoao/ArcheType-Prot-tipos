@@ -30,6 +30,7 @@ public class ReceberDano : MonoBehaviour
             if (vida <= 0)
             {
                 actionsDeath.Invoke();
+                Debug.Log("morrer pls");
 
             }
         }

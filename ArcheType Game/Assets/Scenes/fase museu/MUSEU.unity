@@ -180,6 +180,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1347484929950087223, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6924766708562143095, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7031826383690007447, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_LocalScale.x
       value: 0
@@ -271,6 +279,18 @@ PrefabInstance:
     - target: {fileID: 8187668958623273858, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_Name
       value: 'Canvas '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187668958623273871, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187668958623273871, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187668958623273871, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8187668958979461857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_IsActive
