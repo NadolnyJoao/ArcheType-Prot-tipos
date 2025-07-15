@@ -2508,7 +2508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004095, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_Size.x
-      value: 4.512429
+      value: 2.6992888
       objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004095, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_Size.y
@@ -2516,19 +2516,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004095, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_Offset.x
-      value: -0.06754732
+      value: -0.8496442
       objectReference: {fileID: 0}
     - target: {fileID: 7708014439114004095, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
       propertyPath: m_Offset.y
       value: -0.21952653
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708014439114004095, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
-      propertyPath: m_Size.x
-      value: 2.6992888
-      objectReference: {fileID: 0}
-    - target: {fileID: 7708014439114004095, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.8496442
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cee378d4c3e671644bbf0f8a1cc9dab1, type: 3}
@@ -3168,6 +3160,10 @@ PrefabInstance:
     - target: {fileID: 4777951248582304214, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152255322740157238, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7031826383690007447, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_LocalScale.x
@@ -6155,7 +6151,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Caverna
+  m_text: Floresta
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6231,6 +6227,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155958729}
+  m_CullTransparentMesh: 1
+--- !u!1 &1169116730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1169116731}
+  - component: {fileID: 1169116733}
+  - component: {fileID: 1169116732}
+  m_Layer: 5
+  m_Name: lobo img
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1169116731
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169116730}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1227767211}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -9.7, y: -30}
+  m_SizeDelta: {x: 100, y: 63}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1169116732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169116730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6509434, g: 0.526553, b: 0.4452207, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 944756940, guid: 1f6b31238c85a5946978823637421e72, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1169116733
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169116730}
   m_CullTransparentMesh: 1
 --- !u!1 &1177493640
 GameObject:
@@ -6536,7 +6608,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1414180723}
+      - m_Target: {fileID: 1169116730}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -6701,6 +6773,7 @@ RectTransform:
   - {fileID: 1391172342}
   - {fileID: 1155958730}
   - {fileID: 1414180724}
+  - {fileID: 1169116731}
   m_Father: {fileID: 1209938636}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8321,7 +8394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1415971338
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9369,7 +9442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Caverna
+  m_text: Planice
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9549,10 +9622,6 @@ MonoBehaviour:
   caverna: 0
   floresta: 0
   planice: 0
-  chaopedra: 0
-  chaofloresta: 0
-  chaoAzulejo: 0
-  chaoplanice: 0
   mapa: {fileID: 1000064407}
   cavernadescoberta: {fileID: 324960562}
   florestadescoberta: {fileID: 1227767210}
@@ -9561,6 +9630,10 @@ MonoBehaviour:
   playerfloresta: {fileID: 1180198093}
   playerplanice: {fileID: 1180198093}
   mapavazio: {fileID: 1413147572}
+  desenhocaverna: {fileID: 951463118}
+  desenhofloresta: {fileID: 1169116730}
+  desenhoplanice: {fileID: 1415625553}
+  voltaraomuseu: {fileID: 1415971337}
 --- !u!1 &1714694689
 GameObject:
   m_ObjectHideFlags: 0
@@ -10604,36 +10677,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 1803967972, guid: 7298662e57b505042a726e37a171f489, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1976424577
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976424574}
-  m_CullTransparentMesh: 1
 --- !u!1 &2009447719 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8903767213032891569, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
