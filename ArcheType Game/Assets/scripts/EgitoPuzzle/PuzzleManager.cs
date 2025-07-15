@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using Unity.VisualScripting;
 using FMODUnity;
 using FMOD.Studio;
@@ -14,7 +15,7 @@ public class PuzzleManager : MonoBehaviour
     public GameObject Interact;
     public EventReference PuzzleSound;
     public EventReference pieceDrop;
-    
+    public UnityEvent finishPuzzleEvent;
     
     void Start()
     {
@@ -36,11 +37,11 @@ public class PuzzleManager : MonoBehaviour
         PuzzleCompleto = true;
         portacontroller.Abrir();
         Debug.Log("🏆 Puzzle completo!");
-
+        
         if (PuzzleCompleto)
         {
             ExitPuzzle();
-            
+            finishPuzzleEvent.Invoke();
             Object.Destroy(Interact, 0);
 
         }
