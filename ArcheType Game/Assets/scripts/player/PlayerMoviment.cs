@@ -20,6 +20,11 @@ public class PlayerMoviment : MonoBehaviour
     public float intervaloPasso = 0.58f;
     public bool saiuAmbiente = false;
 
+//MAPEAMENTO
+    public bool chaopedra = false;
+    public bool chaofloresta = false;
+    public bool chaoplanice = false;
+
     //não queria fazer desse jeito
     public UnityEvent actionInterableContact;
     public DialogoSystenUI dialogoSystenUI;
@@ -124,12 +129,27 @@ public class PlayerMoviment : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        // MAPEAMENTO 
+        if (other.gameObject.name == "ground(pedra)")
+        {
+            chaopedra = true;
+        }
+        if (other.gameObject.name == "ground(floresta)")
+        {
+            chaofloresta = true;
+        }
+        if (other.gameObject.name == "ground(planice)")
+        {
+            chaoplanice = true;
+        }
+
+        //SOM
         if (other.gameObject.tag == "ground")
         {
             isgrounded = true;
             saiuAmbiente = false;
             GroundSong groundSong = other.gameObject.GetComponent<GroundSong>();
-        
+
             if (groundSong != null && saiuAmbiente == false)
             {
                 footSteep = groundSong.FsSound;
@@ -144,17 +164,28 @@ public class PlayerMoviment : MonoBehaviour
     }
     void OnCollisionExit2D(Collision2D col)
     {
-
+        if (col.gameObject.name == "ground(pedra)")
+        {
+            chaopedra = false;
+        }
+        if (col.gameObject.name == "ground(floresta)")
+        {
+            chaofloresta = false;
+        }
+        if (col.gameObject.name == "ground(planice)")
+        {
+            chaoplanice = false;
+        }
         if (col.gameObject.tag == "ground")
         {
-            
+
             GroundSong groundSong = col.gameObject.GetComponent<GroundSong>();
             saiuAmbiente = true;
             if (saiuAmbiente)
             {
                 groundSong.BG.SetActive(false);
             }
-            
+
         }
     }
 

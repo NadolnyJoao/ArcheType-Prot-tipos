@@ -423,7 +423,7 @@
     </levels>
     <folder name="Cast" type="default">
       <levels>
-        <level id='1'/><level id='5'/><level id='2'/><level id='4'/><level id='6'/><level id='3'/>
+        <level id='4'/><level id='6'/><level id='1'/><level id='3'/><level id='2'/><level id='5'/>
       </levels>
       </folder>
     <folder name="Audio">
@@ -1491,16 +1491,16 @@
     <fxnodes>
       <terminal>
         <fxnode>
-          <Toonz_columnFx id='13'/>
-        </fxnode>
-        <fxnode>
           <Toonz_columnFx id='15'/>
         </fxnode>
         <fxnode>
-          <Toonz_columnFx id='8'/>
+          <Toonz_columnFx id='17'/>
         </fxnode>
         <fxnode>
-          <Toonz_columnFx id='17'/>
+          <Toonz_columnFx id='13'/>
+        </fxnode>
+        <fxnode>
+          <Toonz_columnFx id='8'/>
         </fxnode>
         <fxnode>
           <Toonz_columnFx id='11'/>
