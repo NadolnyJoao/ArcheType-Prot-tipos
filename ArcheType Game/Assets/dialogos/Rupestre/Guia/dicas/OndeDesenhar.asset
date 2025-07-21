@@ -17,6 +17,6 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278223603
   falas:
-  - Va para dentro da Caverna desenhar sua descobertas
+  - "VV\xE1 para dentro da Caverna desenhar sua descobertas "
   canPass: 1
   index: 0

@@ -18,6 +18,6 @@ MonoBehaviour:
     rgba: 4278228223
   falas:
   - Tente montar um gato
-  - as figuras que possum linhas horizontais amarelas tente colocar na base
+  - 'as figuras que possuem linhas horizontais amarelas tente colocar na base '
   canPass: 1
   index: 0
