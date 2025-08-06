@@ -1,23 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using FMODUnity;
 using FMOD.Studio;
 
-public class VolumeManager : MonoBehaviour
-{
-public Slider volumeSlider;
-    private Bus masterBus;
-    private const string VolumePrefKey = "VolumeLevel";
 
-    void start()
+public class SlideVolumeManage : MonoBehaviour
+{
+
+    public Bus busSlide;
+    public string nameBus = "bus:/";
+    public Slider volumeSlider;
+    private const string VolumePrefKey = "VolumeLevel";
+    private string namepred;
+    void Start()
     {
-        masterBus = RuntimeManager.GetBus("bus:/");
-        
+        volumeSlider = GetComponent<Slider>();
+        busSlide = RuntimeManager.GetBus(nameBus);
+
+        Debug.Log(nameBus.Split("bus:/")[0]+","+nameBus.Split("bus:/")[1]);
+        namepred = nameBus.Split("bus:/")[1];
+
         float savedVolume;
         // Carrega volume salvo (ou padrão 1.0f)
-        if (PlayerPrefs.HasKey(VolumePrefKey))
+        if (PlayerPrefs.HasKey(VolumePrefKey+namepred))
         {
-            savedVolume = PlayerPrefs.GetFloat(VolumePrefKey);
+            savedVolume = PlayerPrefs.GetFloat(VolumePrefKey+namepred);
             volumeSlider.value = savedVolume;
             SetVolume(savedVolume);
             Debug.Log("Volume carregado: " + savedVolume);
@@ -36,14 +45,16 @@ public Slider volumeSlider;
 
     public void SetVolume(float volume)
     {
-        masterBus.setVolume(volume);
-        PlayerPrefs.SetFloat(VolumePrefKey, volume);
+        busSlide.setVolume(volume);
+        PlayerPrefs.SetFloat(VolumePrefKey+namepred, volume);
         PlayerPrefs.Save(); // Salva o volume atual
         Debug.Log("Volume ajustado para: " + volume);
     }
-    void OnDisable()
-{
-    PlayerPrefs.SetFloat("volume", volumeSlider.value);
-    PlayerPrefs.Save(); // força o salvamento
-}
+
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }

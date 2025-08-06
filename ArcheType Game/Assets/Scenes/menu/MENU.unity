@@ -894,8 +894,8 @@ RectTransform:
   m_Children:
   - {fileID: 751549588}
   - {fileID: 568362438}
-  - {fileID: 599758875}
   - {fileID: 612150429}
+  - {fileID: 599758875}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1080,7 +1080,7 @@ RectTransform:
   m_Children:
   - {fileID: 706819253}
   m_Father: {fileID: 452648880}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1118,7 +1118,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 452648880}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2781,8 +2781,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1450865986}
   - component: {fileID: 1450865987}
+  - component: {fileID: 1450865988}
   m_Layer: 5
-  m_Name: Musica_Volume_slider
+  m_Name: GERAL_Volume_slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2861,19 +2862,21 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1392270208}
-        m_TargetAssemblyTypeName: VolumeManager, Assembly-CSharp
-        m_MethodName: SetVolume
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1450865988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450865985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1fbab0a8d50ad74b94ff77147bf6db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameBus: bus:/
+  volumeSlider: {fileID: 1450865987}
 --- !u!1 &1525011884
 GameObject:
   m_ObjectHideFlags: 0
@@ -3767,6 +3770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1921866127}
   - component: {fileID: 1921866128}
+  - component: {fileID: 1921866129}
   m_Layer: 5
   m_Name: Musica_Volume_slider (1)
   m_TagString: Untagged
@@ -3847,19 +3851,21 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1392270208}
-        m_TargetAssemblyTypeName: VolumeManager, Assembly-CSharp
-        m_MethodName: SetVolume
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1921866129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921866126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1fbab0a8d50ad74b94ff77147bf6db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameBus: bus:/musics
+  volumeSlider: {fileID: 1921866128}
 --- !u!1 &1942616279
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,8 +4104,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2058631072}
   - component: {fileID: 2058631073}
+  - component: {fileID: 2058631074}
   m_Layer: 5
-  m_Name: Musica_Volume_slider (2)
+  m_Name: BG_Volume_slider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4178,19 +4185,21 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1392270208}
-        m_TargetAssemblyTypeName: VolumeManager, Assembly-CSharp
-        m_MethodName: SetVolume
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &2058631074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058631071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1fbab0a8d50ad74b94ff77147bf6db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameBus: bus:/bgs
+  volumeSlider: {fileID: 2058631073}
 --- !u!1 &2073021515
 GameObject:
   m_ObjectHideFlags: 0
@@ -4249,7 +4258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 476717814, guid: da6bbab4a10178247b1e188e704e4af4, type: 3}
+  m_Sprite: {fileID: 440239909, guid: da6bbab4a10178247b1e188e704e4af4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4325,7 +4334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1105485284, guid: da6bbab4a10178247b1e188e704e4af4, type: 3}
+  m_Sprite: {fileID: 476717814, guid: da6bbab4a10178247b1e188e704e4af4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
