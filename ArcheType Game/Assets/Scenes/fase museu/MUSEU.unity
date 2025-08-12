@@ -296,6 +296,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8187668960046077004, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819164275374343311, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: minLoadingTime
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
 --- !u!4 &357859856 stripped
@@ -729,6 +737,7 @@ GameObject:
   - component: {fileID: 628111330}
   - component: {fileID: 628111329}
   - component: {fileID: 628111331}
+  - component: {fileID: 628111332}
   m_Layer: 6
   m_Name: guia
   m_TagString: Untagged
@@ -896,6 +905,27 @@ MonoBehaviour:
   minDist: 2
   speed: 3
   transfomrPlayer: {fileID: 86959385}
+--- !u!95 &628111332
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628111325}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec6bc11294fef354d97e6f0386aac957, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &729336808
 PrefabInstance:
   m_ObjectHideFlags: 0

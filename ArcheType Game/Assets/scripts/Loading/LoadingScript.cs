@@ -37,7 +37,7 @@ public class LoadingScript : MonoBehaviour
         operation.allowSceneActivation = false;
 
         LoadingScreen.SetActive(true);
-
+        Time.timeScale = 1; 
         float Tempopassado = 0f;
 
         while (!operation.isDone)

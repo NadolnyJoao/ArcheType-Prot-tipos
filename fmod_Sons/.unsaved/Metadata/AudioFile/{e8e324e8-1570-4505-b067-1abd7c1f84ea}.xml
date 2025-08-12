@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e8e324e8-1570-4505-b067-1abd7c1f84ea}">
+		<property name="assetPath">
+			<value>FS/FS - Land3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.74054166666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f60e3892-d3b5-4705-a2e1-bf35c2604348}</destination>
+		</relationship>
+	</object>
+</objects>
