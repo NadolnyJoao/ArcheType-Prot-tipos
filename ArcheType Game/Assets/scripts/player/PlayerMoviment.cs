@@ -40,6 +40,7 @@ public class PlayerMoviment : MonoBehaviour
         if(dialogoSystenUI==null)
         dialogoSystenUI = DialogoSystenUI.dialogoSystenUI;
         Debug.Log("dialogo system fund is : " + dialogoSystenUI);
+        
     }
 
     void OnMove(InputValue value){
