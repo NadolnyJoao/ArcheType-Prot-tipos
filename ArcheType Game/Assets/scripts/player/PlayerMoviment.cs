@@ -37,6 +37,7 @@ public class PlayerMoviment : MonoBehaviour
         ani = GetComponent<Animator>();
         rig = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>(); 
+        if(dialogoSystenUI==null)
         dialogoSystenUI = DialogoSystenUI.dialogoSystenUI;
         Debug.Log("dialogo system fund is : " + dialogoSystenUI);
     }
