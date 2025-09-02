@@ -5,6 +5,7 @@ using UnityEngine;
 public class GuiaMoviment : MonoBehaviour
 {
     private Vector3 pos;
+    public Animator anima;
     [Header("ir ate o oquadro")]
     public float minDist;
     public float speed;
@@ -14,7 +15,7 @@ public class GuiaMoviment : MonoBehaviour
     void Start()
     {
         pos = transform.position;
-        
+        anima = GetComponent<Animator>();
     }
 
     void Update()
@@ -28,6 +29,7 @@ public class GuiaMoviment : MonoBehaviour
             dir = dir.normalized;
             transform.Translate(dir * speed * Time.deltaTime);
             distOfPicture = Vector3.Distance(transform.position, pos);
+            anima.SetBool("Speed", (distOfPicture >0.1) );
             if (distOfPicture < 0.1f)
             {
 
