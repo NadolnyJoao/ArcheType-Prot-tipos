@@ -13,7 +13,8 @@ public class PlayerMoviment : MonoBehaviour
     private Rigidbody2D rig;
     private float horizontalInput, verticalInput;
     private bool jump = false;
-    private bool isgrounded = false;
+    private bool aniajump = false;
+    public bool isgrounded = false;
     public Animator ani;
     private EventReference footSteep;
     private float passoTimer = 0f;
@@ -52,11 +53,13 @@ public class PlayerMoviment : MonoBehaviour
     {
         if (value.isPressed && isgrounded)
         {
-            jump = true;
+            
+            aniajump = true;
+        
             // Debug.Log("Pulo ativado");
         }
     }
-    
+
     void Update()
     {
         // horizontalInput = Input.GetAxis("Horizontal");
@@ -87,13 +90,27 @@ public class PlayerMoviment : MonoBehaviour
             // se so jogar no update vai ficar repedindo o som varias vezes por isso tenho que colocar um intervalo de tempo para soar mais clean
             // isso vai ser provisório nao me xinga pedro
         }
-        if(passoTimer <= 0)
+        if (passoTimer <= 0)
         {
-            passoTimer = intervaloPasso; 
-             Footsteep();
+            passoTimer = intervaloPasso;
+            Footsteep();
         }
-       
-        ani.SetBool("walk",horizontalInput!=0);
+
+        ani.SetBool("walk", horizontalInput != 0);
+        ani.SetBool("inground", isgrounded);
+        ani.SetFloat("velocityY",rig.velocity.y);
+        if(aniajump)
+        {
+            ani.SetTrigger("jump");
+            aniajump = false;
+                
+            }
+    }
+
+    public void Jump()
+    {
+        jump = true;
+         
     }
 
     private void OnInteract()
@@ -105,10 +122,10 @@ public class PlayerMoviment : MonoBehaviour
         }
         else
         {
-            Debug.Log("Ação de interação não definida ou diálogo já está oculto. dialo bos is show: " + dialogoSystenUI.DialogoBoxIsShow()  );
+            Debug.Log("Ação de interação não definida ou diálogo já está oculto. dialo bos is show: " + dialogoSystenUI.DialogoBoxIsShow());
         }
-        
-          if (actionInterableContact != null)
+
+        if (actionInterableContact != null)
         {
             actionInterableContact.Invoke();
         }
@@ -120,7 +137,9 @@ public class PlayerMoviment : MonoBehaviour
     void FixedUpdate()
     {
         float veloy = rig.velocity.y;
-        rig.velocity = new Vector2(horizontalInput * speed * Time.fixedDeltaTime, veloy);
+        if (!aniajump)
+        {           rig.velocity = new Vector2(horizontalInput * speed * Time.fixedDeltaTime, veloy);
+        }
         if (jump)
         {
             rig.AddForce(Vector2.up * forceJump * Time.fixedDeltaTime, ForceMode2D.Impulse);
@@ -146,7 +165,7 @@ public class PlayerMoviment : MonoBehaviour
         }
 
         //SOM
-        if (other.gameObject.tag == "ground")
+        if (other.gameObject.tag == "ground" || other.gameObject.GetComponent<GroundSong>()!=null)
         {
             isgrounded = true;
             saiuAmbiente = false;
