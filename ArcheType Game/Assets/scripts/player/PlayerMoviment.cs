@@ -96,7 +96,7 @@ public class PlayerMoviment : MonoBehaviour
             Footsteep();
         }
 
-        ani.SetBool("walk", horizontalInput != 0);
+        ani.SetBool("walk", horizontalInput != 0 && rig.velocity.x!=0);
         ani.SetBool("inground", isgrounded);
         ani.SetFloat("velocityY",rig.velocity.y);
         if(aniajump)
