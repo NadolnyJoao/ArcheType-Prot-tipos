@@ -4,52 +4,84 @@ using UnityEngine;
 
 public class cobra : MonoBehaviour
 {
-    public Transform Player;
-    public float speed = 3.0f;
+     public Transform player;
+    public float speed = 3f;
+    public float stopDistance = 1f; // Distância mínima para parar
+    public float detectionRange = 5f; // Distância para começar a perseguir
+
     public Animator ani; 
-    public float stopDistance = 10.0f;
-    public SpriteRenderer spriteRenderer; 
-    private bool oieSybau = false; 
-    // Start is called before the first frame update
+    public SpriteRenderer spriteRenderer;
+    private Vector2 randomTarget; // Ponto aleatório de patrulha
+    private float changeTargetTime; // Quando trocar de alvo aleatório
+
     void Start()
     {
         //spriteRenderer = GetComponent<SpriteRenderer>();
+        PickRandomTarget();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Player == null) return;
-        if(oieSybau){
-        // Distância até o player
-        float distance = Vector2.Distance(transform.position, Player.position);
+        if (player == null) return;
 
-        if (distance > stopDistance)
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        if (distanceToPlayer <= detectionRange) 
         {
-            // Direção até o player
-            // Vector2 direction = (Player.position - transform.position).normalized;
-
-            // Movimento suave em direção ao player
-            transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
-
-            // Faz a cobra olhar para o player (rotação em 2D)
-            // float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-           // transform.rotation = Quaternion.Euler(0, 0, angle + 90);
-           if (Player.position.x < transform.position.x){
-                spriteRenderer.flipX = false;
-           } else{
-            spriteRenderer.flipX = true; 
-           }
+            // --- MODO PERSEGUIÇÃO ---
+            FollowPlayer(distanceToPlayer);
         }
+        else
+        {
+            // --- MODO PATRULHA ---
+            Patrol();
         }
     }
 
+    void FollowPlayer(float distance)
+    {
+        if (distance > stopDistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
+            // Vira sprite dependendo da posição do player
+            if(player.position.x < transform.position.x){
+                 spriteRenderer.flipX = false;
+            } else{
+                spriteRenderer.flipX = true;
+            }   
+           
+        }
+    }
+
+    void Patrol()
+    {
+        // Se já chegou perto do alvo ou passou do tempo, escolhe outro ponto
+        if (Vector2.Distance(transform.position, randomTarget) < 0.5f || Time.time > changeTargetTime)
+        {
+            PickRandomTarget();
+        }
+
+        // Anda até o ponto aleatório
+        transform.position = Vector2.MoveTowards(transform.position,randomTarget, (speed * 0.5f) * Time.deltaTime); // mais devagar que perseguição
+
+
+        // Ajusta flip conforme direção
+        spriteRenderer.flipX = randomTarget.x < transform.position.x;
+    }
+
+    void PickRandomTarget()
+    {
+        // Pega um ponto aleatório próximo (raio de 5 unidades)
+        Vector2 randomCircle = Random.insideUnitCircle * 5f;
+        randomTarget = (Vector2)transform.position + randomCircle;
+
+        // Muda de alvo a cada 3 a 6 segundos
+        changeTargetTime = Time.time + Random.Range(3f, 6f);
+    }
     void OnCollisionEnter2D(Collision2D collision){
-        if(collision.gameObject.tag == "ground"){
-            ani.SetBool("inground", true);
-            Debug.Log("sybau");
-            oieSybau = true; 
+        if (collision.gameObject.tag == "ground"){
+            ani.SetBool("inground", true); 
         }
     }
 
