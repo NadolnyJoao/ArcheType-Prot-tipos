@@ -150,6 +150,10 @@ public class ColorMixer : MonoBehaviour
     case "Branco+Vermelho Claro 1": return "Vermelho Claro 2";
     case "Branco+Vermelho Claro 2": return "Vermelho Claro 3";
     
+    case "Branco+Laranja": return "Laranja Claro 1";
+    case "Branco+Laranja Claro 1": return "Laranja Claro 2";
+    case "Branco+Laranja Claro 2": return "Laranja Claro 3";
+
     case "Laranja+Preto": return "Laranja Escuro 1";
     case "Laranja Escuro 1+Preto": return "Laranja Escuro 2";
     case "Laranja Escuro 2+Preto": return "Laranja Escuro 3";

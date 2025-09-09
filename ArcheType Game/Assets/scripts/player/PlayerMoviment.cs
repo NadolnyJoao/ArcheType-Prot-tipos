@@ -99,7 +99,7 @@ public class PlayerMoviment : MonoBehaviour
         ani.SetBool("walk", horizontalInput != 0 && rig.velocity.x!=0);
         ani.SetBool("inground", isgrounded);
         ani.SetFloat("velocityY",rig.velocity.y);
-        if(aniajump)
+        if(aniajump&&isgrounded)
         {
             ani.SetTrigger("jump");
             aniajump = false;

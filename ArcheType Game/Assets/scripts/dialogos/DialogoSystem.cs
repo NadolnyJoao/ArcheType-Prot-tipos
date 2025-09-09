@@ -9,12 +9,19 @@ using UnityEngine.Events;
 
 public class DialogoSystem : MonoBehaviour
 {
+    [System.Serializable]
+    public class ActionFala {
+        public UnityEvent falaEvent;
+        public int id;
+    }
 
     public List<Fala> falas = new List<Fala>();
     public UnityEvent laterActions;
     private int indexFalas = 0;
     // public DialogoSystenUI dialogoUI;
     private bool inDialogue = false;
+
+    public List<ActionFala> actionsLateFala = new List<ActionFala>();
 
 
     public void Update()
@@ -62,6 +69,13 @@ public class DialogoSystem : MonoBehaviour
                     HiddenFala();
                     inDialogue = false;
                     Debug.Log("Fim do dialogo");
+                    foreach (var fala in actionsLateFala)
+                    {
+                        if(indexFalas == fala.id)
+                        {
+                            fala.falaEvent.Invoke();
+                        }
+                    }
                     //proximo dialogo
                     if (falas[indexFalas].canPass)
                     {
