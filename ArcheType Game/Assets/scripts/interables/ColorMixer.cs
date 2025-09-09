@@ -13,6 +13,8 @@ public class ColorMixer : MonoBehaviour
     public Image color2;
     public Image result;
 
+    public bool ObjCompleto = false;
+
     public string colorselect1, colorselect2;
 
     public GameObject mycolorpalette;
@@ -64,7 +66,10 @@ public class ColorMixer : MonoBehaviour
             this.name = name;
             this.components = new List<string>(components);
         }
-    }
+    }   
+    [Header("concluir ocjetivo")]
+        public List<string> coresParaConclui = new List<string>();
+    public UnityEvent ObjetivoConcluiod;
 
     [Header("Paleta do Jogador")]
     public List<ColorData> myColorPalette = new List<ColorData>();
@@ -74,11 +79,28 @@ public class ColorMixer : MonoBehaviour
 
     public void Start()
     {
-        AddBaseColor("Vermelho");
-        AddBaseColor("Preto");
-        AddBaseColor("Branco");
-        AddBaseColor("Amarelo");
+        // AddBaseColor("Vermelho");
+        // AddBaseColor("Preto");
+        // AddBaseColor("Branco");
+        // AddBaseColor("Amarelo");
         SelectSlotColor(0);
+    }
+
+    void Update(){
+        int num =0;
+        foreach(var corNecessaria in coresParaConclui)
+        {
+            foreach (var mycolor in myColorPalette)
+            {
+                if(corNecessaria == mycolor.name){
+                    num++;
+                }
+            }
+        }
+        if(num == coresParaConclui.Count && !ObjCompleto){
+            ObjetivoConcluiod.Invoke();
+            ObjCompleto = true;
+        }
     }
 
     // -------------------- ADICIONAR COR INICIAL --------------------
