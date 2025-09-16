@@ -48,7 +48,7 @@ public class UIPuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         canvasGroup.blocksRaycasts = true;
 
-        RectTransform targetSlot = puzzleManager.emptySlot;
+        RectTransform targetSlot = puzzleManager.allSlots;
         float distance = Vector2.Distance(rectTransform.position, targetSlot.position);
 
         if (distance > snapDistance)
