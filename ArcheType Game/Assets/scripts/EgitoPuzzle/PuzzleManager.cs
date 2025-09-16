@@ -36,10 +36,11 @@ public class PuzzleManager : MonoBehaviour
         }
         PuzzleCompleto = true;
         portacontroller.Abrir();
-        Debug.Log("🏆 Puzzle completo!");
+
         
         if (PuzzleCompleto)
         {
+            Debug.Log("🏆 Puzzle completo!");
             ExitPuzzle();
             finishPuzzleEvent.Invoke();
             Object.Destroy(Interact, 0);
