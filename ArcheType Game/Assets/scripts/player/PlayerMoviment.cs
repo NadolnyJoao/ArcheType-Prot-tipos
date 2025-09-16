@@ -13,6 +13,7 @@ public class PlayerMoviment : MonoBehaviour
     private Rigidbody2D rig;
     private float horizontalInput, verticalInput;
     private bool jump = false;
+    private bool run = false;
     private bool aniajump = false;
     public bool isgrounded = false;
     public Animator ani;
@@ -59,6 +60,30 @@ public class PlayerMoviment : MonoBehaviour
             // Debug.Log("Pulo ativado");
         }
     }
+    private void OnInteract()
+    {
+
+        if (dialogoSystenUI != null && dialogoSystenUI.DialogoBoxIsShow())
+        {
+            dialogoSystenUI.HiddenDialogoBox();
+        }
+        else
+        {
+            Debug.Log("Ação de interação não definida ou diálogo já está oculto. dialo bos is show: " + dialogoSystenUI.DialogoBoxIsShow());
+        }
+
+        if (actionInterableContact != null)
+        {
+            actionInterableContact.Invoke();
+        }
+    }
+    void OnRun(InputValue value){
+        Vector2 input = value.Get<Vector2>();
+        // horizontalInput = input.x;
+        run = input.x>0;
+
+        // Debug.Log("Movendo o jogador pelo input system");
+    }
 
     void Update()
     {
@@ -97,6 +122,8 @@ public class PlayerMoviment : MonoBehaviour
         }
 
         ani.SetBool("walk", horizontalInput != 0 && rig.velocity.x!=0);
+        ani.SetBool("run", horizontalInput != 0 && rig.velocity.x!=0 && run);
+        // run  =  false;
         ani.SetBool("inground", isgrounded);
         ani.SetFloat("velocityY",rig.velocity.y);
         if(aniajump&&isgrounded)
@@ -113,23 +140,7 @@ public class PlayerMoviment : MonoBehaviour
          
     }
 
-    private void OnInteract()
-    {
-
-        if (dialogoSystenUI != null && dialogoSystenUI.DialogoBoxIsShow())
-        {
-            dialogoSystenUI.HiddenDialogoBox();
-        }
-        else
-        {
-            Debug.Log("Ação de interação não definida ou diálogo já está oculto. dialo bos is show: " + dialogoSystenUI.DialogoBoxIsShow());
-        }
-
-        if (actionInterableContact != null)
-        {
-            actionInterableContact.Invoke();
-        }
-    }
+    
     public void setActionInterableContact(UnityEvent action)
     {
         actionInterableContact = action;
@@ -138,7 +149,10 @@ public class PlayerMoviment : MonoBehaviour
     {
         float veloy = rig.velocity.y;
         if (!aniajump)
-        {           rig.velocity = new Vector2(horizontalInput * speed * Time.fixedDeltaTime, veloy);
+        {   
+            float mult = 0;
+           mult = run ?  1.5f : 1.0f;        
+            rig.velocity = new Vector2(horizontalInput * speed * mult * Time.fixedDeltaTime, veloy);
         }
         if (jump)
         {
