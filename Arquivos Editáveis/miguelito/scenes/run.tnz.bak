@@ -37,7 +37,7 @@
           24 
         </fps>
         <path>
-          "+outputs\\.spritesheet"
+          "+outputs\\WALK.spritesheet"
         </path>
         <bpp>
           32 
@@ -4016,6 +4016,6 @@
     "| #1   19 jun 25   16:13   DESKTOP-8CV8user            |"
     "| #2   03 ago 25   12:09   DESKTOP-8CV8user            |"
     "| #3   12 ago 25   17:14   LAB04-06    IFPR            |"
-    "| #4   14 set 25   20:37   DESKTOP-8CV8user            |"
+    "| #4   14 set 25   20:25   DESKTOP-8CV8user            |"
   </history>
   </tnz>

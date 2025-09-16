@@ -24,17 +24,26 @@ public class DimensionTravel : MonoBehaviour
 
     public void ChangeWorld()
     {
-        if(mundonormal)
+        if (mundonormal)
         {
-            Vector3 posicaoPlayer = player.position;
-            posicaoPlayer.y = mundosonhoobj.position.y;
-            player.position = posicaoPlayer;
+            // Vector3 posicaoPlayer = player.position;
+            // posicaoPlayer.y = mundosonhoobj.position.y;
+            player.position = mundosonhoobj.position;
+            mundosonho = true;
+            mundonormal = false;
+            Debug.Log("mudou para mundo do sonho");
         }
-        if(mundosonho)
+        if (mundosonho)
         {
-            Vector3 posicaoPlayer = player.position;
-            posicaoPlayer.y = mundonormalobj.position.y;
-            player.position = posicaoPlayer;            
+            // Vector3 posicaoPlayer = player.position;
+            // posicaoPlayer.y = mundonormalobj.position.y;
+            player.position = mundonormalobj.position;
+            mundonormal = true;
+            mundosonho = false;        
         }
+    }
+    void OnAtaque()
+    {
+        ChangeWorld();
     }
 }

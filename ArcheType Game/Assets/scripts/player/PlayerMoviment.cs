@@ -204,6 +204,7 @@ public class PlayerMoviment : MonoBehaviour
             saiuAmbiente = true;
             if (saiuAmbiente)
             {
+                if(groundSong != null)
                 groundSong.BG.SetActive(false);
             }
 
