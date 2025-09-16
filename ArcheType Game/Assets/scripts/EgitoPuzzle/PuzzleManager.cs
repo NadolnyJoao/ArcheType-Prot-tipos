@@ -20,6 +20,7 @@ public class PuzzleManager : MonoBehaviour
     void Start()
     {
         GameObject porta = GameObject.FindWithTag("portaegito");
+        if(porta != null)
         portacontroller = porta.GetComponent<PortaControler>();
     }
 
@@ -35,6 +36,7 @@ public class PuzzleManager : MonoBehaviour
             }
         }
         PuzzleCompleto = true;
+        if(portacontroller != null)
         portacontroller.Abrir();
 
         
