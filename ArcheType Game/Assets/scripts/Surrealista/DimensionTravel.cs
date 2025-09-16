@@ -32,7 +32,7 @@ public class DimensionTravel : MonoBehaviour
             mundosonho = true;
             mundonormal = false;
             Debug.Log("mudou para mundo do sonho");
-        }
+        }else
         if (mundosonho)
         {
             // Vector3 posicaoPlayer = player.position;
@@ -40,6 +40,7 @@ public class DimensionTravel : MonoBehaviour
             player.position = mundonormalobj.position;
             mundonormal = true;
             mundosonho = false;        
+            Debug.Log("mudou para mundo do normar");
         }
     }
     void OnAtaque()
