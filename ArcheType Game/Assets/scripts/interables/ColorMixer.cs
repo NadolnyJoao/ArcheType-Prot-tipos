@@ -114,6 +114,7 @@ public class ColorMixer : MonoBehaviour
             coisa.GetComponent<Image>().color = GetColorVisual(colorName);
             coisa.GetComponent<RectTransform>().anchoredPosition = new Vector2(-140f * myColorPalette.Count, 0);
             coisa.GetComponent<Button>().onClick.AddListener(() => SelectColor(colorName));
+            coisa.GetComponent<ColorHover>().SetName(colorName);
         }
         else
         {
