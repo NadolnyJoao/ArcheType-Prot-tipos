@@ -147,3 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToFall: 1
+  timeToDestroy: 2
+  timeToBack: 3
+  groundPrefab: {fileID: 6221780334940881654}
