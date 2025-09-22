@@ -4,7 +4,7 @@ using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
 using UnityEngine.Events;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
 public class PlayerMoviment : MonoBehaviour
 {
     public float speed = 100;
@@ -21,8 +21,10 @@ public class PlayerMoviment : MonoBehaviour
     private float passoTimer = 0f;
     public float intervaloPasso = 0.58f;
     public bool saiuAmbiente = false;
+    public bool chavesurreal = false;
+    public BoxCollider2D col;
 
-//MAPEAMENTO
+    //MAPEAMENTO
     public bool chaopedra = false;
     public bool chaofloresta = false;
     public bool chaoplanice = false;
@@ -36,16 +38,18 @@ public class PlayerMoviment : MonoBehaviour
 
     void Start()
     {
+        col.enabled = false;
         ani = GetComponent<Animator>();
         rig = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>(); 
-        if(dialogoSystenUI==null)
-        dialogoSystenUI = DialogoSystenUI.dialogoSystenUI;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (dialogoSystenUI == null)
+            dialogoSystenUI = DialogoSystenUI.dialogoSystenUI;
         Debug.Log("dialogo system fund is : " + dialogoSystenUI);
-        
+
     }
 
-    void OnMove(InputValue value){
+    void OnMove(InputValue value)
+    {
         Vector2 input = value.Get<Vector2>();
         horizontalInput = input.x;
         // Debug.Log("Movendo o jogador pelo input system");
@@ -54,9 +58,9 @@ public class PlayerMoviment : MonoBehaviour
     {
         if (value.isPressed && isgrounded)
         {
-            
+
             aniajump = true;
-        
+
             // Debug.Log("Pulo ativado");
         }
     }
@@ -77,10 +81,11 @@ public class PlayerMoviment : MonoBehaviour
             actionInterableContact.Invoke();
         }
     }
-    void OnRun(InputValue value){
+    void OnRun(InputValue value)
+    {
         Vector2 input = value.Get<Vector2>();
         // horizontalInput = input.x;
-        run = input.x>0;
+        run = input.x > 0;
 
         // Debug.Log("Movendo o jogador pelo input system");
     }
@@ -121,37 +126,37 @@ public class PlayerMoviment : MonoBehaviour
             Footsteep();
         }
 
-        ani.SetBool("walk", horizontalInput != 0 && rig.velocity.x!=0);
-        ani.SetBool("run", horizontalInput != 0 && rig.velocity.x!=0 && run);
+        ani.SetBool("walk", horizontalInput != 0 && rig.velocity.x != 0);
+        ani.SetBool("run", horizontalInput != 0 && rig.velocity.x != 0 && run);
         // run  =  false;
         ani.SetBool("inground", isgrounded);
-        ani.SetFloat("velocityY",rig.velocity.y);
-        if(aniajump&&isgrounded)
+        ani.SetFloat("velocityY", rig.velocity.y);
+        if (aniajump && isgrounded)
         {
             ani.SetTrigger("jump");
             aniajump = false;
-                
-            }
+
+        }
     }
 
     public void Jump()
     {
         jump = true;
-         
+
     }
 
-    
+
     public void setActionInterableContact(UnityEvent action)
     {
         actionInterableContact = action;
-    }  
+    }
     void FixedUpdate()
     {
         float veloy = rig.velocity.y;
         if (!aniajump)
-        {   
+        {
             float mult = 0;
-           mult = run ?  1.5f : 1.0f;        
+            mult = run ? 1.5f : 1.0f;
             rig.velocity = new Vector2(horizontalInput * speed * mult * Time.fixedDeltaTime, veloy);
         }
         if (jump)
@@ -164,11 +169,15 @@ public class PlayerMoviment : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        // MAPEAMENTO 
-        if (other.gameObject.name == "ground(pedra)")
+        if (other.gameObject.name == "chave" && chavesurreal == true)
         {
-            chaopedra = true;
+            Destroy(other.gameObject);
         }
+        // MAPEAMENTO 
+            if (other.gameObject.name == "ground(pedra)")
+            {
+                chaopedra = true;
+            }
         if (other.gameObject.name == "ground(floresta)")
         {
             chaofloresta = true;
@@ -179,7 +188,7 @@ public class PlayerMoviment : MonoBehaviour
         }
 
         //SOM
-        if (other.gameObject.tag == "ground" || other.gameObject.GetComponent<GroundSong>()!=null)
+        if (other.gameObject.tag == "ground" || other.gameObject.GetComponent<GroundSong>() != null)
         {
             isgrounded = true;
             saiuAmbiente = false;
@@ -218,8 +227,8 @@ public class PlayerMoviment : MonoBehaviour
             saiuAmbiente = true;
             if (saiuAmbiente)
             {
-                if(groundSong != null)
-                groundSong.BG.SetActive(false);
+                if (groundSong != null)
+                    groundSong.BG.SetActive(false);
             }
 
         }
@@ -234,6 +243,19 @@ public class PlayerMoviment : MonoBehaviour
 
     public void Footsteep()
     {
-        RuntimeManager.PlayOneShot(footSteep, transform.position);    
+        RuntimeManager.PlayOneShot(footSteep, transform.position);
     }
+
+    public void TakeKey()
+    {
+        chavesurreal = true;
+        if (chavesurreal)
+        {
+            col.enabled = true;
+        }
+        
+    }
+
+
 }
+

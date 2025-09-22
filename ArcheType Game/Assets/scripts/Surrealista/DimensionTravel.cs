@@ -10,16 +10,18 @@ public class DimensionTravel : MonoBehaviour
     public Transform player;
     public Transform mundonormalobj;
     public Transform mundosonhoobj;
+    public Transform salasurreal;
+    private PlayerMoviment playermoviment;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playermoviment = FindAnyObjectByType<PlayerMoviment>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ChangeWorld()
@@ -32,19 +34,30 @@ public class DimensionTravel : MonoBehaviour
             mundosonho = true;
             mundonormal = false;
             Debug.Log("mudou para mundo do sonho");
-        }else
+        }
+        else
         if (mundosonho)
         {
             // Vector3 posicaoPlayer = player.position;
             // posicaoPlayer.y = mundonormalobj.position.y;
             player.position = mundonormalobj.position;
             mundonormal = true;
-            mundosonho = false;        
+            mundosonho = false;
             Debug.Log("mudou para mundo do normar");
         }
     }
     void OnAtaque()
     {
         ChangeWorld();
+    }
+
+    public void DestrancarPorta()
+    {
+        if (playermoviment.chavesurreal == true)
+        {
+            Debug.Log("porta destrancada");
+            player.position = salasurreal.position;
+            playermoviment.chavesurreal = false;
+        }
     }
 }
