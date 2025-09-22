@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ManageDigit : MonoBehaviour
 {
     // Start is called before the first frame update
-    public List<Color32> digitos = new List<Color32>();
+    public List<Sprite> digitos = new List<Sprite>();
     public Image showDigit;
     public Image nextDown;
     public Image nextUp;
@@ -25,9 +25,9 @@ public class ManageDigit : MonoBehaviour
     int upIndex = (idAtual - 1 + digitos.Count) % digitos.Count;
     int downIndex = (idAtual + 1) % digitos.Count;
 
-    showDigit.color = digitos[idAtual];
-    nextUp.color = digitos[upIndex];
-    nextDown.color = digitos[downIndex];
+    showDigit.sprite = digitos[idAtual];
+    nextUp.sprite = digitos[upIndex];
+    nextDown.sprite = digitos[downIndex];
 
     Debug.Log($"SetColors → Atual: {idAtual}, Up: {upIndex}, Down: {downIndex}");
 }
@@ -44,7 +44,7 @@ public class ManageDigit : MonoBehaviour
 
         // showDigit.color = digitos[idAtual];
         // nextDown.color = digitos[idAtual + 1 < digitos.Count ? idAtual + 1 : 0];
-        Invoke("SetColors",1);
+        Invoke("SetColors",0.99f);
     }
     public void NextDown()
     {
@@ -58,7 +58,7 @@ public class ManageDigit : MonoBehaviour
         // showDigit.color = digitos[idAtual];
         // nextUp.color = digitos[idAtual - 1 > 0 ? idAtual - 1 : digitos.Count - 1];
         
-        Invoke("SetColors",1);
+        Invoke("SetColors",0.99f);
     }
 
 
