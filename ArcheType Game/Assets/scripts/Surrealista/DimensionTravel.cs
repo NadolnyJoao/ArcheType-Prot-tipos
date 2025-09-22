@@ -53,11 +53,11 @@ public class DimensionTravel : MonoBehaviour
 
     public void DestrancarPorta()
     {
-        if (playermoviment.chavesurreal == true)
-        {
-            Debug.Log("porta destrancada");
-            player.position = salasurreal.position;
-            playermoviment.chavesurreal = false;
-        }
+        // if (playermoviment.chavesurreal == true)
+        // {
+        //     Debug.Log("porta destrancada");
+        //     player.position = salasurreal.position;
+        //     playermoviment.chavesurreal = false;
+        // }
     }
 }

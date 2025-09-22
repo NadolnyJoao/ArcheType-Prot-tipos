@@ -21,8 +21,7 @@ public class PlayerMoviment : MonoBehaviour
     private float passoTimer = 0f;
     public float intervaloPasso = 0.58f;
     public bool saiuAmbiente = false;
-    public bool chavesurreal = false;
-    public BoxCollider2D col;
+
 
     //MAPEAMENTO
     public bool chaopedra = false;
@@ -38,7 +37,6 @@ public class PlayerMoviment : MonoBehaviour
 
     void Start()
     {
-        col.enabled = false;
         ani = GetComponent<Animator>();
         rig = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -169,10 +167,7 @@ public class PlayerMoviment : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.name == "chave" && chavesurreal == true)
-        {
-            Destroy(other.gameObject);
-        }
+        
         // MAPEAMENTO 
             if (other.gameObject.name == "ground(pedra)")
             {
@@ -246,15 +241,7 @@ public class PlayerMoviment : MonoBehaviour
         RuntimeManager.PlayOneShot(footSteep, transform.position);
     }
 
-    public void TakeKey()
-    {
-        chavesurreal = true;
-        if (chavesurreal)
-        {
-            col.enabled = true;
-        }
-        
-    }
+    
 
 
 }
