@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fase egito/CutsceneEgito.unity
     guid: 46e7cc3dc881cdf43b37b2513854722d
+  - enabled: 1
+    path: Assets/Scenes/renascentista/renascentistatestes1.unity
+    guid: ae0e429b5afe0e3498366cd5b026739f
   m_configObjects: {}
