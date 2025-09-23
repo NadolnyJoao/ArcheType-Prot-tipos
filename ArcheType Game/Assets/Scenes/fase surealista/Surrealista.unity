@@ -1665,6 +1665,7 @@ GameObject:
   - component: {fileID: 975621270}
   - component: {fileID: 975621269}
   - component: {fileID: 975621271}
+  - component: {fileID: 975621272}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: ground
@@ -1752,7 +1753,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.025302947, y: 0.0234133}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1763,8 +1764,29 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9493941, y: 1.0468266}
   m_EdgeRadius: 0
+--- !u!114 &975621272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975621268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: -1164386100
+      Data2: 1236726105
+      Data3: 1372017050
+      Data4: 956080377
+    Path: event:/FS LAJOTA_01
+  BG: {fileID: 137761590}
 --- !u!1 &989360436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,14 +1922,14 @@ MonoBehaviour:
   actions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1028203706}
         m_TargetAssemblyTypeName: LoadingScript, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4054,9 +4076,10 @@ GameObject:
   - component: {fileID: 1710246698}
   - component: {fileID: 1710246697}
   - component: {fileID: 1710246699}
+  - component: {fileID: 1710246700}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4141,7 +4164,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.035119668}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4152,8 +4175,29 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.0702393}
   m_EdgeRadius: 0
+--- !u!114 &1710246700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710246696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: -1164386100
+      Data2: 1236726105
+      Data3: 1372017050
+      Data4: 956080377
+    Path: event:/FS LAJOTA_01
+  BG: {fileID: 137761590}
 --- !u!1 &1743790702
 GameObject:
   m_ObjectHideFlags: 0
@@ -5064,9 +5108,10 @@ GameObject:
   - component: {fileID: 2087653732}
   - component: {fileID: 2087653734}
   - component: {fileID: 2087653733}
+  - component: {fileID: 2087653735}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5164,6 +5209,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2087653735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087653731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: -1085880414
+      Data2: 1167093745
+      Data3: 1347453829
+      Data4: -716344650
+    Path: event:/FS - wood1
+  BG: {fileID: 432076873}
 --- !u!1 &2132665280
 GameObject:
   m_ObjectHideFlags: 0
