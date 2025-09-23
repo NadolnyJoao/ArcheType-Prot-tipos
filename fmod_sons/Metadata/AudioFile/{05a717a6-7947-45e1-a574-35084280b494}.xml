@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{05a717a6-7947-45e1-a574-35084280b494}">
 		<property name="assetPath">
-			<value>Surrealista/Fá_piano.wav</value>
+			<value>Surrealista/Ponte Piano/Fá_piano.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
