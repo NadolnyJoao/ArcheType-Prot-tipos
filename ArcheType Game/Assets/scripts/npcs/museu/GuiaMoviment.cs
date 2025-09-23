@@ -6,6 +6,7 @@ public class GuiaMoviment : MonoBehaviour
 {
     private Vector3 pos;
     public Animator anima;
+    private SpriteRenderer sprite;
 
     [Header("Ir ate o quadro")]
     public float minDist;
@@ -17,6 +18,7 @@ public class GuiaMoviment : MonoBehaviour
     // Start é chamado uma vez no início
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
         // Define a posição inicial como o destino
         pos = transform.position;
 
@@ -42,6 +44,15 @@ public class GuiaMoviment : MonoBehaviour
             if (distOfPlayer > 10)
             {
                 pos = transfomrPlayer.position;
+                if (transform.position.x > transfomrPlayer.position.x)
+            {
+                sprite.flipX = true;
+
+            }
+            else
+            {
+                sprite.flipX = false;
+            }
             }
         }
 
@@ -68,8 +79,10 @@ public class GuiaMoviment : MonoBehaviour
                 transform.position = pos;
                 isMoving = false; // O guia chegou, então para o movimento
             }
-        }
 
+
+        }
+            
         // Atualiza a animação com base no estado de movimento
         if (anima != null)
         {

@@ -21,6 +21,7 @@ public class TakeKey : MonoBehaviour
 
     public void Takekey()
     {
+        Debug.Log("chaveeeeee");
         chave.SetActive(false);
         chavesurreal = true;
         if (chavesurreal)
