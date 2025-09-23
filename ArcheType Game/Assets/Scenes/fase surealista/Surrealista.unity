@@ -1266,7 +1266,7 @@ Transform:
   m_GameObject: {fileID: 619859209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.40298, y: 0.40260023, z: -0.045151617}
-  m_LocalScale: {x: 0.040548764, y: 0.059082117, z: 1}
+  m_LocalScale: {x: 0.040548764, y: 0.059082128, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -1357,7 +1357,7 @@ GameObject:
   - component: {fileID: 686524031}
   - component: {fileID: 686524030}
   m_Layer: 0
-  m_Name: tecla presta piano (1)
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1452,7 +1452,7 @@ GameObject:
   - component: {fileID: 989360438}
   - component: {fileID: 989360437}
   m_Layer: 0
-  m_Name: tecla presta piano (4)
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1708,7 +1708,7 @@ GameObject:
   - component: {fileID: 1017276885}
   - component: {fileID: 1017276884}
   m_Layer: 0
-  m_Name: tecla presta piano (2)
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2311,7 +2311,7 @@ GameObject:
   - component: {fileID: 1352452247}
   - component: {fileID: 1352452248}
   m_Layer: 0
-  m_Name: tecla presta piano (3)
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3683,7 +3683,7 @@ GameObject:
   - component: {fileID: 1894898819}
   - component: {fileID: 1894898818}
   m_Layer: 0
-  m_Name: tecla presta piano
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
