@@ -2781,7 +2781,7 @@ Transform:
   - {fileID: 49497223}
   - {fileID: 775314347}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &292587631
 GameObject:
@@ -5711,7 +5711,7 @@ GameObject:
   - component: {fileID: 886365593}
   - component: {fileID: 886365592}
   m_Layer: 0
-  m_Name: ground (1)
+  m_Name: Teto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5914,6 +5914,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &931389800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 931389802}
+  - component: {fileID: 931389801}
+  m_Layer: 0
+  m_Name: BG - Painting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &931389801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931389800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 686164982
+      Data2: 1206940855
+      Data3: 316368530
+      Data4: 99401774
+    Path: event:/BG - Painting on canvas
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &931389802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931389800}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.25, y: 7.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &931466221
 GameObject:
@@ -6880,7 +6943,7 @@ GameObject:
   - component: {fileID: 1048163537}
   - component: {fileID: 1048163536}
   m_Layer: 0
-  m_Name: ground
+  m_Name: Teto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7097,7 +7160,7 @@ GameObject:
   - component: {fileID: 1082102068}
   - component: {fileID: 1082102067}
   m_Layer: 0
-  m_Name: ground
+  m_Name: ground_primeiroAndar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7118,12 +7181,12 @@ MonoBehaviour:
   nameGround: pedra
   FsSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  BG: {fileID: 0}
+      Data1: 1947323453
+      Data2: 1272028553
+      Data3: -1422531441
+      Data4: 1760272389
+    Path: event:/FS - wood2
+  BG: {fileID: 931389800}
 --- !u!61 &1082102068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10773,7 +10836,7 @@ GameObject:
   - component: {fileID: 1463645514}
   - component: {fileID: 1463645513}
   m_Layer: 0
-  m_Name: ground (1)
+  m_Name: ground_SegundoAndar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10809,12 +10872,12 @@ MonoBehaviour:
   nameGround: pedra
   FsSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  BG: {fileID: 0}
+      Data1: 1947323453
+      Data2: 1272028553
+      Data3: -1422531441
+      Data4: 1760272389
+    Path: event:/FS - wood2
+  BG: {fileID: 931389800}
 --- !u!61 &1463645514
 BoxCollider2D:
   m_ObjectHideFlags: 0
