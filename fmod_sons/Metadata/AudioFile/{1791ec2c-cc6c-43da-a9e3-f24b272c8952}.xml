@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{c247d966-ff04-4262-829b-94a415c4cd9c}">
+	<object class="AudioFile" id="{1791ec2c-cc6c-43da-a9e3-f24b272c8952}">
 		<property name="assetPath">
-			<value>Candle_fire2.wav</value>
+			<value>paiting_splash2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>48</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>31.818354166666666</value>
+			<value>0.56065759637188206</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{f60e3892-d3b5-4705-a2e1-bf35c2604348}</destination>

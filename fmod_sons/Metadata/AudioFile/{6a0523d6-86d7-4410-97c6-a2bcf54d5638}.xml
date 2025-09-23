@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{c247d966-ff04-4262-829b-94a415c4cd9c}">
+	<object class="AudioFile" id="{6a0523d6-86d7-4410-97c6-a2bcf54d5638}">
 		<property name="assetPath">
-			<value>Candle_fire2.wav</value>
+			<value>manuseio de livros4.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>48</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<property name="length">
-			<value>31.818354166666666</value>
+			<value>0.73814058956916095</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{f60e3892-d3b5-4705-a2e1-bf35c2604348}</destination>
