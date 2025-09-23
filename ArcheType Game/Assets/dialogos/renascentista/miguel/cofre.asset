@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a171c697117a18047bf6a35eccf7e400, type: 3}
-  m_Name: VaiEmbora
+  m_Name: cofre
   m_EditorClassIdentifier: 
-  name: Rafael
+  name: Miguel
   colorName:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4292972836
   falas:
-  - "N\xE3o era pra voc\xEA est\xE1 mechendo nisso. Quero que saia  daqui"
+  - Tem um cofre atras desse quadro
   canPass: 1
   index: 0
