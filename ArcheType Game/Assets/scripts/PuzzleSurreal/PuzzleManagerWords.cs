@@ -5,6 +5,8 @@ public class PuzzleManagerWords : MonoBehaviour
 {
     public List<RectTransform> allSlots; // todos os slots do puzzlezudo 
     public GameObject puzzle;
+    public GameObject portasaida;
+    public GameObject portapuzzle;
 
     public void CheckWinCondition()
     {
@@ -15,7 +17,8 @@ public class PuzzleManagerWords : MonoBehaviour
             if (!piece.IsInCorrectSlot())
                 return;
         }
-
+        portapuzzle.SetActive(false);
+        portasaida.SetActive(true);
         Debug.Log("parabens voce não é um astrolopietcus");
         ExitPuzzle();
     }

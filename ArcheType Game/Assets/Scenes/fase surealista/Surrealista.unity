@@ -1060,9 +1060,9 @@ MonoBehaviour:
   actions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1191471779}
-        m_TargetAssemblyTypeName: PlayerMoviment, Assembly-CSharp
-        m_MethodName: TakeKey
+      - m_Target: {fileID: 1008818158}
+        m_TargetAssemblyTypeName: TakeKey, Assembly-CSharp
+        m_MethodName: Takekey
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1537,6 +1537,7 @@ GameObject:
   - component: {fileID: 1008818156}
   - component: {fileID: 1008818155}
   - component: {fileID: 1008818157}
+  - component: {fileID: 1008818158}
   m_Layer: 0
   m_Name: PORTA
   m_TagString: Untagged
@@ -1552,7 +1553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008818153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.66, y: 2.28, z: -0.045151617}
+  m_LocalPosition: {x: 10.37, y: 2.28, z: -0.045151617}
   m_LocalScale: {x: 0.45340613, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1697,6 +1698,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.91, y: 6.03}
   m_EdgeRadius: 0
+--- !u!114 &1008818158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008818153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a701506992e0f94e808633e9bfa9f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chavesurreal: 0
+  chave: {fileID: 618755969}
+  col: {fileID: 1008818157}
 --- !u!1 &1017276883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,17 +1825,6 @@ MonoBehaviour:
   mundonormalobj: {fileID: 12469181}
   mundosonhoobj: {fileID: 87545383}
   salasurreal: {fileID: 0}
---- !u!114 &1191471779 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-  m_PrefabInstance: {fileID: 395315626}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030738681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9d0a5d50cb122d4eb6a3440050b0b53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1242194866
 GameObject:
   m_ObjectHideFlags: 0
