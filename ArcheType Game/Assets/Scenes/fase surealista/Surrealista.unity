@@ -165,8 +165,9 @@ GameObject:
   - component: {fileID: 15891549}
   - component: {fileID: 15891548}
   - component: {fileID: 15891547}
+  - component: {fileID: 15891550}
   m_Layer: 0
-  m_Name: chao (1)
+  m_Name: chao quarto surreal
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,8 +181,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15891545}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -2.0658703, z: 0.033835035}
-  m_LocalScale: {x: 7.3908796, y: 3.8342, z: 1}
+  m_LocalPosition: {x: -0.05, y: -4.4088, z: 0.033835035}
+  m_LocalScale: {x: 7.3908796, y: 8.519976, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2066058135}
@@ -263,6 +264,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15891545}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &15891550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15891545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: -1164386100
+      Data2: 1236726105
+      Data3: 1372017050
+      Data4: 956080377
+    Path: event:/FS LAJOTA_01
+  BG: {fileID: 137761590}
 --- !u!1 &87545382
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +453,69 @@ MonoBehaviour:
   mundonormalobj: {fileID: 12469181}
   mundosonhoobj: {fileID: 87545383}
   salasurreal: {fileID: 0}
+--- !u!1 &137761590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137761591}
+  - component: {fileID: 137761592}
+  m_Layer: 0
+  m_Name: BG - Mundo dos sonhos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &137761591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137761590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.5065165, y: -3.982158, z: -0.03837269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137761592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137761590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1304725061
+      Data2: 1287685152
+      Data3: 1778015374
+      Data4: 2043957746
+    Path: event:/Dripping water
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &181262702
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +598,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &201686416
 GameObject:
@@ -680,6 +765,69 @@ PrefabInstance:
       objectReference: {fileID: 6200000, guid: 30038a908a9fec347b14c55b94383fd5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+--- !u!1 &432076873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 432076874}
+  - component: {fileID: 432076875}
+  m_Layer: 0
+  m_Name: BG - Mundo Real
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &432076874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432076873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.5065165, y: -3.982158, z: -0.03837269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &432076875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432076873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1039078613
+      Data2: 1116627179
+      Data3: -351903826
+      Data4: 1269606534
+    Path: event:/City - BG
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &488017714
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,9 +1021,10 @@ Transform:
   m_LocalPosition: {x: -2.0368, y: -0.01, z: 0}
   m_LocalScale: {x: 1.4538445, y: 1.4033617, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1600877432}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618755969
 GameObject:
@@ -911,9 +1060,9 @@ MonoBehaviour:
   actions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1191471779}
-        m_TargetAssemblyTypeName: PlayerMoviment, Assembly-CSharp
-        m_MethodName: TakeKey
+      - m_Target: {fileID: 1008818158}
+        m_TargetAssemblyTypeName: TakeKey, Assembly-CSharp
+        m_MethodName: Takekey
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1008,7 +1157,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &618755973
 BoxCollider2D:
@@ -1046,10 +1195,11 @@ GameObject:
   m_Component:
   - component: {fileID: 619859211}
   - component: {fileID: 619859210}
-  - component: {fileID: 619859214}
   - component: {fileID: 619859213}
+  - component: {fileID: 619859215}
+  - component: {fileID: 619859214}
   m_Layer: 0
-  m_Name: tecla ponte (4)
+  m_Name: Sol
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1115,8 +1265,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619859209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4019065, y: 0.4139, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.06496109, z: 1}
+  m_LocalPosition: {x: 2.40298, y: 0.40260023, z: -0.045151617}
+  m_LocalScale: {x: 0.040548764, y: 0.059082128, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -1132,10 +1282,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.036245584, y: 2.5473719}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1146,7 +1296,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.31, y: 3.1}
+  m_Size: {x: 10.237511, y: 2.0670319}
   m_EdgeRadius: 0
 --- !u!114 &619859214
 MonoBehaviour:
@@ -1155,15 +1305,47 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619859209}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a54aef334d15d240a27687c26a2f987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFall: 0.1
-  timeToDestroy: 2
-  timeToBack: 3
-  groundPrefab: {fileID: 0}
+  pianoNoteEvent:
+    Guid:
+      Data1: 1999278486
+      Data2: 1268559591
+      Data3: -313737850
+      Data4: 768258598
+    Path: event:/Surrealista/Sol_piano
+  pressDepth: 0.1
+  pressSpeed: 5
+  isPressed: 0
+--- !u!61 &619859215
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619859209}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.036245584, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.31, y: 3.1}
+    newSize: {x: 10.31, y: 3.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.237511, y: 3.1}
+  m_EdgeRadius: 0
 --- !u!1 &686524029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,7 +1357,7 @@ GameObject:
   - component: {fileID: 686524031}
   - component: {fileID: 686524030}
   m_Layer: 0
-  m_Name: tecla presta piano (1)
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1241,8 +1423,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686524029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3235502, y: 0.46685073, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.07824319, z: 1}
+  m_LocalPosition: {x: 1.3235505, y: 0.46685073, z: -0.045151617}
+  m_LocalScale: {x: 0.04059058, y: 0.07824319, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -1270,7 +1452,7 @@ GameObject:
   - component: {fileID: 989360438}
   - component: {fileID: 989360437}
   m_Layer: 0
-  m_Name: tecla presta piano (4)
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1335,13 +1517,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989360436}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.01, y: -20.26, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.0175307, y: 0.46685073, z: -0.045151617}
+  m_LocalScale: {x: 0.04059058, y: 0.07824319, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1978254327}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1008818153
 GameObject:
@@ -1355,6 +1537,7 @@ GameObject:
   - component: {fileID: 1008818156}
   - component: {fileID: 1008818155}
   - component: {fileID: 1008818157}
+  - component: {fileID: 1008818158}
   m_Layer: 0
   m_Name: PORTA
   m_TagString: Untagged
@@ -1370,7 +1553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008818153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.56, y: 2.28, z: -0.045151617}
+  m_LocalPosition: {x: 10.37, y: 2.28, z: -0.045151617}
   m_LocalScale: {x: 0.45340613, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1515,6 +1698,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.91, y: 6.03}
   m_EdgeRadius: 0
+--- !u!114 &1008818158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008818153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a701506992e0f94e808633e9bfa9f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chavesurreal: 0
+  chave: {fileID: 618755969}
+  col: {fileID: 1008818157}
 --- !u!1 &1017276883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,7 +1724,7 @@ GameObject:
   - component: {fileID: 1017276885}
   - component: {fileID: 1017276884}
   m_Layer: 0
-  m_Name: tecla presta piano (2)
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1592,8 +1790,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017276883}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2030127, y: 0.46685073, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.07824319, z: 1}
+  m_LocalPosition: {x: 2.2030132, y: 0.46685073, z: -0.045151617}
+  m_LocalScale: {x: 0.04059058, y: 0.07824319, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -1627,17 +1825,6 @@ MonoBehaviour:
   mundonormalobj: {fileID: 12469181}
   mundosonhoobj: {fileID: 87545383}
   salasurreal: {fileID: 0}
---- !u!114 &1191471779 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8723560609020523209, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
-  m_PrefabInstance: {fileID: 395315626}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030738681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9d0a5d50cb122d4eb6a3440050b0b53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1242194866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,8 +1838,10 @@ GameObject:
   - component: {fileID: 1242194871}
   - component: {fileID: 1242194870}
   - component: {fileID: 1242194869}
+  - component: {fileID: 1242194873}
+  - component: {fileID: 1242194872}
   m_Layer: 0
-  m_Name: tecla ponte (2)
+  m_Name: Mi
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1718,8 +1907,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242194866}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5549165, y: 0.40164807, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.07288353, z: 1}
+  m_LocalPosition: {x: 1.5568702, y: 0.39139998, z: -0.045151617}
+  m_LocalScale: {x: 0.040548764, y: 0.06628758, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -1756,10 +1945,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.03624797, y: 2.4319134}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1770,7 +1959,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.31, y: 3.1}
+  m_Size: {x: 10.237505, y: 1.8912306}
   m_EdgeRadius: 0
 --- !u!114 &1242194871
 MonoBehaviour:
@@ -1784,10 +1973,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFall: 0.1
-  timeToDestroy: 2
+  timeToFall: 0.5
+  timeToDestroy: 0.5
   timeToBack: 3
   groundPrefab: {fileID: 0}
+--- !u!114 &1242194872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242194866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54aef334d15d240a27687c26a2f987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoNoteEvent:
+    Guid:
+      Data1: 16701346
+      Data2: 1271485852
+      Data3: 1078465983
+      Data4: -1068908397
+    Path: event:/Surrealista/Mi_piano
+  pressDepth: 0.1
+  pressSpeed: 5
+  isPressed: 0
+--- !u!61 &1242194873
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242194866}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03624797, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.31, y: 3.1}
+    newSize: {x: 10.31, y: 3.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.237505, y: 3.1}
+  m_EdgeRadius: 0
 --- !u!1 &1273767542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +2211,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 204531690168767413, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2763049357196903094, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8187668958623273857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2079,7 +2324,7 @@ GameObject:
   - component: {fileID: 1352452247}
   - component: {fileID: 1352452248}
   m_Layer: 0
-  m_Name: tecla presta piano (3)
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2093,8 +2338,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352452246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6156833, y: 0.46685073, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.07824319, z: 1}
+  m_LocalPosition: {x: 2.6156838, y: 0.46685073, z: -0.045151617}
+  m_LocalScale: {x: 0.04059058, y: 0.07824319, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -2165,8 +2410,10 @@ GameObject:
   - component: {fileID: 1356787974}
   - component: {fileID: 1356787973}
   - component: {fileID: 1356787972}
+  - component: {fileID: 1356787976}
+  - component: {fileID: 1356787975}
   m_Layer: 0
-  m_Name: tecla ponte (5)
+  m_Name: "L\xE1"
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2232,8 +2479,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356787969}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8267546, y: 0.40164807, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.07288353, z: 1}
+  m_LocalPosition: {x: 2.8273904, y: 0.39139998, z: -0.045151617}
+  m_LocalScale: {x: 0.040548764, y: 0.06628758, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -2270,10 +2517,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.09594536, y: 2.4382136}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2284,7 +2531,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.31, y: 3.1}
+  m_Size: {x: 10.118111, y: 1.8438097}
   m_EdgeRadius: 0
 --- !u!114 &1356787974
 MonoBehaviour:
@@ -2298,10 +2545,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFall: 0.1
-  timeToDestroy: 2
+  timeToFall: 0.5
+  timeToDestroy: 0.5
   timeToBack: 3
   groundPrefab: {fileID: 0}
+--- !u!114 &1356787975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356787969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54aef334d15d240a27687c26a2f987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoNoteEvent:
+    Guid:
+      Data1: -1007033502
+      Data2: 1218498180
+      Data3: -586102097
+      Data4: -1558543362
+    Path: "event:/Surrealista/L\xE1_piano"
+  pressDepth: 0.1
+  pressSpeed: 5
+  isPressed: 0
+--- !u!61 &1356787976
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356787969}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.10270238, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.31, y: 3.1}
+    newSize: {x: 10.31, y: 3.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.104597, y: 3.1}
+  m_EdgeRadius: 0
 --- !u!1 &1410365050
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,6 +2865,138 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15.32, y: 7.87}
   m_EdgeRadius: 0
+--- !u!1 &1456651716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1456651717}
+  - component: {fileID: 1456651721}
+  - component: {fileID: 1456651720}
+  - component: {fileID: 1456651719}
+  - component: {fileID: 1456651718}
+  m_Layer: 0
+  m_Name: chao quarto surreal (1)
+  m_TagString: ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1456651717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456651716}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -35.89, y: 8.8404, z: 0.033835035}
+  m_LocalScale: {x: 32.570126, y: 3.8342, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2066058135}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1456651718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456651716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: -1164386100
+      Data2: 1236726105
+      Data3: 1372017050
+      Data4: 956080377
+    Path: event:/FS LAJOTA_01
+  BG: {fileID: 137761590}
+--- !u!61 &1456651719
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456651716}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1}
+  m_EdgeRadius: 0
+--- !u!23 &1456651720
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456651716}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1456651721
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456651716}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1520015554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2583,8 +3010,10 @@ GameObject:
   - component: {fileID: 1520015559}
   - component: {fileID: 1520015558}
   - component: {fileID: 1520015557}
+  - component: {fileID: 1520015561}
+  - component: {fileID: 1520015560}
   m_Layer: 0
-  m_Name: tecla ponte (3)
+  m_Name: "F\xE1"
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2650,8 +3079,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520015554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9770584, y: 0.40164807, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.07288353, z: 1}
+  m_LocalPosition: {x: 1.9785702, y: 0.39139998, z: -0.045151617}
+  m_LocalScale: {x: 0.040548764, y: 0.06628758, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -2688,10 +3117,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.04228711, y: 2.444521}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2702,7 +3131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.31, y: 3.1}
+  m_Size: {x: 10.225428, y: 1.8660154}
   m_EdgeRadius: 0
 --- !u!114 &1520015559
 MonoBehaviour:
@@ -2716,10 +3145,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFall: 0.1
-  timeToDestroy: 2
+  timeToFall: 0.5
+  timeToDestroy: 0.5
   timeToBack: 3
   groundPrefab: {fileID: 0}
+--- !u!114 &1520015560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520015554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54aef334d15d240a27687c26a2f987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoNoteEvent:
+    Guid:
+      Data1: 1846627619
+      Data2: 1113986558
+      Data3: -637001552
+      Data4: 384094964
+    Path: "event:/Surrealista/F\xE1_piano"
+  pressDepth: 0.1
+  pressSpeed: 5
+  isPressed: 0
+--- !u!61 &1520015561
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520015554}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.036245346, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.31, y: 3.1}
+    newSize: {x: 10.31, y: 3.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.237509, y: 3.1}
+  m_EdgeRadius: 0
 --- !u!1 &1532446648
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,10 +3207,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1532446650}
   - component: {fileID: 1532446649}
-  - component: {fileID: 1532446652}
   - component: {fileID: 1532446651}
+  - component: {fileID: 1532446654}
+  - component: {fileID: 1532446653}
   m_Layer: 0
-  m_Name: tecla ponte
+  m_Name: "D\xF3"
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2799,8 +3277,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532446648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7146917, y: 0.4139, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.06496109, z: 1}
+  m_LocalPosition: {x: 0.7137201, y: 0.40189978, z: -0.045151617}
+  m_LocalScale: {x: 0.041283913, y: 0.059554778, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -2816,10 +3294,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.2005043, y: 2.7212074}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2830,24 +3308,56 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.31, y: 3.1}
+  m_Size: {x: 9.680717, y: 1.7646061}
   m_EdgeRadius: 0
---- !u!114 &1532446652
+--- !u!114 &1532446653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532446648}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a54aef334d15d240a27687c26a2f987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFall: 0.1
-  timeToDestroy: 2
-  timeToBack: 3
-  groundPrefab: {fileID: 0}
+  pianoNoteEvent:
+    Guid:
+      Data1: 1270426101
+      Data2: 1261464538
+      Data3: -1891378246
+      Data4: -1976372371
+    Path: "event:/Surrealista/D\xF3_piano"
+  pressDepth: 0.1
+  pressSpeed: 5
+  isPressed: 0
+--- !u!61 &1532446654
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532446648}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1337974, y: 0.07223272}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.31, y: 3.1}
+    newSize: {x: 10.31, y: 3.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.842667, y: 3.2444654}
+  m_EdgeRadius: 0
 --- !u!1 &1600877430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2859,9 +3369,10 @@ GameObject:
   - component: {fileID: 1600877432}
   - component: {fileID: 1600877431}
   - component: {fileID: 1600877433}
+  - component: {fileID: 1600877434}
   m_Layer: 0
-  m_Name: Square (1)
-  m_TagString: Untagged
+  m_Name: "ch\xE3o quarto normar"
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2925,13 +3436,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600877430}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0773, y: -4.074, z: 0}
-  m_LocalScale: {x: 19.953897, y: 1.8293201, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.027857285, y: -2.895903, z: 0}
+  m_LocalScale: {x: 13.724917, y: 1.3035271, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 569248197}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1600877433
 BoxCollider2D:
@@ -2946,7 +3457,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.35269946}
+  m_Offset: {x: 0, y: -0.30893913}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2957,8 +3468,29 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.29460108}
+  m_Size: {x: 1, y: 0.38212177}
   m_EdgeRadius: 0
+--- !u!114 &1600877434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600877430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: -1085880414
+      Data2: 1167093745
+      Data3: 1347453829
+      Data4: -716344650
+    Path: event:/FS - wood1
+  BG: {fileID: 432076873}
 --- !u!1 &1743790702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,10 +3666,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1845216525}
   - component: {fileID: 1845216524}
-  - component: {fileID: 1845216528}
   - component: {fileID: 1845216527}
+  - component: {fileID: 1845216529}
+  - component: {fileID: 1845216528}
   m_Layer: 0
-  m_Name: tecla ponte (1)
+  m_Name: "R\xE9"
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3203,8 +3736,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845216523}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1327746, y: 0.4139, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.06496109, z: 1}
+  m_LocalPosition: {x: 1.13516, y: 0.40260023, z: -0.045151617}
+  m_LocalScale: {x: 0.040548764, y: 0.059082117, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -3220,10 +3753,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.03502488, y: 2.5695915}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3234,7 +3767,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.31, y: 3.1}
+  m_Size: {x: 10.210897, y: 2.1006937}
   m_EdgeRadius: 0
 --- !u!114 &1845216528
 MonoBehaviour:
@@ -3243,15 +3776,47 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845216523}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a54aef334d15d240a27687c26a2f987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFall: 0.1
-  timeToDestroy: 2
-  timeToBack: 3
-  groundPrefab: {fileID: 0}
+  pianoNoteEvent:
+    Guid:
+      Data1: 1506578707
+      Data2: 1286958867
+      Data3: 935093926
+      Data4: -1185898287
+    Path: "event:/Surrealista/R\xE9_piano"
+  pressDepth: 0.1
+  pressSpeed: 5
+  isPressed: 0
+--- !u!61 &1845216529
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845216523}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.035025835, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.31, y: 3.1}
+    newSize: {x: 10.31, y: 3.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.210897, y: 3.1}
+  m_EdgeRadius: 0
 --- !u!1 &1894898817
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,7 +3828,7 @@ GameObject:
   - component: {fileID: 1894898819}
   - component: {fileID: 1894898818}
   m_Layer: 0
-  m_Name: tecla presta piano
+  m_Name: Teclas pretas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3330,7 +3895,7 @@ Transform:
   m_GameObject: {fileID: 1894898817}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.9298217, y: 0.46685073, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.07824319, z: 1}
+  m_LocalScale: {x: 0.04059058, y: 0.07824319, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -3424,6 +3989,7 @@ Transform:
   - {fileID: 686524031}
   - {fileID: 1017276885}
   - {fileID: 1352452247}
+  - {fileID: 989360438}
   m_Father: {fileID: 2066058135}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3439,8 +4005,9 @@ GameObject:
   - component: {fileID: 2063189020}
   - component: {fileID: 2063189019}
   - component: {fileID: 2063189018}
+  - component: {fileID: 2063189022}
   m_Layer: 0
-  m_Name: chao
+  m_Name: chao quarto surreal
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3530,13 +4097,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063189017}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.198233, y: -2.0658703, z: 0.033835035}
-  m_LocalScale: {x: 7.3908796, y: 3.8342, z: 1}
+  m_LocalPosition: {x: -29.9167, y: -3.6279, z: 0.033835035}
+  m_LocalScale: {x: 8.827666, y: 6.9583063, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2066058135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2063189022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063189017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0e9de60f297f349be7d17594ed85c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameGround: 
+  FsSound:
+    Guid:
+      Data1: -1164386100
+      Data2: 1236726105
+      Data3: 1372017050
+      Data4: 956080377
+    Path: event:/FS LAJOTA_01
+  BG: {fileID: 137761590}
 --- !u!1 &2066058134
 GameObject:
   m_ObjectHideFlags: 0
@@ -3569,6 +4157,7 @@ Transform:
   - {fileID: 1978254327}
   - {fileID: 15891546}
   - {fileID: 87545383}
+  - {fileID: 1456651717}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3582,10 +4171,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2132665282}
   - component: {fileID: 2132665281}
-  - component: {fileID: 2132665285}
   - component: {fileID: 2132665284}
+  - component: {fileID: 2132665286}
+  - component: {fileID: 2132665285}
   m_Layer: 0
-  m_Name: tecla ponte (6)
+  m_Name: Si
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3651,8 +4241,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132665280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2380722, y: 0.4139, z: -0.045151617}
-  m_LocalScale: {x: 0.040590573, y: 0.06496109, z: 1}
+  m_LocalPosition: {x: 3.23829, y: 0.4026, z: -0.045151617}
+  m_LocalScale: {x: 0.040548764, y: 0.059082113, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978254327}
@@ -3668,10 +4258,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.03085947, y: 2.4507341}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3682,7 +4272,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.31, y: 3.1}
+  m_Size: {x: 9.899365, y: 1.8697491}
   m_EdgeRadius: 0
 --- !u!114 &2132665285
 MonoBehaviour:
@@ -3691,12 +4281,44 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132665280}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a54aef334d15d240a27687c26a2f987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFall: 0.1
-  timeToDestroy: 2
-  timeToBack: 3
-  groundPrefab: {fileID: 0}
+  pianoNoteEvent:
+    Guid:
+      Data1: 352305282
+      Data2: 1111607791
+      Data3: 121089153
+      Data4: -110736311
+    Path: event:/Surrealista/Si_piano
+  pressDepth: 0.1
+  pressSpeed: 5
+  isPressed: 0
+--- !u!61 &2132665286
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132665280}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09665918, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.31, y: 3.1}
+    newSize: {x: 10.31, y: 3.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.116681, y: 3.1}
+  m_EdgeRadius: 0

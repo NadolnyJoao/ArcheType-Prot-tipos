@@ -22,6 +22,7 @@ public class PlayerMoviment : MonoBehaviour
     public float intervaloPasso = 0.58f;
     public bool saiuAmbiente = false;
 
+    public EventReference screamFall;
 
     //MAPEAMENTO
     public bool chaopedra = false;
@@ -90,6 +91,7 @@ public class PlayerMoviment : MonoBehaviour
 
     void Update()
     {
+        
         // horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
