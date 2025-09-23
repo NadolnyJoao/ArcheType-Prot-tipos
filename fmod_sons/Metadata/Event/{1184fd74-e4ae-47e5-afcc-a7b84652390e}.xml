@@ -79,6 +79,9 @@
 	<object class="GroupTrack" id="{e17f716a-0da7-4f2c-9429-897ffc5bdc9a}">
 		<relationship name="modules">
 			<destination>{bdd375ca-038c-454a-afc4-d576c21bfd73}</destination>
+			<destination>{fce1ec17-3cce-45a7-96bb-c1e818deae9c}</destination>
+			<destination>{382527af-af62-4e41-96b1-ca2c19eac51d}</destination>
+			<destination>{5ed10661-4052-40d4-9861-7feb9c34db65}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{9293b7de-5124-4d0c-b14e-9f5f60700880}</destination>
@@ -89,6 +92,9 @@
 			<destination>{1205c8d4-0885-4ddd-905d-e40ac27ea531}</destination>
 			<destination>{726a9ea8-3a73-4391-9f5e-db9b9f17f927}</destination>
 			<destination>{bdd375ca-038c-454a-afc4-d576c21bfd73}</destination>
+			<destination>{fce1ec17-3cce-45a7-96bb-c1e818deae9c}</destination>
+			<destination>{382527af-af62-4e41-96b1-ca2c19eac51d}</destination>
+			<destination>{5ed10661-4052-40d4-9861-7feb9c34db65}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{81fc77fb-aec4-4f8e-96ad-40ec3eb6a13d}</destination>
@@ -162,8 +168,59 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{bdd375ca-038c-454a-afc4-d576c21bfd73}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>34</value>
+		</property>
 		<property name="start">
 			<value>4</value>
+		</property>
+		<property name="length">
+			<value>11.866666666666667</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{4c7250e5-a29d-4372-8f55-00e57b57660c}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{fce1ec17-3cce-45a7-96bb-c1e818deae9c}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="start">
+			<value>34.336807297367734</value>
+		</property>
+		<property name="length">
+			<value>11.866666666666667</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{4c7250e5-a29d-4372-8f55-00e57b57660c}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{382527af-af62-4e41-96b1-ca2c19eac51d}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="start">
+			<value>106</value>
+		</property>
+		<property name="length">
+			<value>11.866666666666667</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{4c7250e5-a29d-4372-8f55-00e57b57660c}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{5ed10661-4052-40d4-9861-7feb9c34db65}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>50</value>
+		</property>
+		<property name="start">
+			<value>74</value>
 		</property>
 		<property name="length">
 			<value>11.866666666666667</value>
