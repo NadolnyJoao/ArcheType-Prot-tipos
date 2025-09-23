@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{05a717a6-7947-45e1-a574-35084280b494}">
+	<object class="AudioFile" id="{87f9d20f-9f01-486a-b9da-01dc8ff1d572}">
 		<property name="assetPath">
-			<value>Surrealista/Fá_piano.wav</value>
+			<value>FS - wood1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>5.3278541666666666</value>
+			<value>0.79227083333333337</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{f60e3892-d3b5-4705-a2e1-bf35c2604348}</destination>
