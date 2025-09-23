@@ -5790,6 +5790,7 @@ MonoBehaviour:
   laterActions:
     m_PersistentCalls:
       m_Calls: []
+  actionsLateFala: []
 --- !u!61 &628111329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6025,7 +6026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568277, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: m_Name
-      value: quadro (1)
+      value: quadro renascentista
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568277, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: m_IsActive
@@ -6089,7 +6090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: laterActions.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: laterActions.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -12240,7 +12241,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803477254}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -12444,7 +12445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: laterActions.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: laterActions.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
