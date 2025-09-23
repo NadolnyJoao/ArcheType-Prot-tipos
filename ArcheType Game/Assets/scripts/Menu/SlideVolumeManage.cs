@@ -14,6 +14,8 @@ public class SlideVolumeManage : MonoBehaviour
     public Slider volumeSlider;
     private const string VolumePrefKey = "VolumeLevel";
     private string namepred;
+
+
     void Start()
     {
         volumeSlider = GetComponent<Slider>();
@@ -51,7 +53,7 @@ public class SlideVolumeManage : MonoBehaviour
         Debug.Log("Volume ajustado para: " + volume);
     }
 
-
+  
     // Update is called once per frame
     void Update()
     {
