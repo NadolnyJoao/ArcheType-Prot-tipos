@@ -1075,6 +1075,7 @@ MonoBehaviour:
   laterActions:
     m_PersistentCalls:
       m_Calls: []
+  actionsLateFala: []
 --- !u!61 &109247425
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1312,6 +1313,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  actionsLateFala: []
 --- !u!114 &169293037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3638,6 +3640,10 @@ PrefabInstance:
       value: -0.446
       objectReference: {fileID: 0}
     - target: {fileID: 4703951937601195837, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703951937601195837, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.98663735
       objectReference: {fileID: 0}
@@ -3652,6 +3658,14 @@ PrefabInstance:
     - target: {fileID: 4703951937601195837, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.16293183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703951937601195837, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703951937601195837, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4703951937601195837, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6150,6 +6164,7 @@ MonoBehaviour:
   laterActions:
     m_PersistentCalls:
       m_Calls: []
+  actionsLateFala: []
 --- !u!1 &1136544409
 GameObject:
   m_ObjectHideFlags: 0
@@ -9766,6 +9781,7 @@ MonoBehaviour:
   laterActions:
     m_PersistentCalls:
       m_Calls: []
+  actionsLateFala: []
 --- !u!1 &1677512504
 GameObject:
   m_ObjectHideFlags: 0
@@ -10427,7 +10443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746937977}
   m_LocalRotation: {x: -0, y: -0, z: 0.3122756, w: -0.94999164}
-  m_LocalPosition: {x: 0.042, y: -0.026, z: 0}
+  m_LocalPosition: {x: 0.064, y: -0.155, z: 0}
   m_LocalScale: {x: 0.23755981, y: 0.3335195, z: 0.05158688}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11411,6 +11427,7 @@ MonoBehaviour:
   laterActions:
     m_PersistentCalls:
       m_Calls: []
+  actionsLateFala: []
 --- !u!61 &2086945986
 BoxCollider2D:
   m_ObjectHideFlags: 0
