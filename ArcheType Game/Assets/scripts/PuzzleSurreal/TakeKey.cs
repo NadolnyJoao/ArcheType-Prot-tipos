@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class TakeKey : MonoBehaviour
 {
     public bool chavesurreal = false;
     public GameObject chave;
     public BoxCollider2D col;
+    public EventReference takeKey;
+    public EventReference doorOpen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +33,13 @@ public class TakeKey : MonoBehaviour
         if (chavesurreal)
         {
             col.enabled = true;
+            RuntimeManager.PlayOneShot(takeKey, transform.position);
         }
     }
-    
+    public void OpenDoorSound()
+    {
+        RuntimeManager.PlayOneShot(doorOpen, transform.position);
+    }
+ 
 
 }

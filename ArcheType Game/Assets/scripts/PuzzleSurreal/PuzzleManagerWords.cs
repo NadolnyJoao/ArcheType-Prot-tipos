@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using FMODUnity;
+using FMOD.Studio;
 
 public class PuzzleManagerWords : MonoBehaviour
 {
@@ -7,6 +9,7 @@ public class PuzzleManagerWords : MonoBehaviour
     public GameObject puzzle;
     public GameObject portasaida;
     public GameObject portapuzzle;
+    public EventReference doorOpen;
 
     public void CheckWinCondition()
     {
@@ -19,6 +22,7 @@ public class PuzzleManagerWords : MonoBehaviour
         }
         portapuzzle.SetActive(false);
         portasaida.SetActive(true);
+        RuntimeManager.PlayOneShot(doorOpen, transform.position);
         Debug.Log("parabens voce não é um astrolopietcus");
         ExitPuzzle();
     }
@@ -75,4 +79,5 @@ public class PuzzleManagerWords : MonoBehaviour
             piece.currentSlot = newSlot;
         }
     }
+
 }

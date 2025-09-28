@@ -372,7 +372,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &122889664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -615,7 +621,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &181262706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1118,7 +1130,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &488017716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1399,7 +1417,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!212 &618755971
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1968,6 +1992,7 @@ GameObject:
   - component: {fileID: 1008818155}
   - component: {fileID: 1008818157}
   - component: {fileID: 1008818158}
+  - component: {fileID: 1008818159}
   m_Layer: 0
   m_Name: PORTA
   m_TagString: Untagged
@@ -1983,7 +2008,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008818153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.35, y: 13.04, z: -0.045151617}
+  m_LocalPosition: {x: 15.6, y: 11.97, z: -0.045151617}
   m_LocalScale: {x: 0.45340613, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2014,6 +2039,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1008818158}
+        m_TargetAssemblyTypeName: TakeKey, Assembly-CSharp
+        m_MethodName: OpenDoorSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2049,7 +2086,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: -1977282782
+      Data2: 1083310657
+      Data3: 602267826
+      Data4: -1618534159
+    Path: event:/ClosedDoor
 --- !u!212 &1008818156
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2143,6 +2186,32 @@ MonoBehaviour:
   chavesurreal: 0
   chave: {fileID: 618755969}
   col: {fileID: 1008818157}
+  takeKey:
+    Guid:
+      Data1: -1825103355
+      Data2: 1185551501
+      Data3: -1271616869
+      Data4: 2096961829
+    Path: event:/pickup_key1
+  doorOpen:
+    Guid:
+      Data1: -2116952641
+      Data2: 1157891771
+      Data3: 372866744
+      Data4: -1921893398
+    Path: event:/WoodDoor openning_surrealista
+--- !u!114 &1008818159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008818153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25da37e61e967cc4ebc1b8d523abae0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1017276883
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,7 +3564,13 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1410365055
 BoxCollider2D:
   m_ObjectHideFlags: 0

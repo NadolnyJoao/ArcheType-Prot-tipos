@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using FMODUnity;
+using FMOD.Studio;
 
 public class Interactable : MonoBehaviour
 {
@@ -10,14 +12,12 @@ public class Interactable : MonoBehaviour
     public UnityEvent onTrigger;
     public UnityEvent exitTrigger;
     public bool playerContact = false;
-    public GameObject Bip_sound;
+    public EventReference Interection;
 
-    private void PlaySound()
+    public void PlaySound()
     {
-
-            if (Bip_sound != null)
-                Bip_sound.SetActive(true);
-        
+        RuntimeManager.PlayOneShot(Interection, transform.position);
+        Debug.Log("teste");               
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -32,6 +32,7 @@ public class Interactable : MonoBehaviour
             if (playerMoviment != null && playerContact)
             {
                 playerMoviment.setActionInterableContact(actions);
+                //PlaySound(); 
                 Debug.Log("PASSANDO AÇÃO INTERABLE obj: "+gameObject.name);
             }
         }
