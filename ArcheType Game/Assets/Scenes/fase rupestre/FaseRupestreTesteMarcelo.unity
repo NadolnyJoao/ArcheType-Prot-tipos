@@ -427,7 +427,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &64537017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -675,7 +681,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &64751761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1061,7 +1073,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &109247424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1376,7 +1394,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &169293038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1600,7 +1624,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &207836186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2117,7 +2147,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!212 &278889990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2362,7 +2398,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &282664820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3807,7 +3849,7 @@ MonoBehaviour:
           m_StringArgument: damage
           m_BoolArgument: 0
         m_CallState: 2
-  vida: 2
+  vida: 3
   gameover: {fileID: 2009447719}
   damageBite:
     Guid:
@@ -3816,6 +3858,11 @@ MonoBehaviour:
       Data3: 1328581819
       Data4: -473381422
     Path: event:/Bite_wolf1
+  timeInvencivelMax: 3
+  hearts:
+  - {fileID: 348748052}
+  - {fileID: 168007737}
+  - {fileID: 1824221799}
 --- !u!95 &582355292 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 582355289, guid: 96aab55d4808ec54cbc8167a41a93861, type: 3}
@@ -4055,7 +4102,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &635589237
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4279,7 +4332,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &647928877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4876,7 +4935,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &778911297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5379,8 +5444,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.4, y: -38.5}
-  m_SizeDelta: {x: 144.53, y: 60.0341}
+  m_AnchoredPosition: {x: -5.4, y: -18.5}
+  m_SizeDelta: {x: 83.42, y: 60.0341}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &951463120
 MonoBehaviour:
@@ -5402,7 +5467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 04821777ab04bab4ebb6e045b84e1b7a, type: 3}
+  m_Sprite: {fileID: -1244333560, guid: e3fedb53f2337e74399ff04c76039523, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5834,33 +5899,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capivara (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 1423718205498456228, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1072913589}
-    - target: {fileID: 1423718205498456229, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -2076286325, guid: 0dc8052a77df31540ad682dc6e3c9071, type: 3}
-    - target: {fileID: 1423718205498456229, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1423718205498456229, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 914642805
-      objectReference: {fileID: 0}
     - target: {fileID: 1423718205498456230, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1423718205498456230, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.009180624
-      objectReference: {fileID: 0}
-    - target: {fileID: 1423718205498456230, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6408
       objectReference: {fileID: 0}
     - target: {fileID: 1423718205498456230, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5904,32 +5945,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
---- !u!1 &1072913588 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1423718205498456227, guid: dd901a1ccd49dd74e88be45bcdca5e31, type: 3}
-  m_PrefabInstance: {fileID: 1072913587}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1072913589
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072913588}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ba155aa37a0b32b47bc2f97ef446d806, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1080991162
 GameObject:
   m_ObjectHideFlags: 0
@@ -6641,7 +6656,7 @@ RectTransform:
   m_GameObject: {fileID: 1169116730}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 1, y: 1, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1227767211}
@@ -6649,8 +6664,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.7, y: -30}
-  m_SizeDelta: {x: 100, y: 63}
+  m_AnchoredPosition: {x: -9.7, y: -11.6}
+  m_SizeDelta: {x: 100, y: 87.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1169116732
 MonoBehaviour:
@@ -6672,7 +6687,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 944756940, guid: 1f6b31238c85a5946978823637421e72, type: 3}
+  m_Sprite: {fileID: 538501144, guid: 773c3129bde55c1449b107aabc50534a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7592,7 +7607,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1296816156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7911,7 +7932,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!212 &1350277232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8725,7 +8752,7 @@ RectTransform:
   m_GameObject: {fileID: 1415625553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1710128815}
@@ -8733,8 +8760,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.4, y: -38.4287}
-  m_SizeDelta: {x: 45.4313, y: 23.1426}
+  m_AnchoredPosition: {x: -10.4, y: -13.6}
+  m_SizeDelta: {x: 46, y: 37.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415625555
 MonoBehaviour:
@@ -8756,7 +8783,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6bcf7b5456bc3384ca97baa7e8eddbf4, type: 3}
+  m_Sprite: {fileID: 1847204440, guid: 14739b75949d76541ab1c37c42f3f2e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9492,7 +9519,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1528371186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10796,7 +10829,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1820900143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11419,7 +11458,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &2086945985
 MonoBehaviour:
   m_ObjectHideFlags: 0

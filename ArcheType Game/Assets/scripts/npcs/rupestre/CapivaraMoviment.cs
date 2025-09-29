@@ -20,6 +20,7 @@ public class CapivaraMoviment : MonoBehaviour
     public float speedWalk = 2f;
     public float speedRun = 5f;
     [Header("estados")]
+    public bool vivo = true;
 
     [Header("movimento")]
     public int directionMov = 1;
@@ -41,6 +42,7 @@ public class CapivaraMoviment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!vivo) return;
         time -= Time.deltaTime;
         float distPlayer = Vector3.Distance(transform.position, playerTransform.position);
 
@@ -58,12 +60,12 @@ public class CapivaraMoviment : MonoBehaviour
                 MudarEstado();
             }
         }
-        
+
         if (estadoAtual == Estado.Fugindo)
         {
 
             transform.Translate(Vector3.right * directionMov * Time.deltaTime * speedRun);
-            
+
             if (distPlayer > distanciaFuga * 1.5f)
                 estadoAtual = Estado.Andando;
         }
@@ -107,13 +109,24 @@ public class CapivaraMoviment : MonoBehaviour
                     estadoAtual = Estado.Andando;
                     directionMov = (Random.value > 0.5f) ? -1 : 1;
                     sprite.flipX = directionMov == 1;
-                    
+
                     time = Random.Range(tempoMinAndando, tempoMaxAndando);
                 }
                 break;
 
         }
     }
+
+
+void OnTriggerEnter2D(Collider2D other)
+{
+    if (other.gameObject.name.Contains("pedra"))
+    {
+        vivo = false;
+        sprite.flipY = true;
+        anima.speed = 0;
+    }
+}
 }
 
 

@@ -15,6 +15,7 @@ public class ReceberDano : MonoBehaviour
     private float timeInvencivel = 1f;
     public float timeInvencivelMax = 3f;
 
+    public List<GameObject> hearts = new List<GameObject>();
     void Update()
     {
         timeInvencivel -= Time.deltaTime;
@@ -32,10 +33,14 @@ public class ReceberDano : MonoBehaviour
             RuntimeManager.PlayOneShot(damageBite, transform.position);
             vida--;
             actionsDamage.Invoke();
+                hearts[hearts.Count - 1].SetActive(false);
+                //remover ultimo item .pop
+                hearts.RemoveAt(hearts.Count - 1);
             if (vida <= 0)
             {
                 actionsDeath.Invoke();
                 Debug.Log("morrer pls");
+                //esconder ultimo item do array hearts
 
             }
             timeInvencivel = timeInvencivelMax;
