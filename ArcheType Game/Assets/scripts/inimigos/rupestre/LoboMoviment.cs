@@ -101,7 +101,7 @@ public class LoboMoviment : MonoBehaviour
             case Estado.Parado:
                 estadoAtual = Random.value < 0.5f ? Estado.Andando : Estado.Patrulha;
                 time = Random.Range(tempoMinAndando, tempoMaxAndando);
-                direction = Random.value > 0.5f ? -1 : 1;
+                direction = Random.value > 0.8f ? -1 : 1;
                 sprite.flipX = direction == 1;
                 // criar grupo de patrulha
                 if (estadoAtual == Estado.Patrulha)
@@ -140,7 +140,7 @@ public class LoboMoviment : MonoBehaviour
                         }
                         friends.Clear();
                     }else{
-                        direction = (Random.value > 0.5f) ? -1 : 1;
+                        direction = (Random.value > 0.8f) ? -1 : 1;
                 sprite.flipX = direction == 1;
                     }
                 }
@@ -167,7 +167,7 @@ public class LoboMoviment : MonoBehaviour
     {
         lider = null;
         estadoAtual = Estado.Andando;
-        direction = (Random.value > 0.5f) ? -1 : 1;
+        direction = (Random.value > 0.8f) ? -1 : 1;
         sprite.flipX = direction == 1;
     }
     public void setPresa(Transform newPresa)

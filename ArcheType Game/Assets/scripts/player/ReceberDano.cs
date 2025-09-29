@@ -12,11 +12,12 @@ public class ReceberDano : MonoBehaviour
     public int vida = 2;
     public GameObject gameover;
     public EventReference damageBite;
-
+    private float timeInvencivel = 1f;
+    public float timeInvencivelMax = 3f;
 
     void Update()
     {
-
+        timeInvencivel -= Time.deltaTime;
     }
 
     // Start is called before the first frame update
@@ -24,6 +25,10 @@ public class ReceberDano : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            if (timeInvencivel > 0)
+            {
+                return;
+            }
             RuntimeManager.PlayOneShot(damageBite, transform.position);
             vida--;
             actionsDamage.Invoke();
@@ -33,6 +38,8 @@ public class ReceberDano : MonoBehaviour
                 Debug.Log("morrer pls");
 
             }
+            timeInvencivel = timeInvencivelMax;
+
         }
     }
 
