@@ -56,4 +56,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fase surealista/SalaSurreal.unity
     guid: 008978c7b95f5d546b54de875dcf4024
+  - enabled: 1
+    path: Assets/Scenes/fase surealista/CutsceneSurrealista.unity
+    guid: 9be4e132f3a07654a9ba983cfbb93a70
   m_configObjects: {}

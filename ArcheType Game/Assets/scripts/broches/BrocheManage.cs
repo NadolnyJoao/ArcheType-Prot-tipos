@@ -6,10 +6,17 @@ using UnityEngine;
 using UnityEngine.UI;
 public class BrocheManage : MonoBehaviour
 {
+
+    [Serializable]
+    public class ImgBoche
+    {
+        public string name;
+        public Sprite img;
+    }
     public Broches coletados = new Broches();
     public string brocheToColetar;
 
-    public Sprite[] imgBroches;
+    public ImgBoche[] imgBroches;
     public Image[] slotBroches;
 
     private string pathFile = "Assets/Saves/Broches/Broches.json";
@@ -56,24 +63,33 @@ private Sprite imgBroche;
         foreach (string name in coletados.broches)
         {
 
-
-            if (name == "rupestre")
+            foreach (ImgBoche img in imgBroches)
             {
-                imgBroche = imgBroches[0];
-            }
-            else
-            {
-                imgBroche = imgBroches[1];
-            }
-            foreach (Image slot in slotBroches)
-            {
-                if (slot.color != Color.white)
+                Debug.Log("comparação name broche name : " + name + " name img.name: " + img.name + " igual? "+(img.name == name));
+                if (img.name == name)
                 {
-                    slot.sprite = imgBroche;
-                    slot.color = Color.white;
-                    break;
+                    imgBroche = img.img;
+                    foreach (Image slot in slotBroches)
+                    {
+                        if (slot.color != Color.white)
+                        {
+                            slot.sprite = imgBroche;
+                            slot.color = Color.white;
+                            break;
+                        }
+                    }
                 }
             }
+
+            // if (name == "rupestre")
+            //     {
+            //         imgBroche = imgBroches[0];
+            //     }
+            //     else
+            //     {
+            //         imgBroche = imgBroches[1];
+            //     }
+            
         }
 
     }
