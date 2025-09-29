@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour
 
     [Header("Limits")]
     public List<Transform> limites = new List<Transform>();
-
+    public float distLimit = 8;
 
     private void Start()
     {
@@ -27,9 +27,9 @@ public class CameraFollow : MonoBehaviour
             nposition.z = transform.position.z;
             float dist = Vector3.Distance(transform.position, nposition);
             Debug.Log("dist cam to limit " + dist);
-            if (dist < 7)
+            if (dist < distLimit)
             {
-                if (limite.name.Contains("RightLimit"))
+                if (limite.name.Contains("Right"))
                 {
                     if (limite.position.x < transform.position.x)
                     {
