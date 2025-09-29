@@ -2789,9 +2789,9 @@ GameObject:
   m_Component:
   - component: {fileID: 259871494}
   - component: {fileID: 259871498}
-  - component: {fileID: 259871497}
   - component: {fileID: 259871496}
   - component: {fileID: 259871495}
+  - component: {fileID: 259871499}
   m_Layer: 5
   m_Name: book 1
   m_TagString: Untagged
@@ -2816,8 +2816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 388, y: 11.4}
-  m_SizeDelta: {x: 1006.918, y: 136.6963}
+  m_AnchoredPosition: {x: 374.63, y: 11.4}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &259871495
 CanvasGroup:
@@ -2846,7 +2846,15 @@ MonoBehaviour:
   originalSlot: {fileID: 1792524855}
   currentSlot: {fileID: 0}
   snapDistance: 50
---- !u!114 &259871497
+--- !u!222 &259871498
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259871493}
+  m_CullTransparentMesh: 1
+--- !u!114 &259871499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2855,7 +2863,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 259871493}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -2866,21 +2874,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 4170b3479ecb6594e8564fb665b3c414, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &259871498
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259871493}
-  m_CullTransparentMesh: 1
+  m_Sprite: {fileID: 2024378543, guid: 4170b3479ecb6594e8564fb665b3c414, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &292151719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,9 +2927,9 @@ GameObject:
   m_Component:
   - component: {fileID: 292587632}
   - component: {fileID: 292587636}
-  - component: {fileID: 292587635}
   - component: {fileID: 292587634}
   - component: {fileID: 292587633}
+  - component: {fileID: 292587637}
   m_Layer: 5
   m_Name: book 4
   m_TagString: Untagged
@@ -2952,7 +2955,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -346, y: 34.4333}
-  m_SizeDelta: {x: 907.4252, y: 189.2888}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &292587633
 CanvasGroup:
@@ -2981,7 +2984,15 @@ MonoBehaviour:
   originalSlot: {fileID: 238363600}
   currentSlot: {fileID: 0}
   snapDistance: 50
---- !u!114 &292587635
+--- !u!222 &292587636
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292587631}
+  m_CullTransparentMesh: 1
+--- !u!114 &292587637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2990,7 +3001,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 292587631}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -3001,21 +3012,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 376ef24c70d03334f849af78dc8d367c, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &292587636
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292587631}
-  m_CullTransparentMesh: 1
+  m_Sprite: {fileID: -1482504878, guid: 376ef24c70d03334f849af78dc8d367c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &297369175
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,9 +3169,9 @@ GameObject:
   m_Component:
   - component: {fileID: 345885580}
   - component: {fileID: 345885584}
-  - component: {fileID: 345885583}
   - component: {fileID: 345885582}
   - component: {fileID: 345885581}
+  - component: {fileID: 345885585}
   m_Layer: 5
   m_Name: book 6
   m_TagString: Untagged
@@ -3191,7 +3197,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -107, y: 59.020065}
-  m_SizeDelta: {x: 1049.0118, y: 250.8797}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &345885581
 CanvasGroup:
@@ -3220,7 +3226,15 @@ MonoBehaviour:
   originalSlot: {fileID: 931466222}
   currentSlot: {fileID: 0}
   snapDistance: 50
---- !u!114 &345885583
+--- !u!222 &345885584
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345885579}
+  m_CullTransparentMesh: 1
+--- !u!114 &345885585
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3229,7 +3243,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 345885579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -3240,21 +3254,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: a8fd96516ee589045bb65a95e233bc44, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &345885584
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345885579}
-  m_CullTransparentMesh: 1
+  m_Sprite: {fileID: -865263418, guid: a8fd96516ee589045bb65a95e233bc44, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &378459899 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2930496224151800047, guid: 3e54116e61cecab44b00a00a2323c1ec, type: 3}
@@ -9291,9 +9300,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1231368254}
   - component: {fileID: 1231368258}
-  - component: {fileID: 1231368257}
   - component: {fileID: 1231368256}
   - component: {fileID: 1231368255}
+  - component: {fileID: 1231368259}
   m_Layer: 5
   m_Name: book 5
   m_TagString: Untagged
@@ -9319,7 +9328,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -186, y: 50.250023}
-  m_SizeDelta: {x: 792.6257, y: 217.6699}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1231368255
 CanvasGroup:
@@ -9348,7 +9357,15 @@ MonoBehaviour:
   originalSlot: {fileID: 1800132383}
   currentSlot: {fileID: 0}
   snapDistance: 50
---- !u!114 &1231368257
+--- !u!222 &1231368258
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231368253}
+  m_CullTransparentMesh: 1
+--- !u!114 &1231368259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9357,7 +9374,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1231368253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -9368,21 +9385,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 0f3b2e2632979794c80d57fdab3214fc, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1231368258
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231368253}
-  m_CullTransparentMesh: 1
+  m_Sprite: {fileID: -597753641, guid: 0f3b2e2632979794c80d57fdab3214fc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1260608396
 GameObject:
   m_ObjectHideFlags: 0
@@ -9578,7 +9590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1263898249
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10318,9 +10330,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1313935347}
   - component: {fileID: 1313935351}
-  - component: {fileID: 1313935350}
   - component: {fileID: 1313935349}
   - component: {fileID: 1313935348}
+  - component: {fileID: 1313935352}
   m_Layer: 5
   m_Name: book 2
   m_TagString: Untagged
@@ -10346,7 +10358,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 251, y: 11.8}
-  m_SizeDelta: {x: 1083.4519, y: 138.4832}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1313935348
 CanvasGroup:
@@ -10375,7 +10387,15 @@ MonoBehaviour:
   originalSlot: {fileID: 1776121517}
   currentSlot: {fileID: 0}
   snapDistance: 50
---- !u!114 &1313935350
+--- !u!222 &1313935351
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313935346}
+  m_CullTransparentMesh: 1
+--- !u!114 &1313935352
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10384,7 +10404,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1313935346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -10395,21 +10415,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: f83a970d8b47b1c4d8ac2532cf3ca93e, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1313935351
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313935346}
-  m_CullTransparentMesh: 1
+  m_Sprite: {fileID: 428818548, guid: f83a970d8b47b1c4d8ac2532cf3ca93e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1317704198
 GameObject:
   m_ObjectHideFlags: 0
@@ -13821,9 +13836,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1857101549}
   - component: {fileID: 1857101553}
-  - component: {fileID: 1857101552}
   - component: {fileID: 1857101551}
   - component: {fileID: 1857101550}
+  - component: {fileID: 1857101554}
   m_Layer: 5
   m_Name: book 3
   m_TagString: Untagged
@@ -13849,7 +13864,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 59, y: 27.658}
-  m_SizeDelta: {x: 1045.185, y: 169.4685}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1857101550
 CanvasGroup:
@@ -13878,7 +13893,15 @@ MonoBehaviour:
   originalSlot: {fileID: 1534576388}
   currentSlot: {fileID: 0}
   snapDistance: 50
---- !u!114 &1857101552
+--- !u!222 &1857101553
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857101548}
+  m_CullTransparentMesh: 1
+--- !u!114 &1857101554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13887,7 +13910,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1857101548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -13898,21 +13921,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 0cd810f89d40c914992719f715d63187, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1857101553
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857101548}
-  m_CullTransparentMesh: 1
+  m_Sprite: {fileID: -1733919843, guid: 0cd810f89d40c914992719f715d63187, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1865312328
 GameObject:
   m_ObjectHideFlags: 0
