@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class DimensionTravel : MonoBehaviour
 {
@@ -12,6 +14,8 @@ public class DimensionTravel : MonoBehaviour
     public Transform mundosonhoobj;
     public Transform salasurreal;
     private PlayerMoviment playermoviment;
+    public EventReference mundoNormal;
+    public EventReference mundoSurreal;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +37,9 @@ public class DimensionTravel : MonoBehaviour
             player.position = mundosonhoobj.position;
             mundosonho = true;
             mundonormal = false;
+            RuntimeManager.PlayOneShot(mundoSurreal, transform.position);
             Debug.Log("mudou para mundo do sonho");
+            
         }
         else
         if (mundosonho)
@@ -43,7 +49,9 @@ public class DimensionTravel : MonoBehaviour
             player.position = mundonormalobj.position;
             mundonormal = true;
             mundosonho = false;
+            RuntimeManager.PlayOneShot(mundoNormal, transform.position);
             Debug.Log("mudou para mundo do normar");
+            
         }
     }
     void OnAtaque()

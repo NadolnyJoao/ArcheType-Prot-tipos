@@ -327,6 +327,20 @@ MonoBehaviour:
   mundonormalobj: {fileID: 12469181}
   mundosonhoobj: {fileID: 87545383}
   salasurreal: {fileID: 0}
+  mundoNormal:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  mundoSurreal:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &137761590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,6 +1267,20 @@ MonoBehaviour:
   mundonormalobj: {fileID: 12469181}
   mundosonhoobj: {fileID: 87545383}
   salasurreal: {fileID: 0}
+  mundoNormal:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  mundoSurreal:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &528509003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,6 +1448,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &573271735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 573271737}
+  - component: {fileID: 573271736}
+  m_Layer: 0
+  m_Name: Trilha Sonora
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &573271736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573271735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1226223388
+      Data2: 1264369985
+      Data3: -1417151583
+      Data4: 1424277080
+    Path: event:/Trilha-sonora-surrealista
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &573271737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573271735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.4515, y: 2.4197812, z: 0.0031910245}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618755969
 GameObject:
@@ -2792,6 +2883,20 @@ MonoBehaviour:
   mundonormalobj: {fileID: 12469181}
   mundosonhoobj: {fileID: 87545383}
   salasurreal: {fileID: 0}
+  mundoNormal:
+    Guid:
+      Data1: 1652126588
+      Data2: 1136778565
+      Data3: -733449558
+      Data4: 1903435721
+    Path: "event:/transi\xE7\xE3o-de-mundo2"
+  mundoSurreal:
+    Guid:
+      Data1: 1211244967
+      Data2: 1135007910
+      Data3: -1069491311
+      Data4: -1355893628
+    Path: "event:/transi\xE7\xE3o-de-mundo1"
 --- !u!1 &1191706013
 GameObject:
   m_ObjectHideFlags: 0
