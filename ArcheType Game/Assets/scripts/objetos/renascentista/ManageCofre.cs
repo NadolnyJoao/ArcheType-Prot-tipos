@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class ManageCofre : MonoBehaviour
 {
     // Start is called before the first frame update
-    string secretCode = "123";
+    string secretCode = "122";
     public List<ManageDigit> digitos= new  List<ManageDigit>();
     public UnityEvent onCofreAberto;
     public bool cofreisOpen = false;

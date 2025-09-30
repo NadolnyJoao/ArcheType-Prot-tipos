@@ -12507,7 +12507,7 @@ PrefabInstance:
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: falas.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: d3b02af09bfb1104f9ffeb13783af3b7, type: 2}
+      objectReference: {fileID: 11400000, guid: e49447df4bba57f46ad73ce141891282, type: 2}
     - target: {fileID: 6531590200145568745, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
       propertyPath: falas.Array.data[0].falas.Array.size
       value: 1
