@@ -66,16 +66,19 @@ public class ColorMixer : MonoBehaviour
             this.name = name;
             this.components = new List<string>(components);
         }
-    }   
+    }
     [Header("concluir ocjetivo")]
-        public List<string> coresParaConclui = new List<string>();
+    public List<string> coresParaConclui = new List<string>();
     public UnityEvent ObjetivoConcluiod;
 
     [Header("Paleta do Jogador")]
     public List<ColorData> myColorPalette = new List<ColorData>();
+    public Image[] colorSlots;
 
     [Header("Evento chamado quando uma nova cor é adicionada")]
     public UnityEvent<string> onNewColorAdded;
+    public GameObject colorPopupPrefab;
+    public Transform popupParent;
 
     public void Start()
     {
@@ -86,18 +89,21 @@ public class ColorMixer : MonoBehaviour
         SelectSlotColor(0);
     }
 
-    void Update(){
-        int num =0;
-        foreach(var corNecessaria in coresParaConclui)
+    void Update()
+    {
+        int num = 0;
+        foreach (var corNecessaria in coresParaConclui)
         {
             foreach (var mycolor in myColorPalette)
             {
-                if(corNecessaria == mycolor.name){
+                if (corNecessaria == mycolor.name)
+                {
                     num++;
                 }
             }
         }
-        if(num == coresParaConclui.Count && !ObjCompleto){
+        if (num == coresParaConclui.Count && !ObjCompleto)
+        {
             ObjetivoConcluiod.Invoke();
             ObjCompleto = true;
         }
@@ -110,11 +116,33 @@ public class ColorMixer : MonoBehaviour
         {
             myColorPalette.Add(new ColorData(colorName, colorName));
             // onNewColorAdded?.Invoke(colorName);
-            GameObject coisa = Instantiate(prefabmycolorslot, new Vector3(0 - 100f * myColorPalette.Count, 0, 0), Quaternion.identity, mycolorpalette.transform);
-            coisa.GetComponent<Image>().color = GetColorVisual(colorName);
-            coisa.GetComponent<RectTransform>().anchoredPosition = new Vector2(-140f * myColorPalette.Count, 0);
-            coisa.GetComponent<Button>().onClick.AddListener(() => SelectColor(colorName));
-            coisa.GetComponent<ColorHover>().SetName(colorName);
+            // Adiciona a cor no próximo slot disponível
+            for (int i = 0; i < colorSlots.Length; i++)
+            {
+                if (colorSlots[i].color.a == 0) // Slot vazio (alpha 0)
+                {
+                    colorSlots[i].color = GetColorVisual(colorName);
+                    colorSlots[i].GetComponent<Button>().onClick.RemoveAllListeners();
+                    colorSlots[i].GetComponent<Button>().onClick.AddListener(() => SelectColor(colorName));
+                    if (colorSlots[i].TryGetComponent<ColorHover>(out var hover))
+                        hover.SetName(colorName);
+                    break;
+                }
+            }
+
+            // Instancia o pop-up de cor coletada
+            if (colorPopupPrefab != null && popupParent != null)
+            {
+                var popupObj = Instantiate(colorPopupPrefab, popupParent);
+                var popup = popupObj.GetComponent<ColorPopup>();
+                if (popup != null)
+                {
+                    string texto = $"Tinta {colorName.ToLower()} coletada";
+                    popup.Configurar("Tinta coletada", texto);
+                }else{
+                    Debug.Log("não tem o component colorpopup");
+                }
+            }
         }
         else
         {
@@ -136,7 +164,17 @@ public class ColorMixer : MonoBehaviour
         if (!string.IsNullOrEmpty(result) && !HasColor(result))
         {
             AddBaseColor(result); // Adiciona a nova cor à paleta
-            // myColorPalette.Add(new ColorData(result, colorselect1, colorselect2));
+                                  // myColorPalette.Add(new ColorData(result, colorselect1, colorselect2));
+            if (colorPopupPrefab != null && popupParent != null)
+            {
+                var popupObj = Instantiate(colorPopupPrefab, popupParent);
+                var popup = popupObj.GetComponent<ColorPopup>();
+                if (popup != null)
+                {
+                    string texto = $"Tinta {colorselect1.ToLower()} e {colorselect2.ToLower()} coletadas";
+                    popup.Configurar("Tinta coletada", texto);
+                }
+            }
             onNewColorAdded?.Invoke(result);
             Debug.Log("Nova cor adicionada: " + result);
         }
@@ -153,41 +191,41 @@ public class ColorMixer : MonoBehaviour
         List<string> mix = new List<string>() { a, b };
         mix.Sort();
 
-        
+
         string combo = string.Join("+", mix);
 
         // Regras principais
         switch (combo)
-{
-    case "Amarelo+Branco": return "Amarelo Claro 1";
-    case "Amarelo Claro 1+Branco": return "Amarelo Claro 2";
-    case "Amarelo Claro 2+Branco": return "Amarelo Claro 3";
-    
-    case "Amarelo+Preto": return "Amarelo Escuro 1";
-    case "Amarelo Escuro 1+Preto": return "Amarelo Escuro 2";
-    case "Amarelo Escuro 2+Preto": return "Amarelo Escuro 3";
-    
-    case "Amarelo+Vermelho": return "Laranja";
-    
-    case "Branco+Vermelho": return "Vermelho Claro 1";
-    case "Branco+Vermelho Claro 1": return "Vermelho Claro 2";
-    case "Branco+Vermelho Claro 2": return "Vermelho Claro 3";
-    
-    case "Branco+Laranja": return "Laranja Claro 1";
-    case "Branco+Laranja Claro 1": return "Laranja Claro 2";
-    case "Branco+Laranja Claro 2": return "Laranja Claro 3";
+        {
+            case "Amarelo+Branco": return "Amarelo Claro 1";
+            case "Amarelo Claro 1+Branco": return "Amarelo Claro 2";
+            case "Amarelo Claro 2+Branco": return "Amarelo Claro 3";
 
-    case "Laranja+Preto": return "Laranja Escuro 1";
-    case "Laranja Escuro 1+Preto": return "Laranja Escuro 2";
-    case "Laranja Escuro 2+Preto": return "Laranja Escuro 3";
-    
-    case "Preto+Vermelho": return "Vermelho Escuro 1";
-    case "Preto+Vermelho Escuro 1": return "Vermelho Escuro 2";
-    case "Preto+Vermelho Escuro 2": return "Vermelho Escuro 3";
-}
+            case "Amarelo+Preto": return "Amarelo Escuro 1";
+            case "Amarelo Escuro 1+Preto": return "Amarelo Escuro 2";
+            case "Amarelo Escuro 2+Preto": return "Amarelo Escuro 3";
 
-     
-       
+            case "Amarelo+Vermelho": return "Laranja";
+
+            case "Branco+Vermelho": return "Vermelho Claro 1";
+            case "Branco+Vermelho Claro 1": return "Vermelho Claro 2";
+            case "Branco+Vermelho Claro 2": return "Vermelho Claro 3";
+
+            case "Branco+Laranja": return "Laranja Claro 1";
+            case "Branco+Laranja Claro 1": return "Laranja Claro 2";
+            case "Branco+Laranja Claro 2": return "Laranja Claro 3";
+
+            case "Laranja+Preto": return "Laranja Escuro 1";
+            case "Laranja Escuro 1+Preto": return "Laranja Escuro 2";
+            case "Laranja Escuro 2+Preto": return "Laranja Escuro 3";
+
+            case "Preto+Vermelho": return "Vermelho Escuro 1";
+            case "Preto+Vermelho Escuro 1": return "Vermelho Escuro 2";
+            case "Preto+Vermelho Escuro 2": return "Vermelho Escuro 3";
+        }
+
+
+
 
         return null; // mistura não conhecida
     }
@@ -224,10 +262,10 @@ public class ColorMixer : MonoBehaviour
         }
         if (colorselect1 != "" && colorselect2 != "")
         {
-            string nameColorResult = GetMixResult(colorselect1,colorselect2);
-            Debug.Log("ColorResult "+nameColorResult);
-            if(nameColorResult != null)
-            result.color = GetColorVisual(nameColorResult);
+            string nameColorResult = GetMixResult(colorselect1, colorselect2);
+            Debug.Log("ColorResult " + nameColorResult);
+            if (nameColorResult != null)
+                result.color = GetColorVisual(nameColorResult);
         }
     }
     public void SelectSlotColor(int id)

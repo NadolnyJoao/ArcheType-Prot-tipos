@@ -17,7 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278223603
   falas:
-  - "Se voc\xEA estiver procurando o anci\xE3o, tente sair da caverna pela porta
-    da direita."
+  - "Se voc\xEA estiver procurando o anci\xE3o, tente sair da caverna pela passagem
+    \xE1 direita."
   canPass: 1
   index: 0

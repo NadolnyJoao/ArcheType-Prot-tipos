@@ -17,8 +17,8 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4286019447
   falas:
-  - "Precisamos explorar o cenario e p\xF3der encontrar recursos e locais perigosos"
+  - "\xC9 necessario explorar o cenario e para encontrar recursos e locais perigosos"
   - "Voce ser\xE1 nosso explorador, descubra e registre nas paredes para que possamos
-    passar essa informa\xE7\xE3o para nosso filho"
+    passar essa informa\xE7\xE3o a todos da tribo."
   canPass: 1
-  index: 1
+  index: 0

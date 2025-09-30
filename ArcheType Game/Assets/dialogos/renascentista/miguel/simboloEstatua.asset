@@ -17,6 +17,6 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4292972836
   falas:
-  - Tem um simbolo atras da estatua
+  - Tem um simbolo atras da estatua.
   canPass: 0
   index: 0

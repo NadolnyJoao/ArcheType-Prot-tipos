@@ -17,7 +17,6 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278223603
   falas:
-  - "O graveto voc\xEA pode encontrar na plan\xEDcie \xE0 direita trar na planice
-    a direita"
+  - "O graveto pode ser encontrado na plan\xEDcie \xE0 direita."
   canPass: 1
   index: 0

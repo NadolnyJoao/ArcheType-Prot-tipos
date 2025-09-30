@@ -17,6 +17,6 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4292972836
   falas:
-  - Tem um cofre atras desse quadro
+  - Tem um cofre atras desse quadro.
   canPass: 1
   index: 0

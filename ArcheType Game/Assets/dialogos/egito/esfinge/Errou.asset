@@ -17,8 +17,8 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278190335
   falas:
-  - A resposta esta errada
-  - vou lhe dar mais uma chance
+  - Resposta errada garoto.
+  - Vou lhe dar mais uma chance.
   - "Que criatura pela manh\xE3 anda com quatro patas, ao meio-dia com duas e \xE0
     noite com tr\xEAs? "
   canPass: 1
