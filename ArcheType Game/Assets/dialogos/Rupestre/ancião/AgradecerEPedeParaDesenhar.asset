@@ -17,8 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4285580799
   falas:
-  - "Voc\xEA fez descobertas imjportantes, nossa tribo agradece"
-  - Porque n registra o que vc viu aqui na parede?
-  - Alguns de nos registramos rituasis e momentos que passamos
+  - "Voc\xEA fez descobertas importantes garoto, nossa tribo \xE9 muito grata."
+  - "Porque n\xE3o registra o que viu na parede da caverna?"
   canPass: 1
-  index: 2
+  index: 0

@@ -17,8 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4286019447
   falas:
-  - Sim filho, vamos
-  - "La fora temos nosso chefe, ele passara mais informa\xE7\xF5es"
-  - ele deve esta la fora
+  - Sim filho.
+  - "La fora temos nosso chefe, ele passara mais informa\xE7\xF5es."
   canPass: 0
   index: 0

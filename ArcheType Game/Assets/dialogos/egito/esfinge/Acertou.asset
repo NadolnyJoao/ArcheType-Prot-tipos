@@ -17,6 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278190335
   falas:
-  - acertou lhe permito que passe
+  - "Droga, voc\xEA acertou."
+  - Como combinado, permite que passe.
   canPass: 1
   index: 0

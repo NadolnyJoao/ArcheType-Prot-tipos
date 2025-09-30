@@ -19,8 +19,8 @@ MonoBehaviour:
   falas:
   - "Pensei que voc\xEA iria chegar amanh\xE2."
   - De qualquer forma, preciso de um livro para saber uma mistura de tinta, pode
-    prucarar o livro para mim?
-  - Aporveite e organize minha pratileira
-  - 'Organiza a pratileira e pegue o livro '
+    procurar o livro para mim?
+  - Aproveite e organize minha pratileira.
+  - Organize a pratileira e pegue o livro.
   canPass: 0
-  index: 2
+  index: 0

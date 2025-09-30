@@ -17,10 +17,10 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278190335
   falas:
-  - Obrigado
-  - Hmmm, intersante
-  - "Preciso que pegue algumas cores que esta\xE3o espalhadas pela casa"
-  - "alguas est\xE3o no primeiro andar "
-  - Preciso de Laranja claro 1 e Amarelo escuro 2
+  - Obrigado.
+  - Hmmm, interresante.
+  - "Preciso que pegue algumas cores que est\xE3o espalhadas pela casa."
+  - "Algumas est\xE3o no primeiro andar."
+  - Preciso de um Laranja claro 1 e um Amarelo escuro 2.
   canPass: 0
-  index: 4
+  index: 0
