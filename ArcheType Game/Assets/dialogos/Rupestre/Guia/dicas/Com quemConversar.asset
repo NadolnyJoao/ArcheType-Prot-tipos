@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Guia
   colorName:
     serializedVersion: 2
-    rgba: 4278223603
+    rgba: 4280953386
   falas:
   - "Converse com o Anci\xE3o e os Adoradores para receber suas tarefas. "
   canPass: 1
