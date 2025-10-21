@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Miguel
   colorName:
     serializedVersion: 2
-    rgba: 4292972836
+    rgba: 4280953386
   falas:
   - Tem um cofre atras desse quadro.
   canPass: 1

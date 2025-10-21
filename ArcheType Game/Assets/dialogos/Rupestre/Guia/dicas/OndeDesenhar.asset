@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Guia
   colorName:
     serializedVersion: 2
-    rgba: 4278223603
+    rgba: 4280953386
   falas:
   - "V\xE1 para dentro da Caverna desenhar os biomas."
   canPass: 1

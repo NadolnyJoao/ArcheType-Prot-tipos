@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Rafael
   colorName:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4280953386
   falas:
   - "Os livros est\xE3o no segundo andar e na esquerda."
   - Coloque o livro vermelho em primeiro os os demais no tamanho menor.

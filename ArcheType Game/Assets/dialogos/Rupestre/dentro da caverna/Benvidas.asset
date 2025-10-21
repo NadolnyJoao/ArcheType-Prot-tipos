@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Cuidador da caverna
   colorName:
     serializedVersion: 2
-    rgba: 4286019447
+    rgba: 4280953386
   falas:
   - "\xC9 necessario explorar o cenario e para encontrar recursos e locais perigosos"
   - "Voce ser\xE1 nosso explorador, descubra e registre nas paredes para que possamos
