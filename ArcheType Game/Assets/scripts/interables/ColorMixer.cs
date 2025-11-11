@@ -139,6 +139,8 @@ public class ColorMixer : MonoBehaviour
                 {
                     string texto = $"Tinta {colorName.ToLower()} coletada";
                     popup.Configurar("Tinta coletada", texto);
+                    Destroy(popupObj);
+                    NotificationManage.instance.CreateNotification(null, "Cor coletada", texto);
                 }else{
                     Debug.Log("não tem o component colorpopup");
                 }
@@ -164,24 +166,20 @@ public class ColorMixer : MonoBehaviour
         if (!string.IsNullOrEmpty(result) && !HasColor(result))
         {
             AddBaseColor(result); // Adiciona a nova cor à paleta
-                                  // myColorPalette.Add(new ColorData(result, colorselect1, colorselect2));
-            if (colorPopupPrefab != null && popupParent != null)
-            {
-                var popupObj = Instantiate(colorPopupPrefab, popupParent);
-                var popup = popupObj.GetComponent<ColorPopup>();
-                if (popup != null)
-                {
-                    string texto = $"Tinta {colorselect1.ToLower()} e {colorselect2.ToLower()} coletadas";
-                    popup.Configurar("Tinta coletada", texto);
-                }
-            }
             onNewColorAdded?.Invoke(result);
+            NotificationManage.instance.CreateNotification(null, "Cor descoberta", result);
             Debug.Log("Nova cor adicionada: " + result);
         }
         else
         {
             Debug.Log("Essa mistura não gera nada novo ou já foi descoberta.");
         }
+    }
+
+    public void NotificarColeta(string cores)
+    {
+        NotificationManage.instance.CreateNotification(null, "Cor coletada", cores);
+        Debug.Log("tentamos chamar essa notificação");
     }
 
     // -------------------- REGRAS DE MISTURA --------------------

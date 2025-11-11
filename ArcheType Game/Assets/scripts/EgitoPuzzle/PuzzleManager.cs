@@ -16,7 +16,7 @@ public class PuzzleManager : MonoBehaviour
     public EventReference PuzzleSound;
     public EventReference pieceDrop;
     public UnityEvent finishPuzzleEvent;
-    
+    private bool jaShufflePieces = false;
     void Start()
     {
         GameObject porta = GameObject.FindWithTag("portaegito");
@@ -55,7 +55,8 @@ public class PuzzleManager : MonoBehaviour
         if (PuzzleCompleto == false)
         {
             puzzle.SetActive(true);
-            ShufflePieces();
+            if(!jaShufflePieces)
+                ShufflePieces();
             
         }
 
@@ -69,6 +70,7 @@ public class PuzzleManager : MonoBehaviour
 
     private void ShufflePieces()
     {
+        jaShufflePieces = true;
         List<UIPuzzlePiece> pieces = new List<UIPuzzlePiece>(FindObjectsOfType<UIPuzzlePiece>());
         List<RectTransform> availableSlots = new List<RectTransform>(allSlots);
 
