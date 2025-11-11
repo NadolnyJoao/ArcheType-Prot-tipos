@@ -137,6 +137,12 @@ public class PlayerMoviment : MonoBehaviour
             aniajump = false;
 
         }
+
+        // if (Input.GetKeyDown(KeyCode.G))
+        // {
+        //     NotificationManage.instance.CreateNotification(null, "Key G", "Tecla g foi precionada");
+        // }
+
     }
 
     public void Jump()
