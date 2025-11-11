@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a171c697117a18047bf6a35eccf7e400, type: 3}
-  m_Name: Pai resposta
+  m_Name: Pai alimento
   m_EditorClassIdentifier: 
-  name: Cuidador da caverna
+  name: ' Cuidador da caverna'
   colorName:
     serializedVersion: 2
     rgba: 4281545523
   falas:
-  - Sim filho.
-  - "La fora temos nosso chefe, ele passar\xE1 mais informa\xE7\xF5es."
+  - "Aqui, meu filho. Pode comer, \xE9 o que teremos para essa semana."
+  - "Voc\xEA fez um \xF3timo trabalho. Fale co nosso chefe, ele te dar\xE1 novas
+    instru\xE7\xF5es."
   canPass: 0
-  index: 1
+  index: 0

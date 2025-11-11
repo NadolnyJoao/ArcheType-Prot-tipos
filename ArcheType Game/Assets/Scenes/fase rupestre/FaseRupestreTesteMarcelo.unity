@@ -650,6 +650,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2086945985}
+        m_TargetAssemblyTypeName: DialogoSystem, Assembly-CSharp
+        m_MethodName: CumprirObjetivo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTrigger:
     m_PersistentCalls:
       m_Calls:
@@ -3368,7 +3380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 644927286, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1808368388, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
@@ -3380,11 +3392,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 689623445971119916, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1282534190639480932, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1347484929950087223, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3410,9 +3422,13 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4745012419299889351, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4777951248582304214, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6152255322740157238, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_IsActive
@@ -3668,7 +3684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8903767213032891569, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
@@ -9344,7 +9360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9050893184391320213, guid: ac0263ad98801d0429896e5a7d328227, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9188331184375058812, guid: ac0263ad98801d0429896e5a7d328227, type: 3}
@@ -11613,7 +11629,7 @@ GameObject:
   - component: {fileID: 2086945985}
   - component: {fileID: 2086945984}
   m_Layer: 0
-  m_Name: generic man_0 (3)
+  m_Name: Cuidador da caverna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11716,6 +11732,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0243909cdc543d849be6260430b8153b, type: 2}
   - {fileID: 11400000, guid: dd27118d48519fb40b59387fb5498d54, type: 2}
   - {fileID: 11400000, guid: 58d13f94ab5cb4941b27468ccf4cffa5, type: 2}
+  - {fileID: 11400000, guid: 2c87f432f6e0e2d4cbcc8c8aea3f8207, type: 2}
   laterActions:
     m_PersistentCalls:
       m_Calls: []
