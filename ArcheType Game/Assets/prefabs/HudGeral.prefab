@@ -2671,8 +2671,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.8500061, y: -10.2601}
-  m_SizeDelta: {x: 44.7381, y: 36.6369}
+  m_AnchoredPosition: {x: -4.3472, y: -10.260101}
+  m_SizeDelta: {x: 60.5442, y: 36.6369}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5638060609162159078
 CanvasRenderer:
@@ -6139,6 +6139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobilePainel: {fileID: 204531690168767413}
+  dev: 0
 --- !u!1 &8187668958979461857
 GameObject:
   m_ObjectHideFlags: 0
@@ -6554,7 +6555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8560357397664246280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7061,22 +7062,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8187668958623273857}
     m_Modifications:
-    - target: {fileID: 872663536579670622, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 861a39bbc9d3e2142a4bb7a491c17b53, type: 3}
-    - target: {fileID: 872663536579670622, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_Color.a
-      value: 0.654902
-      objectReference: {fileID: 0}
-    - target: {fileID: 872663536579670622, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_Color.b
-      value: 0.4481132
-      objectReference: {fileID: 0}
-    - target: {fileID: 872663536579670622, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_Color.g
-      value: 0.4481132
-      objectReference: {fileID: 0}
     - target: {fileID: 2625558882436055531, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7161,57 +7146,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3693049700077144843, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652032938225856414, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652032938225856414, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652032938225856414, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -152
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652032938225856414, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 61
-      objectReference: {fileID: 0}
-    - target: {fileID: 6144778068158440963, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 6144778068158440963, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 6144778068158440963, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 103
-      objectReference: {fileID: 0}
-    - target: {fileID: 6144778068158440963, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 54
-      objectReference: {fileID: 0}
     - target: {fileID: 7275511051637568392, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
       propertyPath: m_Name
       value: painel mobile controle
-      objectReference: {fileID: 0}
-    - target: {fileID: 7275511051637568392, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8399865158880794634, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8399865158880794634, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.00012207031
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed9470f47a32bf040b0e30570d68939d, type: 3}

@@ -315,7 +315,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &64537017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -539,7 +545,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &64751761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -796,7 +808,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &109247424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,6 +832,7 @@ MonoBehaviour:
   laterActions:
     m_PersistentCalls:
       m_Calls: []
+  actionsLateFala: []
 --- !u!61 &109247425
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -958,6 +977,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  actionsLateFala: []
 --- !u!114 &169293037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,7 +1036,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &169293038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1216,7 +1242,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &207836186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1733,7 +1765,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!212 &278889990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1973,7 +2011,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &282664820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2600,19 +2644,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 644927286, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1808368388, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 204531690168767413, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 689623445971119916, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1282534190639480932, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4634018777265631710, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2624,7 +2672,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4718269290981582057, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777951248582304214, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176368348362068761, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460926998576168414, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460926998576168414, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1313687447}
+    - target: {fileID: 6460926998576168414, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460926998576168414, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoadingScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460926998576168414, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6924766708562143095, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: dev
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7677926837261114685, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2819,6 +2899,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8560357397664246280, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560357397664246280, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
@@ -2849,6 +2933,10 @@ PrefabInstance:
     - target: {fileID: 8560357397664246280, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8842004611030082228, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8903767213032891569, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_IsActive
@@ -3068,7 +3156,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &635589237
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3292,7 +3386,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &647928877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3665,7 +3765,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &778911297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4914,6 +5020,7 @@ MonoBehaviour:
   laterActions:
     m_PersistentCalls:
       m_Calls: []
+  actionsLateFala: []
 --- !u!1 &1136544409
 GameObject:
   m_ObjectHideFlags: 0
@@ -5992,7 +6099,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1296816156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6306,7 +6419,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!212 &1350277232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6758,6 +6877,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  actionsLateFala: []
 --- !u!4 &1376835198
 Transform:
   m_ObjectHideFlags: 0
@@ -7754,7 +7874,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1528371186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8117,6 +8243,7 @@ MonoBehaviour:
   laterActions:
     m_PersistentCalls:
       m_Calls: []
+  actionsLateFala: []
 --- !u!1 &1677512504
 GameObject:
   m_ObjectHideFlags: 0
@@ -8444,10 +8571,6 @@ MonoBehaviour:
   caverna: 0
   floresta: 0
   planice: 0
-  chaopedra: 0
-  chaofloresta: 0
-  chaoAzulejo: 0
-  chaoplanice: 0
   mapa: {fileID: 1000064407}
   cavernadescoberta: {fileID: 324960562}
   florestadescoberta: {fileID: 1227767210}
@@ -8456,6 +8579,10 @@ MonoBehaviour:
   playerfloresta: {fileID: 1180198093}
   playerplanice: {fileID: 1180198093}
   mapavazio: {fileID: 1413147572}
+  desenhocaverna: {fileID: 0}
+  desenhofloresta: {fileID: 0}
+  desenhoplanice: {fileID: 0}
+  voltaraomuseu: {fileID: 0}
 --- !u!1 &1714694689
 GameObject:
   m_ObjectHideFlags: 0
@@ -9096,7 +9223,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1820900143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9395,7 +9528,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1273999424}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2059265550
 MonoBehaviour:
@@ -9526,7 +9659,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &2086945985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9546,6 +9685,7 @@ MonoBehaviour:
   laterActions:
     m_PersistentCalls:
       m_Calls: []
+  actionsLateFala: []
 --- !u!61 &2086945986
 BoxCollider2D:
   m_ObjectHideFlags: 0
