@@ -18,7 +18,7 @@ MonoBehaviour:
     rgba: 4281545523
   falas:
   - "Aqui, meu filho. Pode comer, \xE9 o que teremos para essa semana."
-  - "Voc\xEA fez um \xF3timo trabalho. Fale co nosso chefe, ele te dar\xE1 novas
+  - "Voc\xEA fez um \xF3timo trabalho. Fale com nosso chefe, ele te dar\xE1 novas
     instru\xE7\xF5es."
   canPass: 0
   index: 0
