@@ -6,12 +6,12 @@ public class MobileManage : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject mobilePainel;
-
+    public bool dev = false;
     void Start()
     {
         mobilePainel.SetActive(false);
 
-        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer || dev)
         {
             mobilePainel.SetActive(true);
             Debug.Log("Mobile interface enabled.");
