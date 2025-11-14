@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f9ac942d5c3f77f40b6a9e0e592a3885
+guid: c3c241ef43dc73246883abfffebc8453
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Title_0
+      name: Esc ARCHETYPE_0
       rect:
         serializedVersion: 2
-        x: 191
-        y: 697
-        width: 1525
-        height: 304
+        x: 0
+        y: 0
+        width: 833
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98cb80d6e9094c846ac75987ce6ed39e
-      internalID: -1099337383
+      spriteID: f2e233da63cc6534387204c034e8c26f
+      internalID: -165317911
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Title_0: -1099337383
+      Esc ARCHETYPE_0: -165317911
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
