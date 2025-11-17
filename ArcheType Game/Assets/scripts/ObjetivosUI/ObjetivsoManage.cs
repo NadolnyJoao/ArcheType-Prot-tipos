@@ -27,6 +27,7 @@ public class ObjetivsoManage : MonoBehaviour
 
         for( int i = 0; i <4; i++)
         {
+            if(i<= objetivos.Count -1 -i)
             if(objetivos[objetivos.Count - 1 - i] != null)
             {
 
