@@ -3,25 +3,36 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
+
+public enum TypeBoches
+{
+    Rupestre,
+    Egito,
+    Renascentista,
+    Surrealista
+};
 public class BrocheManage : MonoBehaviour
 {
 
     [Serializable]
     public class ImgBoche
     {
-        public string name;
+        public TypeBoches name;
         public Sprite img;
     }
     public Broches coletados = new Broches();
-    public string brocheToColetar;
-
+    public TypeBoches bocheaddbytype;
     public ImgBoche[] imgBroches;
     public Image[] slotBroches;
+    private List<TypeBoches> nameBrochesRenderer = new List<TypeBoches>();
 
     private string pathFile = "Assets/Saves/Broches/Broches.json";
     // Start is called before the first frame update
-private Sprite imgBroche;
+    private Sprite imgBroche;
+
+    public UnityEvent Finish;
     void Start()
     {
 
@@ -31,7 +42,7 @@ private Sprite imgBroche;
 
     public void ColetarBroche()
     {
-        coletados.broches.Add(brocheToColetar);
+        coletados.broches.Add(TypeBrochetoString(bocheaddbytype));
         SaveBroches();
     }
 
@@ -42,7 +53,7 @@ private Sprite imgBroche;
 
         string dataJson = JsonUtility.ToJson(brochesToSave, true);
         File.WriteAllText(pathFile, dataJson);
-        Debug.Log("Dados Salvos");
+        // Debug.Log("Dados Salvos");
     }
     void LoadBroches()
     {
@@ -54,43 +65,92 @@ private Sprite imgBroche;
 
             coletados = loadBroches;
 
-            Debug.Log("broches carregados");
+            // Debug.Log("broches carregados");
             RenderBroches();
         }
     }
     void RenderBroches()
     {
-        foreach (string name in coletados.broches)
+        int numbrochesColeted = 0;
+        foreach (string namejs in coletados.broches)
         {
-
-            foreach (ImgBoche img in imgBroches)
+            TypeBoches name = StringtoTypeBoehce(namejs);
+            bool noRender = false;
+            Debug.Log($"COmparation typebrochew name {name} bochesrender lenghth {nameBrochesRenderer.Count}");
+            foreach (TypeBoches namesaved in nameBrochesRenderer)
             {
-                Debug.Log("comparação name broche name : " + name + " name img.name: " + img.name + " igual? "+(img.name == name));
-                if (img.name == name)
+                Debug.Log($"namesaved {namesaved}  == name {name}");
+                if (namesaved == name)
                 {
-                    imgBroche = img.img;
-                    foreach (Image slot in slotBroches)
+                    noRender = true;
+                }
+            }
+            if (!noRender)
+            {
+                foreach (ImgBoche img in imgBroches)
+                {
+                    // Debug.Log("comparação name broche name : " + namejs + " name img.name: " + img.name + " igual? " + (img.name == name));
+                    if (img.name == name)
                     {
-                        if (slot.color != Color.white)
+
+
+
+                        nameBrochesRenderer.Add(name);
+                        numbrochesColeted++;
+                        imgBroche = img.img;
+                        foreach (Image slot in slotBroches)
                         {
-                            slot.sprite = imgBroche;
-                            slot.color = Color.white;
-                            break;
+                            if (slot.color != Color.white)
+                            {
+                                slot.sprite = imgBroche;
+                                slot.color = Color.white;
+                                break;
+                            }
                         }
+
                     }
                 }
             }
+            if (numbrochesColeted == 4)
+            {
+                Debug.Log("Temos o fim do jogo");
+                Finish.Invoke();
+            }
 
-            // if (name == "rupestre")
-            //     {
-            //         imgBroche = imgBroches[0];
-            //     }
-            //     else
-            //     {
-            //         imgBroche = imgBroches[1];
-            //     }
-            
         }
 
+    }
+
+    string TypeBrochetoString(TypeBoches type)
+    {
+        switch (type)
+        {
+            case TypeBoches.Rupestre:
+                return "Rupestre";
+            case TypeBoches.Egito:
+                return "Egito";
+            case TypeBoches.Renascentista:
+                return "Renascentista";
+            case TypeBoches.Surrealista:
+                return "Surrealista";
+            default:
+                return "none";
+        }
+    }
+    TypeBoches StringtoTypeBoehce(string name)
+    {
+        switch (name)
+        {
+            case "Rupestre":
+                return TypeBoches.Rupestre;
+            case "Egito":
+                return TypeBoches.Egito;
+            case "Renascentista":
+                return TypeBoches.Renascentista;
+            case "Surrealista":
+                return TypeBoches.Surrealista;
+            default:
+                return TypeBoches.Rupestre;
+        }
     }
 }

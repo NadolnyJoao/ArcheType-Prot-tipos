@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fase surealista/CutsceneSurrealista.unity
     guid: 9be4e132f3a07654a9ba983cfbb93a70
+  - enabled: 1
+    path: Assets/Scenes/fim game/Creditos.unity
+    guid: 2a08121a36a68224192c4e20d5a0e85f
   m_configObjects: {}

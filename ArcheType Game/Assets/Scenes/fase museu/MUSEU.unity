@@ -5204,16 +5204,28 @@ MonoBehaviour:
   actions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1075595590}
-        m_TargetAssemblyTypeName: ObjetivsoManage, Assembly-CSharp
-        m_MethodName: AddObjetivo
-        m_Mode: 5
+      - m_Target: {fileID: 1857612276}
+        m_TargetAssemblyTypeName: BrocheManage, Assembly-CSharp
+        m_MethodName: ColetarBroche
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Analise os quadros
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 615311446}
+        m_TargetAssemblyTypeName: BrocheManage, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   onTrigger:
@@ -5461,6 +5473,18 @@ PrefabInstance:
     - target: {fileID: 644927284, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808368389, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: imgBroches.Array.data[1].name
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808368389, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: imgBroches.Array.data[2].name
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808368389, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: imgBroches.Array.data[3].name
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1347484929950087223, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -6965,6 +6989,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6531590200145568747, guid: 8729ce22416ad0e43a12c4913da7c0b1, type: 3}
   m_PrefabInstance: {fileID: 506008846}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &615311446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4745012419299889351, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+  m_PrefabInstance: {fileID: 318389797}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &618641609
 GameObject:
@@ -13659,17 +13688,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1075595590 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4126208843490498379, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
-  m_PrefabInstance: {fileID: 318389797}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2088eff3938627d4b89b012861e7f938, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1132092680
 GameObject:
   m_ObjectHideFlags: 0
@@ -20698,6 +20716,17 @@ RectTransform:
   m_AnchoredPosition: {x: 550.5, y: 259.5}
   m_SizeDelta: {x: 1101, y: 519}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1857612276 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1808368389, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+  m_PrefabInstance: {fileID: 318389797}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858e4aeeb44826f4cbaa936c7cd79da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1893321114
 PrefabInstance:
   m_ObjectHideFlags: 0

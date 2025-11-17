@@ -47,7 +47,7 @@ public class SombraMiguel : MonoBehaviour
                 case AnimatorControllerParameterType.Trigger:
                     // Para triggers, precisamos verificar se foram acionados
                     // SyncTrigger(param.name);
-                    Debug.Log("Trigger param name "+ param.name);
+                    // Debug.Log("Trigger param name "+ param.name);
                     break;
             }
         }
@@ -59,7 +59,7 @@ public class SombraMiguel : MonoBehaviour
         // Usamos IsInTransition para detectar triggers de forma mais confiável
         AnimatorStateInfo stateInfo = papai.GetCurrentAnimatorStateInfo(0);
         AnimatorStateInfo nextStateInfo = papai.GetNextAnimatorStateInfo(0);
-        Debug.Log("trigger");
+        // Debug.Log("trigger");
         // Se o trigger foi acionado neste frame, aciona na sombra também
         if (papai.GetCurrentAnimatorStateInfo(0).fullPathHash != myAni.GetCurrentAnimatorStateInfo(0).fullPathHash)
         {
