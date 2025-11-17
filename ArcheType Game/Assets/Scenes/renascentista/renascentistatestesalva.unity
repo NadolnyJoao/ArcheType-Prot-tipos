@@ -2863,6 +2863,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1069390094}
+          m_TargetAssemblyTypeName: ObjetivsoManage, Assembly-CSharp
+          m_MethodName: AddObjetivo
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Procure e misture as tintas
+            m_BoolArgument: 1
+          m_CallState: 2
     id: 1
   - falaEvent:
       m_PersistentCalls:
@@ -2889,6 +2901,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1069390094}
+          m_TargetAssemblyTypeName: ObjetivsoManage, Assembly-CSharp
+          m_MethodName: AddObjetivo
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Va desenhar no primeiro andar
             m_BoolArgument: 1
           m_CallState: 2
     id: 2
@@ -2919,7 +2943,47 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1069390094}
+          m_TargetAssemblyTypeName: ObjetivsoManage, Assembly-CSharp
+          m_MethodName: AddObjetivo
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Tente abrir o cofre
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: ObjetivsoManage, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     id: 3
+  - falaEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1069390094}
+          m_TargetAssemblyTypeName: ObjetivsoManage, Assembly-CSharp
+          m_MethodName: AddObjetivo
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Organize os  livros
+            m_BoolArgument: 0
+          m_CallState: 2
+    id: 0
 --- !u!114 &259043819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6490,6 +6554,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 644927286, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1347484929950087223, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -12.061279
@@ -6497,6 +6565,18 @@ PrefabInstance:
     - target: {fileID: 1347484929950087223, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647620463976005419, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_text
+      value: 'Procure objetivos
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788552379365163957, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_text
+      value: 'Procure objetivos
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 3042546003381057811, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_Sprite
@@ -7556,8 +7636,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 914642805
-  m_SortingLayer: 1
+  m_SortingLayerID: -109013073
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: -1916675826, guid: 4e3e7045211e5b9479ef84f5643df4ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9968,6 +10048,17 @@ Transform:
   m_Father: {fileID: 1659734713}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1069390094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4126208843490498379, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+  m_PrefabInstance: {fileID: 704903783}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2088eff3938627d4b89b012861e7f938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1072583854
 GameObject:
   m_ObjectHideFlags: 0
@@ -10493,8 +10584,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1108076298}
   - component: {fileID: 1108076302}
-  - component: {fileID: 1108076301}
-  - component: {fileID: 1108076300}
   - component: {fileID: 1108076299}
   m_Layer: 0
   m_Name: estatua (1)
@@ -10545,117 +10634,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.51, y: 7.2}
   m_EdgeRadius: 0
---- !u!114 &1108076300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108076297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3eb7f8ad9a22246bc872af851ca53d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  falas:
-  - {fileID: 11400000, guid: a51bbd9718d41dc43b483d5ce2cd8df1, type: 2}
-  laterActions:
-    m_PersistentCalls:
-      m_Calls: []
-  actionsLateFala:
-  - falaEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1514578737}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-    id: 0
---- !u!114 &1108076301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108076297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51fab711a9c303342bfb174e4e3a77ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actions:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1108076300}
-        m_TargetAssemblyTypeName: DialogoSystem, Assembly-CSharp
-        m_MethodName: InvokeDialogo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1371054736}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  exitTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1514578737}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1371054736}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  playerContact: 0
-  Interection:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
 --- !u!212 &1108076302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12091,8 +12069,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -109013073
-  m_SortingLayer: 3
+  m_SortingLayerID: 914642805
+  m_SortingLayer: 1
   m_SortingOrder: 104
   m_Sprite: {fileID: -1215906503, guid: 15e3c24919b3dcb4ca0daffbb2ee7247, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.48235294}
@@ -14165,8 +14143,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -109013073
-  m_SortingLayer: 3
+  m_SortingLayerID: 914642805
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 1116269906, guid: 96139b8c15cda934581ba4fe1607b126, type: 3}
   m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
@@ -17753,8 +17731,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -109013073
-  m_SortingLayer: 3
+  m_SortingLayerID: 914642805
+  m_SortingLayer: 1
   m_SortingOrder: -571
   m_Sprite: {fileID: 1116269906, guid: 96139b8c15cda934581ba4fe1607b126, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.48235294}
@@ -19465,7 +19443,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bcb163f74fb31c54586ebaa726006cb3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d652ac60aab3d946b6419cc314182fd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19945,8 +19923,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -109013073
-  m_SortingLayer: 3
+  m_SortingLayerID: 914642805
+  m_SortingLayer: 1
   m_SortingOrder: 608
   m_Sprite: {fileID: -1215906503, guid: 15e3c24919b3dcb4ca0daffbb2ee7247, type: 3}
   m_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
