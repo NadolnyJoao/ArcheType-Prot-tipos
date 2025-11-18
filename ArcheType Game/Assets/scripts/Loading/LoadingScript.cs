@@ -11,7 +11,7 @@ public class LoadingScript : MonoBehaviour
 
     public float minLoadingTime = 2f;
     public static LoadingScript Instance { get; private set; }
-
+    private bool isLoad = false;
     private void Awake()
     {
         if (Instance == null)
@@ -27,8 +27,13 @@ public class LoadingScript : MonoBehaviour
 
     public void LoadScene(int sceneId)
     {
+        if(isLoad == false)
+        {
+            
         aniBackground.SetTrigger("fadeout");
         StartCoroutine(LoadSceneAsync(sceneId));
+        isLoad = true;
+        }
     }
 
     IEnumerator LoadSceneAsync(int sceneId)

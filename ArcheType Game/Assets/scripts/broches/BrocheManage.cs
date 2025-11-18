@@ -114,6 +114,8 @@ public class BrocheManage : MonoBehaviour
             if (numbrochesColeted == 4)
             {
                 Debug.Log("Temos o fim do jogo");
+                 string dataJson = JsonUtility.ToJson(new Broches(), true);
+                File.WriteAllText(pathFile, dataJson);
                 Finish.Invoke();
             }
 
