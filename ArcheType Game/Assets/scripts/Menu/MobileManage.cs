@@ -18,6 +18,7 @@ public class MobileManage : MonoBehaviour
         }
         else
         {
+            mobilePainel.SetActive(false);
             Debug.Log("Not a mobile platform, mobile interface disabled.");
         }
     }
