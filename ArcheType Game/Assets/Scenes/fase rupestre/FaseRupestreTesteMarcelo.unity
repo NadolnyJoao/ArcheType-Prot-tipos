@@ -1042,6 +1042,7 @@ GameObject:
   - component: {fileID: 168007738}
   - component: {fileID: 168007740}
   - component: {fileID: 168007739}
+  - component: {fileID: 168007741}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -1107,6 +1108,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168007737}
   m_CullTransparentMesh: 1
+--- !u!114 &168007741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168007737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1632395023
+      Data2: 1323317446
+      Data3: 1814111414
+      Data4: -1731184300
+    Path: event:/miguel_hurt
+  Event: 
+  PlayEvent: 12
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &169293033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2792,6 +2824,7 @@ GameObject:
   - component: {fileID: 348748053}
   - component: {fileID: 348748055}
   - component: {fileID: 348748054}
+  - component: {fileID: 348748056}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -2857,6 +2890,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348748052}
   m_CullTransparentMesh: 1
+--- !u!114 &348748056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348748052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1632395023
+      Data2: 1323317446
+      Data3: 1814111414
+      Data4: -1731184300
+    Path: event:/miguel_hurt
+  Event: 
+  PlayEvent: 12
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &361149984
 GameObject:
   m_ObjectHideFlags: 0
@@ -11588,6 +11652,7 @@ GameObject:
   - component: {fileID: 1824221800}
   - component: {fileID: 1824221802}
   - component: {fileID: 1824221801}
+  - component: {fileID: 1824221803}
   m_Layer: 5
   m_Name: Image (2)
   m_TagString: Untagged
@@ -11653,6 +11718,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824221799}
   m_CullTransparentMesh: 1
+--- !u!114 &1824221803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824221799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1632395023
+      Data2: 1323317446
+      Data3: 1814111414
+      Data4: -1731184300
+    Path: event:/miguel_hurt
+  Event: 
+  PlayEvent: 12
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1827638664
 GameObject:
   m_ObjectHideFlags: 0
