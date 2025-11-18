@@ -62,4 +62,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fim game/Creditos.unity
     guid: 2a08121a36a68224192c4e20d5a0e85f
+  - enabled: 1
+    path: Assets/Scenes/fase museu/Cutscene/MuseuCutsceneInicio.unity
+    guid: 00c834dd47057904ea0436ec93469436
+  - enabled: 1
+    path: Assets/Scenes/fase rupestre/Cutscene/RupestreCutscene.unity
+    guid: da70141420d9b3546b5619e167f90dd2
+  - enabled: 1
+    path: Assets/Scenes/fase surealista/Cutscene/SurrealistaCutscene.unity
+    guid: 90805a37d4973474890bdce22037dc08
+  - enabled: 1
+    path: Assets/Scenes/fase egito/Cutscene/EgitoCutscene.unity
+    guid: 99be37f3e9b894e489220ece8ebcfa32
+  - enabled: 1
+    path: Assets/Scenes/renascentista/Cutscene/RenascentistaCutscene.unity
+    guid: 8ac8f316e7de47646a8101ca8ff65c1a
   m_configObjects: {}

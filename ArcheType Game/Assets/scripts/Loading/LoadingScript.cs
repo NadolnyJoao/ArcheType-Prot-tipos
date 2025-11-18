@@ -36,6 +36,7 @@ public class LoadingScript : MonoBehaviour
         }
     }
 
+
     IEnumerator LoadSceneAsync(int sceneId)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
