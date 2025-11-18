@@ -5309,6 +5309,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 806384765, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -27.76
+      objectReference: {fileID: 0}
     - target: {fileID: 1808368389, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: imgBroches.Array.data[1].name
       value: 1

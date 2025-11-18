@@ -17,11 +17,11 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4280953386
   falas:
-  - Que o Grande Sol ilumine suas colheitas e traga fartura ao seu povo!
+  - Que o Grande Sol ilumine suas colheitas e traga fartura ao seu povo!.
   - "O Sol aben\xE7oa os que honram sua luz. Que suas planta\xE7\xF5es cres\xE7am
-    fortes"
-  - Se seu caminhos estiverem fechado basta de rezar ao deus sol
+    fortes."
+  - Se seu caminhos estiverem fechados basta de rezar ao Deus Sol.
   - "Voc\xEA pode coletar uma gota de luz se tiver um graveto e queim\xE1-lo em nossa
-    foqueira"
+    foqueira."
   canPass: 1
   index: 0

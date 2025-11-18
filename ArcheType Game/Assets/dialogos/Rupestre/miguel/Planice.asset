@@ -17,6 +17,6 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4280953386
   falas:
-  - "Aqui em um bom lugar para eles ca\xE7arem."
+  - "Aqui seria um bom lugar para eles ca\xE7arem."
   canPass: 1
   index: 0

@@ -17,6 +17,6 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4280953386
   falas:
-  - "N\xE3o consigo passar por aqui, acho que da apra queimar se usar um graveto"
+  - "N\xE3o consigo passar por aqui, acho que da para queimar se usar um graveto."
   canPass: 1
   index: 0

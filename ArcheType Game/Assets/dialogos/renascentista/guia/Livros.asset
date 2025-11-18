@@ -17,7 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4280953386
   falas:
-  - "Os livros est\xE3o no segundo andar e na esquerda."
+  - "Os livros est\xE3o no segundo andar \xE1 esquerda."
   - Coloque o livro vermelho em primeiro os os demais no tamanho menor.
   canPass: 1
   index: 0
