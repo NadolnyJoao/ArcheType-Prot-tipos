@@ -1130,7 +1130,7 @@ MonoBehaviour:
     Path: event:/miguel_hurt
   Event: 
   PlayEvent: 12
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -1502,6 +1502,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  somCarvao:
+    Guid:
+      Data1: 11006515
+      Data2: 1240240168
+      Data3: -654945114
+      Data4: -472769057
+    Path: event:/Strach_rupestre
 --- !u!1 &207836183
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,7 +2919,7 @@ MonoBehaviour:
     Path: event:/miguel_hurt
   Event: 
   PlayEvent: 12
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -11740,7 +11747,7 @@ MonoBehaviour:
     Path: event:/miguel_hurt
   Event: 
   PlayEvent: 12
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
