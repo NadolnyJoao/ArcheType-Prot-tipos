@@ -1152,9 +1152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858e4aeeb44826f4cbaa936c7cd79da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brocheToColetar: renascentista
+  bocheaddbytype: 2
   imgBroches: []
   slotBroches: []
+  Finish:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1772847309
 GameObject:
   m_ObjectHideFlags: 0

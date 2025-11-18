@@ -203,7 +203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToFall
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToDestroy
@@ -553,11 +553,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -92756329
-      Data2: 1298278327
-      Data3: 675164347
-      Data4: 235596540
-    Path: event:/Trilha-sonora_Egito
+      Data1: 830098609
+      Data2: 1286232104
+      Data3: 917353107
+      Data4: 140009378
+    Path: event:/musica-egito
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -993,7 +993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToFall
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToDestroy
@@ -1485,7 +1485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToFall
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToDestroy
@@ -1777,7 +1777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToFall
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToDestroy
@@ -5084,7 +5084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1144690259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8261,6 +8261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HudGeral
       objectReference: {fileID: 0}
+    - target: {fileID: 8187668958623273871, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
     - target: {fileID: 8187668958979461857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -8743,7 +8747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToFall
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToDestroy
