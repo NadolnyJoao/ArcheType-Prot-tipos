@@ -29,6 +29,7 @@ public class PlayerBroche : MonoBehaviour
     }
     void AtivePLayerMOv()
     {
+        Debug.Log("Reativa PlayerMoviment");
         ani.SetInteger("numBroche",4);
         playerMov.enabled = true;
     }

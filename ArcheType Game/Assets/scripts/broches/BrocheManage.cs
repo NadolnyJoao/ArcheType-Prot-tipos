@@ -66,10 +66,11 @@ public class BrocheManage : MonoBehaviour
         LoadBroches();
         // if (myBag.coletados == null) myBag.coletados = new Broches();
 
-        Invoke("AniColect", 1);
+       
     }
     public void AniColect()
     {
+        Debug.Log("Invoke AniColect");
         if (myBag.lastBroche != TypeBoches.none && playerBroche != null)
         {
             playerBroche.PlayeAnimation(TypeBrochetoInt(myBag.lastBroche));
@@ -111,6 +112,7 @@ public class BrocheManage : MonoBehaviour
             myBag = loadBroches;
 
             RenderBroches();
+             Invoke("AniColect", 0.3f);
         }
     }
     void RenderBroches()
