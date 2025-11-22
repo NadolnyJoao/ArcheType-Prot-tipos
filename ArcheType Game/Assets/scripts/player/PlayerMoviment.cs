@@ -33,6 +33,8 @@ public class PlayerMoviment : MonoBehaviour
     public UnityEvent actionInterableContact;
     public DialogoSystenUI dialogoSystenUI;
 
+    public bool canDoSound = true; 
+
     // Adicione uma referência para o SpriteRenderer para virar o sprite
     private SpriteRenderer spriteRenderer;
 
@@ -114,7 +116,7 @@ public class PlayerMoviment : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 180, 0); // Garante que a rotação esteja virada para a esquerda
             }
         }
-        if (horizontalInput != 0 && isgrounded)
+        if (horizontalInput != 0 && isgrounded && canDoSound)
         {
             passoTimer -= Time.deltaTime;
             // se so jogar no update vai ficar repedindo o som varias vezes por isso tenho que colocar um intervalo de tempo para soar mais clean
@@ -124,7 +126,9 @@ public class PlayerMoviment : MonoBehaviour
         {
             passoTimer = intervaloPasso;
             Footsteep();
+            
         }
+        
 
         ani.SetBool("walk", horizontalInput != 0 && rig.velocity.x != 0);
         ani.SetBool("run", horizontalInput != 0 && rig.velocity.x != 0 && run);
@@ -175,7 +179,11 @@ public class PlayerMoviment : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        
+         if (other.gameObject.tag == "Wall")
+            {
+
+                canDoSound = false; 
+            }
         // MAPEAMENTO 
             if (other.gameObject.name == "ground(pedra)")
             {
@@ -235,6 +243,12 @@ public class PlayerMoviment : MonoBehaviour
             }
 
         }
+
+        if (col.gameObject.GetComponent<BoxCollider2D>() != null)
+    {
+        canDoSound = true; 
+    }
+
     }
 
     // Método público para obter a direção atual (opcional)

@@ -2772,7 +2772,7 @@ GameObject:
   - component: {fileID: 259043819}
   - component: {fileID: 259043818}
   m_Layer: 0
-  m_Name: rafael monark adolf
+  m_Name: Rafael de Sanzio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4037,8 +4037,8 @@ GameObject:
   - component: {fileID: 435547535}
   - component: {fileID: 435547534}
   m_Layer: 0
-  m_Name: w
-  m_TagString: Untagged
+  m_Name: wall
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10137,6 +10137,64 @@ Transform:
   m_Father: {fileID: 103680961}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1080083874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1080083876}
+  - component: {fileID: 1080083875}
+  m_Layer: 0
+  m_Name: invisblewall
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1080083875
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080083874}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.2424421}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.383916}
+  m_EdgeRadius: 0
+--- !u!4 &1080083876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080083874}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 21.82, y: 7.543531, z: 0.04918132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1807371576}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1082102066
 GameObject:
   m_ObjectHideFlags: 0
@@ -14541,8 +14599,8 @@ GameObject:
   - component: {fileID: 1439701217}
   - component: {fileID: 1439701216}
   m_Layer: 0
-  m_Name: w
-  m_TagString: Untagged
+  m_Name: wall
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14575,7 +14633,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1716902, y: 0}
+  m_Offset: {x: 0.35771018, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14586,7 +14644,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.34338, y: 1}
+  m_Size: {x: 1.7154199, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1439701217
 SpriteRenderer:
@@ -17727,6 +17785,7 @@ Transform:
   - {fileID: 1035061089}
   - {fileID: 1949209789}
   - {fileID: 817337951}
+  - {fileID: 1080083876}
   m_Father: {fileID: 876608352}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18475,8 +18534,8 @@ GameObject:
   - component: {fileID: 1894984872}
   - component: {fileID: 1894984873}
   m_Layer: 0
-  m_Name: w
-  m_TagString: Untagged
+  m_Name: wall
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

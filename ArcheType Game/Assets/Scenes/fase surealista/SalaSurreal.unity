@@ -3839,7 +3839,7 @@ GameObject:
   - component: {fileID: 1222477155}
   m_Layer: 0
   m_Name: parede
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4390,6 +4390,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 644927286, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6460926998576168414, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
@@ -6271,7 +6275,7 @@ GameObject:
   - component: {fileID: 1909675366}
   m_Layer: 0
   m_Name: parede
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

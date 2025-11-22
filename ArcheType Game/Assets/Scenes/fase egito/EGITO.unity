@@ -2518,6 +2518,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2145163432}
     m_Modifications:
+    - target: {fileID: 4082721460946363566, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363567, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2548,7 +2552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363568, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2934
+      value: -0.26
       objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363570, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_Size.y
@@ -2592,11 +2596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.03
+      value: 28.25
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4082721461726820513, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2633,6 +2637,10 @@ PrefabInstance:
     - target: {fileID: 4082721461726821215, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_Name
       value: porta Egipcia (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082721461726821215, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
@@ -2755,7 +2763,7 @@ GameObject:
   - component: {fileID: 715969746}
   m_Layer: 0
   m_Name: porta egipcia (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2768,12 +2776,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715969744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.36, y: -0.22, z: 0}
-  m_LocalScale: {x: 1.0418739, y: 1.1272299, z: 1}
+  m_LocalPosition: {x: 0.10494045, y: 0.0033057781, z: 0.0930611}
+  m_LocalScale: {x: 0.8451711, y: 0.20324893, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 142520987}
-  m_RootOrder: 1
+  m_Father: {fileID: 1794762866}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &715969746
 Animator:
@@ -3516,7 +3524,7 @@ GameObject:
   - component: {fileID: 860502185}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5666,6 +5674,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2145163432}
     m_Modifications:
+    - target: {fileID: 4082721460946363566, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 4082721460946363567, guid: 6307789a6f437ad48b5c9a7401579311, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8399,7 +8411,7 @@ GameObject:
   - component: {fileID: 1794762864}
   m_Layer: 0
   m_Name: Square (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8470,7 +8482,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8493,7 +8505,8 @@ Transform:
   m_LocalPosition: {x: 66.0111, y: -1.2576, z: 0}
   m_LocalScale: {x: 1.2327373, y: 5.5460563, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 715969745}
   m_Father: {fileID: 0}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9698,7 +9711,7 @@ GameObject:
   - component: {fileID: 1911191122}
   m_Layer: 0
   m_Name: Pilar (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
