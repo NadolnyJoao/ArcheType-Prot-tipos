@@ -10,6 +10,8 @@ public class RespostaQuestion : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public PlayerMoviment playerMov;
+    
     public UnityEvent acertou;
     public UnityEvent errou;
 
@@ -26,6 +28,23 @@ public class RespostaQuestion : MonoBehaviour
         else
         {
             errou.Invoke();
+        }
+    }
+
+    void Start()
+    {
+
+    }
+    void Update()
+    {
+        
+        if(inputResponse.gameObject.activeSelf)
+        {
+            playerMov.enabled = false;
+        }
+        else
+        {
+            playerMov.enabled = true;
         }
     }
 

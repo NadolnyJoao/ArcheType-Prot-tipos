@@ -32,7 +32,7 @@ public class NotificationManage : MonoBehaviour
         Notification popNotificatino = popUp.GetComponent<Notification>();
         popNotificatino.SetData(img, titletext, bodytext);
         popNotificatino.StartAnimation();
-        Destroy(popUp, 2);
+        Destroy(popUp, 6);
 
     }
 }

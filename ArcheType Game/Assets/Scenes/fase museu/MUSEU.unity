@@ -5314,6 +5314,10 @@ PrefabInstance:
       value: -27.76
       objectReference: {fileID: 0}
     - target: {fileID: 1808368389, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: myBag.broches.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808368389, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: imgBroches.Array.data[1].name
       value: 1
       objectReference: {fileID: 0}
@@ -14074,6 +14078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c2722eaec0e174687b1b32fa6d93cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backpack: {fileID: 21300000, guid: 8aa3e5edfceb8c54ab53b45533a148a2, type: 3}
 --- !u!1 &1278581137
 GameObject:
   m_ObjectHideFlags: 0

@@ -561,7 +561,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &48844592
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,7 +841,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &94962016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1189,7 +1201,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!212 &127509704
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2120,7 +2138,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &250609882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2381,7 +2405,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &259043820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2802,7 +2832,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &345885579
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,7 +3379,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &492924053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4332,6 +4374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 644927286, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3042546003381057811, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4435,6 +4481,10 @@ PrefabInstance:
     - target: {fileID: 8187668958979461857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187668960046077004, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
@@ -7486,6 +7536,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  somCarvao:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1136546602
 GameObject:
   m_ObjectHideFlags: 0
@@ -7737,6 +7794,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   myColorPalette: []
+  colorSlots: []
   onNewColorAdded:
     m_PersistentCalls:
       m_Calls:
@@ -7752,6 +7810,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  colorPopupPrefab: {fileID: 0}
+  popupParent: {fileID: 0}
 --- !u!114 &1211910513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8559,7 +8619,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1270900795
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8771,7 +8837,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1295257622
 GameObject:
   m_ObjectHideFlags: 0
@@ -11050,7 +11122,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerContact: 0
-  Bip_sound: {fileID: 0}
+  Interection:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &1691299735
 BoxCollider2D:
   m_ObjectHideFlags: 0

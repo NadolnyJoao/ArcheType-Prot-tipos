@@ -7,6 +7,7 @@ public class PlayerBroche : MonoBehaviour
     // Start is called before the first frame update
     private PlayerMoviment playerMov;
     private Animator ani;
+    public Sprite backpack;
     void Start()
     {
         playerMov = GetComponent<PlayerMoviment>();
@@ -15,6 +16,7 @@ public class PlayerBroche : MonoBehaviour
         {
             Debug.Log("PlayerBrohce não tem acesso a PlayerMovimento");
         }
+
     }
 
     // Update is called once per frame
@@ -32,5 +34,8 @@ public class PlayerBroche : MonoBehaviour
         Debug.Log("Reativa PlayerMoviment");
         ani.SetInteger("numBroche",4);
         playerMov.enabled = true;
+        string texto = "Broche Coletado";
+        string texto2 = "Verifique sua mochila (TECLA ESC)";
+        NotificationManage.instance.CreateNotification(backpack, texto, texto2);
     }
 }
