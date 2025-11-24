@@ -26,7 +26,7 @@ public class CameraFollow : MonoBehaviour
             Vector3 nposition = limite.position;
             nposition.z = transform.position.z;
             float dist = Vector3.Distance(transform.position, nposition);
-            Debug.Log("dist cam to limit " + dist);
+           // Debug.Log("dist cam to limit " + dist);
             if (dist < distLimit)
             {
                 if (limite.name.Contains("Right"))

@@ -9,6 +9,8 @@ TagManager:
   - portaegito
   - fogo
   - Wall
+  - Horas
+  - Minutos
   layers:
   - Default
   - TransparentFX
