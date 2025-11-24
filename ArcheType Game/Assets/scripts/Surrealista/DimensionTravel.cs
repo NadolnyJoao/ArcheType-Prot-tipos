@@ -16,6 +16,9 @@ public class DimensionTravel : MonoBehaviour
     private PlayerMoviment playermoviment;
     public EventReference mundoNormal;
     public EventReference mundoSurreal;
+
+    public WorldTransitionPlayer transitionPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +40,7 @@ public class DimensionTravel : MonoBehaviour
             player.position = mundosonhoobj.position;
             mundosonho = true;
             mundonormal = false;
-            RuntimeManager.PlayOneShot(mundoSurreal, transform.position);
+            //RuntimeManager.PlayOneShot(mundoSurreal, transform.position);
             Debug.Log("mudou para mundo do sonho");
             
         }
@@ -49,14 +52,25 @@ public class DimensionTravel : MonoBehaviour
             player.position = mundonormalobj.position;
             mundonormal = true;
             mundosonho = false;
-            RuntimeManager.PlayOneShot(mundoNormal, transform.position);
+            //RuntimeManager.PlayOneShot(mundoNormal, transform.position);
             Debug.Log("mudou para mundo do normar");
             
         }
     }
-    void OnAtaque()
+    public void OnAtaque()
     {
-        ChangeWorld();
+        Debug.Log("oie"); 
+          if (transitionPlayer != null)
+        {
+            transitionPlayer.PlayTransition(() =>
+            {
+                ChangeWorld(); // troca só depois do vídeo
+            });
+        }
+        else
+        {
+            ChangeWorld(); // fallback caso não tenha vídeo
+        }
     }
 
     public void DestrancarPorta()

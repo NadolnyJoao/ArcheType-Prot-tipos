@@ -24,9 +24,9 @@ public class horasNormais : MonoBehaviour
             contadorsegs = 0; 
         }
 
-        if(min == 25)
+        if(min == 24)
         {
-            horas = horas - 15; 
+            horas = horas - 13; 
             min = 0; 
             transform.rotation = Quaternion.Euler(0,0,0); 
             transform.Rotate(0f, 0f, horas);
