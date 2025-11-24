@@ -2041,7 +2041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &546852633
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6133,7 +6133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1398505568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6207,7 +6207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c07a81371098d54abf77ebad0394193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMov: {fileID: 1062551214}
   acertou:
     m_PersistentCalls:
       m_Calls:
@@ -6673,6 +6672,7 @@ GameObject:
   - component: {fileID: 1575983346}
   - component: {fileID: 1575983345}
   - component: {fileID: 1575983344}
+  - component: {fileID: 1575983347}
   m_Layer: 0
   m_Name: Esfinge
   m_TagString: Untagged
@@ -6869,6 +6869,20 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   actionsLateFala: []
+--- !u!114 &1575983347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575983341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25728f3a95007b7499cdafc19875c42e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMov: {fileID: 1062551214}
+  objtst: {fileID: 1398505567}
 --- !u!1 &1585492676
 GameObject:
   m_ObjectHideFlags: 0
@@ -10225,7 +10239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2088597303
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10399,7 +10413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2092823307
 MonoBehaviour:
   m_ObjectHideFlags: 0
