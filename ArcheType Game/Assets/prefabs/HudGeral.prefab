@@ -154,7 +154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &644927286
 RectTransform:
   m_ObjectHideFlags: 0
@@ -400,6 +400,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858e4aeeb44826f4cbaa936c7cd79da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myBag:
+    lastBroche: 4
+    broches: []
   bocheaddbytype: 0
   imgBroches:
   - name: 0
@@ -903,15 +906,15 @@ RectTransform:
   m_GameObject: {fileID: 464478638383630263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3974495946817550854}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.0000229, y: -59.10001}
+  m_AnchoredPosition: {x: 1.0000229, y: -44.4}
   m_SizeDelta: {x: 321.3019, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2590474579083079057
@@ -996,10 +999,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6300630760276842715}
-        m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
-        m_MethodName: Resume
-        m_Mode: 1
+      - m_Target: {fileID: 8819164275374343311}
+        m_TargetAssemblyTypeName: LoadingScript, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1367,7 +1370,7 @@ RectTransform:
   m_GameObject: {fileID: 1501388011406013873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3974495946817550854}
@@ -1375,7 +1378,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.0000229, y: 108.7}
+  m_AnchoredPosition: {x: 1.0000229, y: 121.05}
   m_SizeDelta: {x: 224.1934, y: 53.3059}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &400370050282095693
@@ -2305,8 +2308,8 @@ RectTransform:
   m_Children:
   - {fileID: 3396412826587701374}
   - {fileID: 4993351209650700214}
-  - {fileID: 7076782668495510649}
   - {fileID: 5616860898623282575}
+  - {fileID: 7076782668495510649}
   - {fileID: 4151799361936108293}
   m_Father: {fileID: 8560357397664246280}
   m_RootOrder: 2
@@ -4916,7 +4919,7 @@ RectTransform:
   m_GameObject: {fileID: 6231257585039890002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8190966559644376453}
@@ -4934,11 +4937,11 @@ RectTransform:
   m_Father: {fileID: 8842004611030082228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 1940.1438, y: 0.0000039204842}
+  m_SizeDelta: {x: 1510.524, y: 950}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &4852650129598098922
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8118,7 +8121,7 @@ GameObject:
   - component: {fileID: 6811827506125917393}
   - component: {fileID: 9025860971353228677}
   m_Layer: 0
-  m_Name: Sair btn  (2)
+  m_Name: tutoriial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8141,8 +8144,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -239}
-  m_SizeDelta: {x: 641.35, y: 435.2375}
+  m_AnchoredPosition: {x: -0.000013709, y: -290}
+  m_SizeDelta: {x: 641.35, y: 371.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7675358702972622400
 CanvasRenderer:
@@ -8440,7 +8443,7 @@ GameObject:
   - component: {fileID: 115630668899134562}
   - component: {fileID: 3723028406833683819}
   m_Layer: 0
-  m_Name: Sair btn  (1)
+  m_Name: Opcoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8459,11 +8462,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3974495946817550854}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 22}
+  m_AnchoredPosition: {x: 1, y: 37.3}
   m_SizeDelta: {x: 206.7138, y: 56.0108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2558074033920091158
@@ -8548,17 +8551,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6300630760276842715}
-        m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
-        m_MethodName: Resume
-        m_Mode: 1
+      - m_Target: {fileID: 8384748886731184877}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &9187515542108738627
 GameObject:
