@@ -3730,6 +3730,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6924766708562143095, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: dev
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6924766708562143095, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
