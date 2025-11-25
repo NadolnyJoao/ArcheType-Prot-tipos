@@ -112,7 +112,7 @@ public class BrocheManage : MonoBehaviour
             myBag = loadBroches;
 
             RenderBroches();
-             Invoke("AniColect", 0.3f);
+             Invoke("AniColect", 0.7f);
         }
     }
     void RenderBroches()
