@@ -6659,7 +6659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6460926998576168414, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7498466680952775776, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_IsActive
@@ -18146,11 +18146,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     Guid:
-      Data1: -879046464
-      Data2: 1333832008
-      Data3: -1068874839
-      Data4: -107347097
-    Path: event:/Renascentista/Tinta sendo misturada/mixing_paint
+      Data1: -317865142
+      Data2: 1105182567
+      Data3: 668251819
+      Data4: -389081448
+    Path: "event:/Renascentista/Tinta caindo no pil\xE3o/paiting_splash1"
 --- !u!1 &1857101548
 GameObject:
   m_ObjectHideFlags: 0
