@@ -4479,7 +4479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1808368389, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: bocheaddbytype
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6460926998576168414, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4604,6 +4604,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8187668958623273857, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
   m_PrefabInstance: {fileID: 1346776800}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1346776802 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1808368389, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+  m_PrefabInstance: {fileID: 1346776800}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858e4aeeb44826f4cbaa936c7cd79da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1350861325
 GameObject:
   m_ObjectHideFlags: 0
@@ -5284,6 +5295,21 @@ MonoBehaviour:
       Data3: 372866744
       Data4: -1921893398
     Path: event:/WoodDoor openning_surrealista
+  finish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1346776802}
+        m_TargetAssemblyTypeName: BrocheManage, Assembly-CSharp
+        m_MethodName: ColetarBroche
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1576528610
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using FMODUnity;
 using FMOD.Studio;
+using UnityEngine.Events;
 
 public class PuzzleManagerWords : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class PuzzleManagerWords : MonoBehaviour
     public GameObject portasaida;
     public GameObject portapuzzle;
     public EventReference doorOpen;
-
+    public UnityEvent finish;
     public void CheckWinCondition()
     {
         PuzzlePalavras[] pieces = FindObjectsOfType<PuzzlePalavras>();
@@ -23,7 +24,9 @@ public class PuzzleManagerWords : MonoBehaviour
         portapuzzle.SetActive(false);
         portasaida.SetActive(true);
         RuntimeManager.PlayOneShot(doorOpen, transform.position);
+        finish.Invoke();
         Debug.Log("parabens voce não é um astrolopietcus");
+
         ExitPuzzle();
     }
 

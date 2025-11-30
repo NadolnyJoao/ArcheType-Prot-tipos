@@ -45,6 +45,8 @@ public class BrocheManage : MonoBehaviour
 
     public UnityEvent Finish;
     private PlayerBroche playerBroche;
+    private int numbrochesColeted = 0;
+
     void Start()
     {
         // Debug.Log(myBag);
@@ -122,11 +124,11 @@ public class BrocheManage : MonoBehaviour
 
             myBag = loadBroches;
 
-            
+
         }
         else
         {
-           //se não achou, cria pasta e arquivo inicial
+            //se não achou, cria pasta e arquivo inicial
             Debug.Log("Não achou o arquivo de broches, criando novo");
             myBag = new BagBroche();
 
@@ -139,11 +141,22 @@ public class BrocheManage : MonoBehaviour
             // NotificationManage.instance.CreateNotification(null, "Erro", "Não achou arquivo de broches - arquivo criado"); 
         }
         RenderBroches();
-            Invoke("AniColect", 0.7f);
+        Invoke("AniColect", 0.7f);
+        Invoke("CheckFinish", 1.7f);
+    }
+    void CheckFinish()
+    {
+        if (numbrochesColeted == 4)
+        {
+            Debug.Log("Temos o fim do jogo");
+            string dataJson = JsonUtility.ToJson(new Broches(), true);
+            File.WriteAllText(pathFile, dataJson);
+            Finish.Invoke();
+        }
     }
     void RenderBroches()
     {
-        int numbrochesColeted = 0;
+        numbrochesColeted = 0;
         Debug.Log("render broches");
         if (myBag.broches.Count > 0)
             foreach (string namejs in myBag.broches)
@@ -186,13 +199,7 @@ public class BrocheManage : MonoBehaviour
                         }
                     }
                 }
-                if (numbrochesColeted == 4)
-                {
-                    Debug.Log("Temos o fim do jogo");
-                    string dataJson = JsonUtility.ToJson(new Broches(), true);
-                    File.WriteAllText(pathFile, dataJson);
-                    Finish.Invoke();
-                }
+
 
             }
 
