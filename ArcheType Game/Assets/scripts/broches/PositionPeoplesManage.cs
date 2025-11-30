@@ -27,7 +27,7 @@ public class PositionPeoplesManage : MonoBehaviour
         // has a position saved?
         //load postitions
 
-        if(PlayerPrefs.GetInt("loadPositions", 0) == 1)
+        if (PlayerPrefs.GetInt("loadPositions", 0) == 1)
         {
             LoadPositions();
         }
@@ -49,6 +49,27 @@ public class PositionPeoplesManage : MonoBehaviour
             Debug.Log("posições caregadas");
             PlayerPrefs.SetInt("loadPositions", 0);
             PlayerPrefs.Save();
+        }
+        else
+        {
+            //se não achou, cria pasta e arquivo inicial
+            Debug.Log("Não achou o arquivo de broches, criando novo");
+            List<Vector3> positions = new List<Vector3>();
+            positions.Add(playerTransform.position);
+            positions.Add(guiaTransform.position);
+
+            PositionList positionList = new PositionList(positions);
+            string dataJson = JsonUtility.ToJson(positionList, true);
+
+            string dir = Path.GetDirectoryName(pathFile);
+            if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
+
+     
+            File.WriteAllText(pathFile, dataJson);
+            Debug.Log("Dados Salvos");
+            PlayerPrefs.SetInt("loadPositions", 1);
+            PlayerPrefs.Save();
+            // NotificationManage.instance.CreateNotification(null, "Erro", "Não achou arquivo de broches - arquivo criado"); 
         }
     }
     public void SavePositions()

@@ -21,12 +21,12 @@ public class BrocheManage : MonoBehaviour
     {
         public TypeBoches lastBroche = TypeBoches.none;
         // public Broches coletados;
-          public List<string> broches = new List<string>();
+        public List<string> broches = new List<string>();
 
     }
 
 
-    
+
     [Serializable]
     public class ImgBoche
     {
@@ -64,9 +64,10 @@ public class BrocheManage : MonoBehaviour
             Debug.Log("BrocheMAnage nçao tem acesso a PLayerBroches");
         }
         LoadBroches();
+
         // if (myBag.coletados == null) myBag.coletados = new Broches();
 
-       
+
     }
     public void AniColect()
     {
@@ -80,7 +81,7 @@ public class BrocheManage : MonoBehaviour
         }
     }
 
-   public void ColetarBroche()
+    public void ColetarBroche()
     {
         // if (myBag.coletados == null) myBag.coletados = new Broches();
         myBag.broches.Add(TypeBrochetoString(bocheaddbytype));
@@ -98,7 +99,7 @@ public class BrocheManage : MonoBehaviour
         File.WriteAllText(pathFile, dataJson);
         // Debug.Log("Dados Salvos");
     }
-        void LoadBroches()
+    void LoadBroches()
     {
         if (File.Exists(pathFile))
         {
@@ -106,18 +107,44 @@ public class BrocheManage : MonoBehaviour
 
             BagBroche loadBroches = JsonUtility.FromJson<BagBroche>(dataJson);
 
-            if (loadBroches == null) loadBroches = new BagBroche();
+            if (loadBroches == null)
+            {
+                loadBroches = new BagBroche();
+
+                // NotificationManage.instance.CreateNotification(null, "Sucess", "Arquivo vaziu");
+            }
+            else
+            {
+
+                // NotificationManage.instance.CreateNotification(null, "Sucess", "Achou o arquivo de broches");
+            }
             // if (loadBroches.coletados == null) loadBroches.coletados = new Broches();
 
             myBag = loadBroches;
 
-            RenderBroches();
-             Invoke("AniColect", 0.7f);
+            
         }
+        else
+        {
+           //se não achou, cria pasta e arquivo inicial
+            Debug.Log("Não achou o arquivo de broches, criando novo");
+            myBag = new BagBroche();
+
+            string dir = Path.GetDirectoryName(pathFile);
+            if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
+
+            string dataJson = JsonUtility.ToJson(myBag, true);
+            File.WriteAllText(pathFile, dataJson);
+
+            // NotificationManage.instance.CreateNotification(null, "Erro", "Não achou arquivo de broches - arquivo criado"); 
+        }
+        RenderBroches();
+            Invoke("AniColect", 0.7f);
     }
     void RenderBroches()
     {
         int numbrochesColeted = 0;
+        Debug.Log("render broches");
         if (myBag.broches.Count > 0)
             foreach (string namejs in myBag.broches)
             {
@@ -136,7 +163,7 @@ public class BrocheManage : MonoBehaviour
                 {
                     foreach (ImgBoche img in imgBroches)
                     {
-                        // Debug.Log("comparação name broche name : " + namejs + " name img.name: " + img.name + " igual? " + (img.name == name));
+                        Debug.Log("comparação name broche name : " + namejs + " name img.name: " + img.name + " igual? " + (img.name == name));
                         if (img.name == name)
                         {
 
@@ -151,6 +178,7 @@ public class BrocheManage : MonoBehaviour
                                 {
                                     slot.sprite = imgBroche;
                                     slot.color = Color.white;
+                                    // NotificationManage.instance.CreateNotification(imgBroche, "Broche Renderizado", $"renderizado broche {namejs}");
                                     break;
                                 }
                             }
