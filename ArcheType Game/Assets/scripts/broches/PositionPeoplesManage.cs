@@ -62,14 +62,18 @@ public class PositionPeoplesManage : MonoBehaviour
             string dataJson = JsonUtility.ToJson(positionList, true);
 
             string dir = Path.GetDirectoryName(pathFile);
-            if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
+            if (!Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir);
+            NotificationManage.instance.CreateNotification(null, "Erro Position", "Não achou arquivo de broches - arquivo criado"); 
+                
+            } 
 
      
             File.WriteAllText(pathFile, dataJson);
             Debug.Log("Dados Salvos");
             PlayerPrefs.SetInt("loadPositions", 1);
             PlayerPrefs.Save();
-            // NotificationManage.instance.CreateNotification(null, "Erro", "Não achou arquivo de broches - arquivo criado"); 
         }
     }
     public void SavePositions()
