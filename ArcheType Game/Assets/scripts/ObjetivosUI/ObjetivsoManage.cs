@@ -24,18 +24,16 @@ public class ObjetivsoManage : MonoBehaviour
     private void SetObjtUI()
     {
         textoMainObjt.text = objetivos[objetivos.Count - 1];
-
-        for( int i = 0; i <4; i++)
+        int n = 4;
+        if(objetivos.Count < 4)
         {
-            if(i<= objetivos.Count -1 -i)
-            if(objetivos[objetivos.Count - 1 - i] != null)
-            {
+            n= objetivos.Count;
+        }
+        for( int i = 0; i <n; i++)
+        {
 
                 textsobjetivos[i].text = objetivos[objetivos.Count - 1 - i];
-            }else{
-                textsobjetivos[i].text = "Ta vivo";
-
-            }
+           
         }
     }
 

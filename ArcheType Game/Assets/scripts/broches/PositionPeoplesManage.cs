@@ -76,18 +76,24 @@ public class PositionPeoplesManage : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-    public void SavePositions()
-    {
-        List<Vector3> positions = new List<Vector3>();
-        positions.Add(playerTransform.position);
-        positions.Add(guiaTransform.position);
+   public void SavePositions()
+{
+    List<Vector3> positions = new List<Vector3>();
+    positions.Add(playerTransform.position);
+    positions.Add(guiaTransform.position);
 
-        PositionList positionList = new PositionList(positions);
-        string dataJson = JsonUtility.ToJson(positionList, true);
-        File.WriteAllText(pathFile, dataJson);
-        Debug.Log("Dados Salvos");
-        PlayerPrefs.SetInt("loadPositions", 1);
-        PlayerPrefs.Save();
+    PositionList positionList = new PositionList(positions);
+    string dataJson = JsonUtility.ToJson(positionList, true);
 
-    }
+    string dir = Path.GetDirectoryName(pathFile);
+    if (!Directory.Exists(dir))
+        Directory.CreateDirectory(dir);
+
+    File.WriteAllText(pathFile, dataJson);
+
+    Debug.Log("Dados Salvos");
+    PlayerPrefs.SetInt("loadPositions", 1);
+    PlayerPrefs.Save();
+}
+
 }
