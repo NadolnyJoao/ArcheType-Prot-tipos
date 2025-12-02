@@ -16,13 +16,13 @@ public class MobileManage : MonoBehaviour
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer || dev)
         {
             mobilePainel.SetActive(true);
-            Debug.Log("Mobile interface enabled.");
+            // Debug.Log("Mobile interface enabled.");
             mobileEvents.Invoke();
         }
         else
         {
             mobilePainel.SetActive(false);
-            Debug.Log("Not a mobile platform, mobile interface disabled.");
+            // Debug.Log("Not a mobile platform, mobile interface disabled.");
         }
     }
 
