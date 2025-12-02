@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class PlayerBroche : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class PlayerBroche : MonoBehaviour
     private PlayerMoviment playerMov;
     private Animator ani;
     public Sprite backpack;
+
+     public EventReference coletaBroche;
     void Start()
     {
         playerMov = GetComponent<PlayerMoviment>();
@@ -25,6 +29,7 @@ public class PlayerBroche : MonoBehaviour
         playerMov.enabled = false;
         ani.SetInteger("numBroche",numBroche);
         ani.SetTrigger("broche");
+        RuntimeManager.PlayOneShot(coletaBroche, transform.position);
         Debug.Log($"Plat trigger ani broches how number {numBroche}");
 
         Invoke("AtivePLayerMOv",1);

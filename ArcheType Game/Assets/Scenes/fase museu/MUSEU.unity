@@ -14340,6 +14340,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backpack: {fileID: 21300000, guid: 8aa3e5edfceb8c54ab53b45533a148a2, type: 3}
+  coletaBroche:
+    Guid:
+      Data1: -337998017
+      Data2: 1136686048
+      Data3: 2050226074
+      Data4: -2051168402
+    Path: event:/Coleta de broche1
 --- !u!114 &1276458138
 MonoBehaviour:
   m_ObjectHideFlags: 0
