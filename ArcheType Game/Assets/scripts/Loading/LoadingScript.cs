@@ -17,7 +17,7 @@ public class LoadingScript : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Opcional se quiser que ele sobreviva entre cenas
+            //DontDestroyOnLoad(gameObject); // Opcional se quiser que ele sobreviva entre cenas
         }
         else
         {

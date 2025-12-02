@@ -77,4 +77,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/renascentista/Cutscene/RenascentistaCutscene.unity
     guid: 8ac8f316e7de47646a8101ca8ff65c1a
+  - enabled: 1
+    path: Assets/Scenes/fim game/CREDITOSJOGO.unity
+    guid: 8da8c5d6258b3d84fa52408cc562552b
   m_configObjects: {}
