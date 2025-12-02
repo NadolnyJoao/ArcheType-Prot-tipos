@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class FallingGround : MonoBehaviour
 {
-    [Header("Tempos de execução")]
+     [Header("Tempos de execução")]
     public float timeToFall = 1.0f;
     public float timeToDestroy = 2.0f;
     public float timeToBack = 3.0f;
 
     private Rigidbody2D rg;
-    public GameObject groundPrefab; 
+    public GameObject groundPrefab;
 
     private Quaternion startRotation;
     private Vector2 startPosition;
@@ -19,14 +19,12 @@ public class FallingGround : MonoBehaviour
     {
         rg = GetComponent<Rigidbody2D>();
 
-        // Se não achar Rigidbody2D, evita erro
         if (rg == null)
         {
-            Debug.LogError("Sem RigidBody nesta bomba xd");
+            Debug.LogError("Sem Rigidbody2D no objeto!");
             return;
         }
 
-        rg.isKinematic = true; 
         startPosition = transform.position;
         startRotation = transform.rotation;
     }
@@ -35,20 +33,36 @@ public class FallingGround : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            
             Invoke(nameof(Cair), timeToFall);
         }
     }
 
     void Cair()
     {
-        rg.isKinematic = false;
-        Invoke(nameof(VoltarChao), timeToBack); // só instancia após cair
-        Destroy(this.gameObject, timeToDestroy); 
+        // Permite que o chão caia
+        rg.bodyType = RigidbodyType2D.Dynamic;
+        rg.gravityScale = 1;
+
+        // Recria depois
+        Invoke(nameof(VoltarChao), timeToBack);
+
+        // Destroi o chão original após o tempo
+        Destroy(gameObject, timeToDestroy);
     }
 
     void VoltarChao()
     {
-        Instantiate(groundPrefab, startPosition, startRotation);
+        GameObject novoChao = Instantiate(groundPrefab, startPosition, startRotation);
+
+        // Garante que o novo chão fique parado
+        Rigidbody2D newRg = novoChao.GetComponent<Rigidbody2D>();
+
+        if (newRg != null)
+        {
+            newRg.bodyType = RigidbodyType2D.Kinematic;
+            newRg.gravityScale = 0;
+            newRg.velocity = Vector2.zero;
+            newRg.angularVelocity = 0;
+        }
     }
 }

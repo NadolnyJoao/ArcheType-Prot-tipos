@@ -209,6 +209,10 @@ PrefabInstance:
       propertyPath: timeToDestroy
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6221780334940881643, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881654, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: m_Name
       value: FallingGround
@@ -1195,6 +1199,10 @@ PrefabInstance:
       propertyPath: timeToDestroy
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6221780334940881643, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881654, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: m_Name
       value: FallingGround
@@ -1320,6 +1328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 370682693}
   - component: {fileID: 370682694}
+  - component: {fileID: 370682695}
   m_Layer: 5
   m_Name: Puzzle
   m_TagString: Untagged
@@ -1406,6 +1415,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &370682695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370682692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfba4110e1669d549a4ca928871f419d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetsToDisable:
+  - {fileID: 2058495001}
 --- !u!4 &384156228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 528555661688966795, guid: 4780fbd8dd9873b4f9c264f2f9ef44fb, type: 3}
@@ -1686,6 +1709,10 @@ PrefabInstance:
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToDestroy
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221780334940881643, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
+      propertyPath: m_BodyType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881654, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: m_Name
@@ -1978,6 +2005,10 @@ PrefabInstance:
     - target: {fileID: 6221780334940881642, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: timeToDestroy
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221780334940881643, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
+      propertyPath: m_BodyType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881654, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: m_Name
@@ -4732,7 +4763,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 914642805
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 37
   m_Sprite: {fileID: 21300000, guid: 026586d6307cc3947ac9b4ef0a161f69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6493,6 +6524,7 @@ GameObject:
   - component: {fileID: 1398505569}
   - component: {fileID: 1398505568}
   - component: {fileID: 1398505571}
+  - component: {fileID: 1398505572}
   m_Layer: 5
   m_Name: QuestuibPainel
   m_TagString: Untagged
@@ -6652,6 +6684,20 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   inputResponse: {fileID: 2088597304}
+--- !u!114 &1398505572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398505567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfba4110e1669d549a4ca928871f419d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetsToDisable:
+  - {fileID: 2058495001}
 --- !u!4 &1431651308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 528555661688966795, guid: 4780fbd8dd9873b4f9c264f2f9ef44fb, type: 3}
@@ -9177,6 +9223,10 @@ PrefabInstance:
       propertyPath: timeToDestroy
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6221780334940881643, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6221780334940881654, guid: b8c73326a7a86eb4c913d3a0ebc48621, type: 3}
       propertyPath: m_Name
       value: FallingGround
@@ -10423,6 +10473,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2058495001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 204531690168767413, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+  m_PrefabInstance: {fileID: 1735536702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2075977050
 GameObject:
   m_ObjectHideFlags: 0

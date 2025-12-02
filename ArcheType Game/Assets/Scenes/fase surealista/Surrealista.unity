@@ -5809,6 +5809,7 @@ GameObject:
   - component: {fileID: 1242194869}
   - component: {fileID: 1242194873}
   - component: {fileID: 1242194872}
+  - component: {fileID: 1242194874}
   m_Layer: 0
   m_Name: Mi
   m_TagString: ground
@@ -5891,7 +5892,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242194866}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5937,7 +5938,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242194866}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
   m_Name: 
@@ -5994,6 +5995,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.237505, y: 3.1}
   m_EdgeRadius: 0
+--- !u!114 &1242194874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242194866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02f59d9d279c0645ba36d04ce084ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToFall: 0.5
+  timeToDestroy: 2
 --- !u!1 &1273767542
 GameObject:
   m_ObjectHideFlags: 0
@@ -6628,6 +6643,7 @@ GameObject:
   - component: {fileID: 1356787972}
   - component: {fileID: 1356787976}
   - component: {fileID: 1356787975}
+  - component: {fileID: 1356787977}
   m_Layer: 0
   m_Name: "L\xE1"
   m_TagString: ground
@@ -6710,7 +6726,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356787969}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6756,7 +6772,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356787969}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
   m_Name: 
@@ -6813,6 +6829,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.104597, y: 3.1}
   m_EdgeRadius: 0
+--- !u!114 &1356787977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356787969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02f59d9d279c0645ba36d04ce084ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToFall: 0.5
+  timeToDestroy: 2
 --- !u!1 &1357357112
 GameObject:
   m_ObjectHideFlags: 0
@@ -7905,6 +7935,7 @@ GameObject:
   - component: {fileID: 1520015557}
   - component: {fileID: 1520015561}
   - component: {fileID: 1520015560}
+  - component: {fileID: 1520015562}
   m_Layer: 0
   m_Name: "F\xE1"
   m_TagString: ground
@@ -7987,7 +8018,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520015554}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -8033,7 +8064,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520015554}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20d1b8a58656b924ab081b96151fc586, type: 3}
   m_Name: 
@@ -8090,6 +8121,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.237509, y: 3.1}
   m_EdgeRadius: 0
+--- !u!114 &1520015562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520015554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02f59d9d279c0645ba36d04ce084ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToFall: 0.5
+  timeToDestroy: 2
 --- !u!1 &1532446648
 GameObject:
   m_ObjectHideFlags: 0

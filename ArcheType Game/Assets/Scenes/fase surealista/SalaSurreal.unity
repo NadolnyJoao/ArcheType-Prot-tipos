@@ -4481,6 +4481,10 @@ PrefabInstance:
       propertyPath: bocheaddbytype
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 167002476618941500, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6460926998576168414, guid: 61019bbd5e378d64eb3f44e5368e6590, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
