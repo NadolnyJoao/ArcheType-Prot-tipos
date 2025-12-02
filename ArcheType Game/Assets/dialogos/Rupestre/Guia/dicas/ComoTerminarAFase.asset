@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Guia
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - "Converte com o Anci\xE3o para contar suas descobertas. "
   canPass: 1

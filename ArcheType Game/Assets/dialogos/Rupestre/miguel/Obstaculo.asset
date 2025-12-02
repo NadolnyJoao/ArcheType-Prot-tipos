@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Miguel
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - "N\xE3o consigo passar por aqui, acho que da para queimar se usar um graveto
     em chamas."

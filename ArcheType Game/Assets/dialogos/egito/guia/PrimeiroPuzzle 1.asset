@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Guia
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - Tente montar um gato.
   - 'As figuras que possuem linhas horizontais amarelas tente colocar na base. '

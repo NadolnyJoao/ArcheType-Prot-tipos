@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Guia
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - "Se voc\xEA estiver procurando o anci\xE3o, tente sair da caverna pela passagem
     \xE1 direita."

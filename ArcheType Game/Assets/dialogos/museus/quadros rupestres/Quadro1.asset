@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Guia
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - "Imagine um tempo muito antigo, quando ainda n\xE3o existia papel, l\xE1pis ou
     tinta."
@@ -26,4 +26,4 @@ MonoBehaviour:
     desenhos ali? "
   - "Pode ter certeza que foi o \u2018di\xE1rio\u2019 de algu\xE9m da pr\xE9-hist\xF3ria! "
   canPass: 1
-  index: 4
+  index: 0

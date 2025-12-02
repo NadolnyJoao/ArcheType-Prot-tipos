@@ -15,12 +15,12 @@ MonoBehaviour:
   name: Rafael
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - Perfeito.
   - Estou ocupado agora.
   - "Mas tenho algo perfeito para voc\xEA fazer."
   - No primeiro andar tem uma estatua.
-  - "Quero que voc\xEA fa\xE7a um desenho de perspectiva do comodo."
+  - "Quero que voc\xEA fa\xE7a um desenho de perspectiva do c\xF4modo."
   canPass: 0
   index: 0

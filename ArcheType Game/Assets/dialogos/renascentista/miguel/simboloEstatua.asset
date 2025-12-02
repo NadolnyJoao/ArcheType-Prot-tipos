@@ -15,8 +15,8 @@ MonoBehaviour:
   name: Miguel
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
-  - Tem um simbolo atras da estatua.
+  - "Tem um s\xEDmbolo atr\xE1s da est\xE1tua."
   canPass: 0
   index: 0

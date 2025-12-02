@@ -15,9 +15,9 @@ MonoBehaviour:
   name: Cuidador da caverna
   colorName:
     serializedVersion: 2
-    rgba: 4281545523
+    rgba: 4294967295
   falas:
   - Sim filho.
   - "La fora temos nosso chefe, ele passar\xE1 mais informa\xE7\xF5es."
   canPass: 0
-  index: 1
+  index: 0

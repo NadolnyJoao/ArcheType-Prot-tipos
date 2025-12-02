@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Miguel
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - "Tem um cofre atr\xE1s desse quadro."
   canPass: 1

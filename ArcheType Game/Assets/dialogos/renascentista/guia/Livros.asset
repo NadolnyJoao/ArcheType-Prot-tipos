@@ -15,9 +15,9 @@ MonoBehaviour:
   name: Rafael
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - "Os livros est\xE3o no segundo andar \xE1 esquerda."
-  - Coloque o livro vermelho em primeiro os os demais no tamanho menor.
+  - Organize os livros em ordem descresente.
   canPass: 1
   index: 0

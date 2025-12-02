@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Guia
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - "Aqui temos uma representa\xE7\xE3o de como eles enxergavam os animais."
   canPass: 1

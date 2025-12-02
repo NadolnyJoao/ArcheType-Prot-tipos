@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Miguel
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - Melhor avisar sobre as frutas e os lobos que tem por aqui.
   canPass: 1

@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Miguel
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - "Aqui seria um bom lugar para eles ca\xE7arem."
   canPass: 1

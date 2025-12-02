@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Guia
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
   - "O graveto pode ser encontrado na plan\xEDcie \xE0 direita."
   canPass: 1

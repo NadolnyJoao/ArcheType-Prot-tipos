@@ -15,7 +15,7 @@ MonoBehaviour:
   name: ' Cuidador da caverna'
   colorName:
     serializedVersion: 2
-    rgba: 4281545523
+    rgba: 4294967295
   falas:
   - "Aqui, meu filho. Pode comer, \xE9 o que teremos para essa semana."
   - "Voc\xEA fez um \xF3timo trabalho. Fale com nosso chefe, ele te dar\xE1 novas

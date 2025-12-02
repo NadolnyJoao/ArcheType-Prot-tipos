@@ -15,8 +15,8 @@ MonoBehaviour:
   name: Miguelito
   colorName:
     serializedVersion: 2
-    rgba: 4280953386
+    rgba: 4294967295
   falas:
-  - Posso ir dormir e visitar o mundo dos sonbhso se precionar a tecla E
+  - Posso ir dormir e visitar o mundo dos sonhos ao pressionar (E).
   canPass: 1
   index: 0
