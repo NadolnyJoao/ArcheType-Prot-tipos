@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a171c697117a18047bf6a35eccf7e400, type: 3}
+  m_Name: Quadro4
+  m_EditorClassIdentifier: 
+  name: Guia
+  colorName:
+    serializedVersion: 2
+    rgba: 4294967295
+  falas:
+  - "Olha s\xF3 essa obra cheia de sonhos e mist\xE9rios! "
+  - "No surrealismo, os artistas pintavam como se estivessem num sonho: rel\xF3gios
+    derretendo, elefantes com pernas de aranha, at\xE9 pessoas com frutas no lugar
+    da cabe\xE7a! "
+  - "Eles queriam explorar a mente humana, misturando o real com o imposs\xEDvel.
+    Viu aquele lobo com asas ali? Ou a \xE1rvore que vira um livro?"
+  - "Era como se pegassem suas ideias mais malucas e as colocassem na tela \u2013
+    afinal, a arte n\xE3o precisa ter limites, n\xE9? "
+  canPass: 1
+  index: 0

@@ -2,14 +2,19 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+../Olhos/
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
+/[Bb]iuld/
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/Assets/Saves/Position
+/Assets/Saves/Broches
+/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
 *.log
 
 # MemoryCaptures can get excessive in size.

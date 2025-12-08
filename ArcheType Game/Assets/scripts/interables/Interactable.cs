@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
+using FMODUnity;
+using FMOD.Studio;
 
 public class Interactable : MonoBehaviour
 {
@@ -9,35 +12,43 @@ public class Interactable : MonoBehaviour
     public UnityEvent onTrigger;
     public UnityEvent exitTrigger;
     public bool playerContact = false;
-    void Start()
-    {
+    public EventReference Interection;
 
-    }
-
-    // Update is called once per frame
-    void Update()
+    public void PlaySound()
     {
-        if (Input.GetKeyDown(KeyCode.W) && playerContact)
-        {
-            actions.Invoke();
-        }
+        RuntimeManager.PlayOneShot(Interection, transform.position);
+        Debug.Log("teste");               
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             playerContact = true;
             onTrigger.Invoke();
-        }
 
+            //passar actions para o player
+            PlayerMoviment playerMoviment = other.GetComponent<PlayerMoviment>();
+            if (playerMoviment != null && playerContact)
+            {
+                playerMoviment.setActionInterableContact(actions);
+                //PlaySound(); 
+                Debug.Log("PASSANDO AÇÃO INTERABLE obj: "+gameObject.name);
+            }
+        }
     }
+
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             playerContact = false;
             exitTrigger.Invoke();
+            PlayerMoviment playerMoviment = other.GetComponent<PlayerMoviment>();
+            if (playerMoviment != null && playerContact == false)
+            {
+                playerMoviment.setActionInterableContact(null);
+            }
         }
     }
 }

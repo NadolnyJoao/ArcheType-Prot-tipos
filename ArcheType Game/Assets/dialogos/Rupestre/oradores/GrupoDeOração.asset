@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a171c697117a18047bf6a35eccf7e400, type: 3}
+  m_Name: "GrupoDeOra\xE7\xE3o"
+  m_EditorClassIdentifier: 
+  name: "Irm\xE3os"
+  colorName:
+    serializedVersion: 2
+    rgba: 4294967295
+  falas:
+  - Que o Grande Sol ilumine suas colheitas e traga fartura ao seu povo!.
+  - "O Sol aben\xE7oa os que honram sua luz. Que suas planta\xE7\xF5es cres\xE7am
+    fortes."
+  - Se seu caminhos estiverem fechados basta de rezar ao Deus Sol.
+  - "Voc\xEA pode coletar uma gota de luz se tiver um graveto e queim\xE1-lo em nossa
+    foqueira."
+  canPass: 1
+  index: 0
